@@ -77,8 +77,8 @@ ActiveRecord::Schema.define(version: 2019_12_01_160636) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "firstname"
-    t.string "lastname"
+    t.string "first_name"
+    t.string "last_name"
     t.string "username"
     t.string "avatar"
     t.index ["email"], name: "index_users_on_email", unique: true
