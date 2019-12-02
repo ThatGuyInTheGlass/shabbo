@@ -1,27 +1,19 @@
 .footer {
-  background: white;
+  background: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  padding: 0px 10px;
+  padding: 0px 5px;
   color: #FFFFFF;
   content-align: left;
+  position: fixed;
+  bottom: 0;
+  margin-top: 1px;
 }
-.footer-links {
-  display: flex;
-  align-content: right;
+
+.button-footer {
 }
-.footer-links a {
-  color: black;
-  opacity: 0.15;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-  align: center;
-}
-.footer-links a:hover {
-  opacity: 1;
 
 html, body {
   height: 100%;
@@ -37,3 +29,5 @@ body {
   flex-shrink: 0;
 }
 
+.content{
+}
