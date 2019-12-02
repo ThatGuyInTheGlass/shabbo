@@ -3,6 +3,7 @@ UserCategory.destroy_all
 ActivityCategory.destroy_all
 Booking.destroy_all
 Review.destroy_all
+Category.destory_all
 Activity.destroy_all
 User.destroy_all
 
@@ -110,7 +111,6 @@ review1 = Review.create(
   description: "This was a great service",
   stars:"5",
   user: user4,
-  activity: activity3
   )
 
 review2 = Review.create(
@@ -132,6 +132,53 @@ booking2 = Booking.create(
   activity: activity5
   )
 
+############# Categories ##################################
+
+category1 = Category.create(
+  name:'Yoga'
+  )
+category2 = Category.create(
+  name:'Restaurants'
+  )
+
+category3 = Category.create(
+  name:'Bars'
+  )
+
+category4 = Category.create(
+  name:'Friday/Shabbat Dinners'
+  )
+
+category5 = Category.create(
+  name: 'Lessons'
+  )
+
+category6 = Category.create(
+  name:'Clubs'
+  )
+
+category7 = Category.create(
+  name:'Parks'
+  )
+
+category8 = Category.create(
+  name:'Sports'
+  )
+
+category9 = Category.create(
+  name:'Special Events'
+  )
+
+category10 = Category.create(
+  name:'Meetups'
+  )
+
+category12 = Category.create(
+  name:'Beach Life'
+  )
+category11 = Category.create(
+  name:'Other'
+  )
 ############# Activity Categories ##################################
 puts 'Creating Activity Categories...'
 
