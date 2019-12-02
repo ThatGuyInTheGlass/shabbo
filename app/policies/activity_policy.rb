@@ -5,5 +5,9 @@ class ActivityPolicy < ApplicationPolicy
     end
   end
 
+  def index?
+    true
+  end
+
 
 end
