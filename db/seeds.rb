@@ -1,4 +1,4 @@
-puts 'Cleaning database...'
+puts 'Cleaning the Shabbo database...'
 UserCategory.destroy_all
 ActivityCategory.destroy_all
 Booking.destroy_all
@@ -8,7 +8,7 @@ Activity.destroy_all
 User.destroy_all
 
 ############# Users ##################################
-puts 'Creating users...'
+puts 'Creating some Shabbo users...'
 user1 = User.create(
   email: 'jimmyj@gmail.com',
   password: '123456',
@@ -66,7 +66,7 @@ user7 = User.create(
   remote_avatar_url: 'https://www.iconfinder.com/icons/3389619/avatar_beard_hipster_male_man_portrait_icon'
   )
 ############# Activities ##################################
-puts 'Creating activities...'
+puts 'Creating some REA\'s...'
 activity1 = Activity.create(
   title: 'Pita Express',
   address: 'Right on the TLV Boardwalk',
@@ -119,7 +119,7 @@ activity7 = Activity.create(
     )
 activity8 = Activity.create(
   title: 'Thai House',
-  address: 'Ben Yehuda 30, Tel Aviv, Israel'
+  address: 'Ben Yehuda 30, Tel Aviv, Israel',
   description: 'One of the best restaurants in the city. Owned by an Israeli/Thai couple that wanted to change thai food in the Jewish State! Amazing stuff here',
   remote_image_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripadvisor.com%2FLocationPhotoDirectLink-g293984-d776507-i351235983-Thai_House-Tel_Aviv_Tel_Aviv_District.html&psig=AOvVaw0_pdlXPd0l0WrQstpnsCCk&ust=1575388083131000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiDmY2ol-YCFQAAAAAdAAAAABAD"
   )
@@ -148,7 +148,7 @@ activity12 = Activity.create(
   remote_image_url: "https://cdn.vox-cdn.com/thumbor/_hU9GxUw1BcKvxBsDBcXIoTzbMM=/0x0:960x640/870x653/filters:focal(404x244:556x396):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585051/M25__photo_credit_M25_n.0.0.0.jpg"
   )
 ############# Reviews ##################################
-puts 'Creating reviews...'
+puts 'Creating some user reviews...'
 review1 = Review.create(
   title:"Great Job",
   description: "This was a great service",
@@ -164,7 +164,7 @@ review2 = Review.create(
   activity: activity4
   )
 ############# Bookings ##################################
-puts 'Creating Bookings...'
+puts 'Creating some shabbo bookings...'
 booking1 = Booking.create(
   user: user1,
   activity: activity3
@@ -176,6 +176,7 @@ booking2 = Booking.create(
   )
 
 ############# Categories ##################################
+puts 'Creating the Shabbo \'categories\''
 
 category1 = Category.create(
   name:'Yoga'
@@ -224,7 +225,7 @@ category12 = Category.create(
   name:'Other'
   )
 ############# Activity Categories ##################################
-puts 'Creating Activity Categories...'
+puts 'Creating categories that fit the shabbo activity...'
 
 activitycategory1 = ActivityCategory.create(
   category: category1,
@@ -287,7 +288,7 @@ activitycategory12 = ActivityCategory.create(
   )
 
 ################# User Categories ##################################
-puts 'Creating User Interests..'
+puts 'Creating catergoies that a Shabbo user selects.'
 
 
 user_interest1 = UserCategory.create(
