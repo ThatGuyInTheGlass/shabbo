@@ -1,5 +1,5 @@
 .footer {
-  background: white;
+  background: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,21 +7,12 @@
   padding: 0px 10px;
   color: #FFFFFF;
   content-align: left;
+  position: fixed;
+  bottom: 0;
 }
-.footer-links {
-  display: flex;
-  align-content: right;
+
+.button-footer {
 }
-.footer-links a {
-  color: black;
-  opacity: 0.15;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-  align: center;
-}
-.footer-links a:hover {
-  opacity: 1;
 
 html, body {
   height: 100%;
