@@ -10,7 +10,7 @@ User.destroy_all
 ############# Users ##################################
 puts 'Creating users...'
 user1 = User.create(
-  email: 'jimmy@johns.com',
+  email: 'jimmyj@gmail.com',
   password: '123456',
   first_name: 'Jimbo',
   last_name: 'Johns',
@@ -18,58 +18,58 @@ user1 = User.create(
   remote_avatar_url: 'https://www.iconfinder.com/icons/3389634/avatar_male_man_portrait_icon'
   )
 user2 = User.create(
-  email: 'noah@nash.com',
+  email: 'noah@gmail.com',
   password: '123456',
   first_name: 'Noah',
   last_name: 'Nash',
-  username: 'noahnash',
+  username: 'noahnash1190',
   remote_avatar_url: 'https://www.iconfinder.com/icons/3389628/avatar_male_man_portrait_icon'
   )
 user3 = User.create(
-  email: 'lindsey@henry.com',
+  email: 'lindsey@protonmail.com',
   password: '123456',
   first_name: 'Lindsey',
   last_name: 'Henry',
-  username: 'levyhenry',
+  username: 'levy_henry',
   remote_avatar_url: 'https://www.iconfinder.com/icons/3389599/afro_avatar_female_portrait_woman_icon'
   )
 user4 = User.create(
-  email: 'ben@alvo.com',
+  email: 'ben@chile.com',
   password: '123456',
   first_name: 'Ben',
   last_name: 'Alvo',
-  username: 'ChileanPrick',
+  username: 'Chilean-A-hole',
   remote_avatar_url: 'https://www.iconfinder.com/icons/3389635/avatar_male_man_portrait_icon'
   )
 user5 = User.create(
-  email: 'ross@allen.com',
+  email: 'ross@gmail.com',
   password: '123456',
   first_name: 'Ross',
   last_name: 'Allen',
-  username: 'Ross123',
+  username: 'RossyBaby',
   remote_avatar_url: 'https://www.iconfinder.com/icons/3389610/avatar_male_man_portrait_icon'
   )
 user6 = User.create(
-  email: 'joy@phua.com',
+  email: 'joy@lewagon.com',
   password: '123456',
   first_name: 'Joy',
   last_name: 'Phua',
-  username: 'LeWagon1',
+  username: 'LeWagonNumb1',
   remote_avatar_url: 'https://www.iconfinder.com/icons/3389609/avatar_female_portrait_woman_icon'
   )
 user7 = User.create(
-  email: 'david@sellam.com',
+  email: 'david@lewagon.com',
   password: '123456',
   first_name: 'David',
   last_name: 'Sellam',
-  username: 'davidsellam',
+  username: 'ThatFrenchGuy',
   remote_avatar_url: 'https://www.iconfinder.com/icons/3389619/avatar_beard_hipster_male_man_portrait_icon'
   )
 ############# Activities ##################################
 puts 'Creating activities...'
 activity1 = Activity.create(
   title: 'Pita Express',
-  address: 'TLV Boardwalk',
+  address: 'Right on the TLV Boardwalk',
   description: 'One of the better pitas in Tel Aviv!',
   remote_image_url: "https://www.google.com/url?sa=i&url=http%3A%2F%2Foishizo.blogspot.com%2F2010%2F12%2Fpita-express-more-food-court-regrets.html&psig=AOvVaw1Pt4hZmZUP18G9PDjaUsmv&ust=1575373145037000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjesbnwluYCFQAAAAAdAAAAABAD"
   )
@@ -182,57 +182,62 @@ category11 = Category.create(
 ############# Activity Categories ##################################
 puts 'Creating Activity Categories...'
 
-activitycategory1 = Activity_category.create(
+activitycategory1 = ActivityCategory.create(
   category: category1,
   activity: activity2
   )
 
-# activitycategory2 = Activity_category.create(
+# activitycategory2 = ActivityCategory.create(
 #   category: category1,
 #   activity: activity2
 #   )
 
-# activitycategory3 = Activity_category.create(
+# activitycategory3 = ActivityCategory.create(
 #   category: category1,
 #   activity: activity2
 #   )
 
-# activitycategory4 = Activity_category.create(
+# activitycategory4 = ActivityCategory.create(
 #   category: category1,
 #   activity: activity2
 #   )
 
-# activitycategory5 = Activity_category.create(
+# activitycategory5 = ActivityCategory.create(
 #   category: category1,
 #   activity: activity2
 #   )
 
-# activitycategory6 = Activity_category.create(
+# activitycategory6 = ActivityCategory.create(
 #   category: category1,
 #   activity: activity2
 #   )
 
-# activitycategory7 = Activity_category.create(
+# activitycategory7 = ActivityCategory.create(
 #   category: category1,
 #   activity: activity2
 #   )
 
-# activitycategory8 = Activity_category.create(
+# activitycategory8 = ActivityCategory.create(
 #   category: category1,
 #   activity: activity2
 #   )
 
-# activitycategory9 = Activity_category.create(
+# activitycategory9 = ActivityCategory.create(
 #   category: category1,
 #   activity: activity2
 #   )
 
-# activitycategory10 = Activity_category.create(
+# activitycategory10 = ActivityCategory.create(
 #   category: category1,
 #   activity: activity2
 #   )
 
-# activitycategory11 = Activity_category.create(
+# activitycategory11 = ActivityCategory.create(
+#   category: category1,
+#   activity: activity2
+#   )
+
+# activitycategory12 = ActivityCategory.create(
 #   category: category1,
 #   activity: activity2
 #   )
@@ -241,57 +246,62 @@ activitycategory1 = Activity_category.create(
 puts 'Creating User Categories...'
 
 
-activitycategory1 = User_category.create(
+user_interest1 = UserCategory.create(
   category: category1,
   user: user2
   )
 
-# usercategory2 = User_category.create(
+user_interest2 = UserCategory.create(
+  category: category7,
+  user: user2
+  )
+
+user_interest3 = UserCategory.create(
+  category: category10,
+  user: user2
+  )
+
+# usercategory4 = UserCategory.create(
 #   category: category1,
 #   user: user2
 #   )
 
-# usercategory3 = User_category.create(
+# usercategory5 = UserCategory.create(
 #   category: category1,
 #   user: user2
 #   )
 
-# usercategory4 = User_category.create(
+# usercategory6 = UserCategory.create(
 #   category: category1,
 #   user: user2
 #   )
 
-# usercategory5 = User_category.create(
+# usercategory7 = UserCategory.create(
 #   category: category1,
 #   user: user2
 #   )
 
-# usercategory6 = User_category.create(
+# usercategory8 = UserCategory.create(
 #   category: category1,
 #   user: user2
 #   )
 
-# usercategory7 = User_category.create(
+# usercategory9 = UserCategory.create(
 #   category: category1,
 #   user: user2
 #   )
 
-# usercategory8 = User_category.create(
+# usercategory10 = UserCategory.create(
 #   category: category1,
 #   user: user2
 #   )
 
-# usercategory9 = User_category.create(
+# usercategory11 = UserCategory.create(
 #   category: category1,
-#   user: user2
+#   activity: activity2
 #   )
 
-# usercategory10 = User_category.create(
-#   category: category1,
-#   user: user2
-#   )
-
-# usercategory11 = User_category.create(
+# usercategory12 = UserCategory.create(
 #   category: category1,
 #   activity: activity2
 #   )
