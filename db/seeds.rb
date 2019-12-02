@@ -182,5 +182,116 @@ category11 = Category.create(
 ############# Activity Categories ##################################
 puts 'Creating Activity Categories...'
 
+activitycategory1 = Activity_category.create(
+  category: category1,
+  activity: activity2
+  )
+
+# activitycategory2 = Activity_category.create(
+#   category: category1,
+#   activity: activity2
+#   )
+
+# activitycategory3 = Activity_category.create(
+#   category: category1,
+#   activity: activity2
+#   )
+
+# activitycategory4 = Activity_category.create(
+#   category: category1,
+#   activity: activity2
+#   )
+
+# activitycategory5 = Activity_category.create(
+#   category: category1,
+#   activity: activity2
+#   )
+
+# activitycategory6 = Activity_category.create(
+#   category: category1,
+#   activity: activity2
+#   )
+
+# activitycategory7 = Activity_category.create(
+#   category: category1,
+#   activity: activity2
+#   )
+
+# activitycategory8 = Activity_category.create(
+#   category: category1,
+#   activity: activity2
+#   )
+
+# activitycategory9 = Activity_category.create(
+#   category: category1,
+#   activity: activity2
+#   )
+
+# activitycategory10 = Activity_category.create(
+#   category: category1,
+#   activity: activity2
+#   )
+
+# activitycategory11 = Activity_category.create(
+#   category: category1,
+#   activity: activity2
+#   )
+
 ################# User Categories ##################################
 puts 'Creating User Categories...'
+
+
+activitycategory1 = User_category.create(
+  category: category1,
+  user: user2
+  )
+
+# usercategory2 = User_category.create(
+#   category: category1,
+#   user: user2
+#   )
+
+# usercategory3 = User_category.create(
+#   category: category1,
+#   user: user2
+#   )
+
+# usercategory4 = User_category.create(
+#   category: category1,
+#   user: user2
+#   )
+
+# usercategory5 = User_category.create(
+#   category: category1,
+#   user: user2
+#   )
+
+# usercategory6 = User_category.create(
+#   category: category1,
+#   user: user2
+#   )
+
+# usercategory7 = User_category.create(
+#   category: category1,
+#   user: user2
+#   )
+
+# usercategory8 = User_category.create(
+#   category: category1,
+#   user: user2
+#   )
+
+# usercategory9 = User_category.create(
+#   category: category1,
+#   user: user2
+#   )
+
+# usercategory10 = User_category.create(
+#   category: category1,
+#   user: user2
+#   )
+
+# usercategory11 = User_category.create(
+#   category: category1,
+#   activity: activity2
+#   )
