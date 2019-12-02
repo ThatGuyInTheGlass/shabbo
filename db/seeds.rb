@@ -15,23 +15,23 @@ user1 = User.create(
   first_name: 'Jimbo',
   last_name: 'Johns',
   username: 'BigJimbo',
-  remote_avatar_url: 'https://www.iconfinder.com/icons/3389634/avatar_male_man_portrait_icon'
+  remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_3-512.png'
   )
 user2 = User.create(
   email: 'noah@gmail.com',
   password: '123456',
   first_name: 'Noah',
   last_name: 'Nash',
-  username: 'noahnash1190',
-  remote_avatar_url: 'https://www.iconfinder.com/icons/3389628/avatar_male_man_portrait_icon'
+  username: 'xOnoahnash0x',
+  remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_9-512.png'
   )
 user3 = User.create(
   email: 'lindsey@protonmail.com',
   password: '123456',
   first_name: 'Lindsey',
   last_name: 'Henry',
-  username: 'levy_henry',
-  remote_avatar_url: 'https://www.iconfinder.com/icons/3389599/afro_avatar_female_portrait_woman_icon'
+  username: 'levy_henry1989',
+  remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_woman_female_afro-512.png'
   )
 user4 = User.create(
   email: 'ben@chile.com',
@@ -39,7 +39,7 @@ user4 = User.create(
   first_name: 'Ben',
   last_name: 'Alvo',
   username: 'Chilean-A-hole',
-  remote_avatar_url: 'https://www.iconfinder.com/icons/3389635/avatar_male_man_portrait_icon'
+  remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_2-512.png'
   )
 user5 = User.create(
   email: 'ross@gmail.com',
@@ -47,7 +47,7 @@ user5 = User.create(
   first_name: 'Ross',
   last_name: 'Allen',
   username: 'RossyBaby',
-  remote_avatar_url: 'https://www.iconfinder.com/icons/3389610/avatar_male_man_portrait_icon'
+  remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male-512.png'
   )
 user6 = User.create(
   email: 'joy@lewagon.com',
@@ -55,7 +55,7 @@ user6 = User.create(
   first_name: 'Joy',
   last_name: 'Phua',
   username: 'LeWagonNumb1',
-  remote_avatar_url: 'https://www.iconfinder.com/icons/3389609/avatar_female_portrait_woman_icon'
+  remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_woman_female_1-512.png'
   )
 user7 = User.create(
   email: 'david@lewagon.com',
@@ -63,7 +63,7 @@ user7 = User.create(
   first_name: 'David',
   last_name: 'Sellam',
   username: 'ThatFrenchGuy',
-  remote_avatar_url: 'https://www.iconfinder.com/icons/3389619/avatar_beard_hipster_male_man_portrait_icon'
+  remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_beard_hipster-512.png'
   )
 ############# Activities ##################################
 puts 'Creating some REA\'s...'
@@ -71,42 +71,42 @@ activity1 = Activity.create(
   title: 'Pita Express',
   address: 'Right on the TLV Boardwalk',
   description: 'One of the better pitas in Tel Aviv!',
-  remote_image_url: "https://www.google.com/url?sa=i&url=http%3A%2F%2Foishizo.blogspot.com%2F2010%2F12%2Fpita-express-more-food-court-regrets.html&psig=AOvVaw1Pt4hZmZUP18G9PDjaUsmv&ust=1575373145037000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjesbnwluYCFQAAAAAdAAAAABAD"
+  remote_image_url: "http://4.bp.blogspot.com/_t3C7S5jos3o/TQHTasUIPBI/AAAAAAAAErM/XRjPVqmebDk/s1600/1029001158.jpg"
   )
 
 activity2 = Activity.create(
   title: 'Yoga Class',
   address: 'Ben Yehuda 32',
   description: 'You will feel completely enlightened',
-  remote_image_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fweloveyoga.lu%2Fprices%2F&psig=AOvVaw3gOg0yTUKaCKLg3RDzgjok&ust=1575373933042000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCEmbXzluYCFQAAAAAdAAAAABAD"
+  remote_image_url: "https://rudrayog.com/wp-content/uploads/2018/12/c700x420.jpg"
   )
 
 activity3 = Activity.create(
   title: 'Surfing Lessons',
   address: 'The Hilton Beach',
   description: 'I will have you doing handstands on a surfboard within six weeks. Promise. Cut my dick off if im wrong!',
-  remote_image_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.surf4fun.pt%2Fsurf&psig=AOvVaw0xq2KlihvG3C7tk2vp_pPX&ust=1575374009384000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMD94dXzluYCFQAAAAAdAAAAABAD"
+  remote_image_url: "https://static.wixstatic.com/media/c40a27_b4a4567f2062464693bd1e8fad4f1386~mv2.jpg/v1/fill/w_960,h_642,al_c,q_85/c40a27_b4a4567f2062464693bd1e8fad4f1386~mv2.webp"
   )
 
 activity4 = Activity.create(
   title: 'Rave!!!!',
   address: 'The Block',
   description: 'We know how to turn up so you can turn down baby!',
-  remote_image_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alamy.com%2Fstock-photo%2Felegant-party-beautiful-people.html&psig=AOvVaw1g0uA_Zk0HoyKekPrMTmhX&ust=1575374045254000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKiL0IT0luYCFQAAAAAdAAAAABAD"
+  remote_image_url: "https://www.thenittygrittyguide.co/wp-content/uploads/2019/05/hanny-naibaho-388579-unsplash-810x540.jpg"
   )
 
 activity5 = Activity.create(
   title: 'Salsa Class',
   address: 'Havana Club',
   description: 'Taught by the famous Benji Alvo',
-  remote_image_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.havanaclub.co.il%2Fenglish&psig=AOvVaw3puHyyU10I_pu8fN8EC9N4&ust=1575374389823000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDP5o31luYCFQAAAAAdAAAAABAD"
+  remote_image_url: "https://static.wixstatic.com/media/e2e417_698d80de7f3745c5a3e7080e6b579a8d.jpg/v1/fill/w_556,h_236,al_c,q_80,usm_0.66_1.00_0.01/e2e417_698d80de7f3745c5a3e7080e6b579a8d.webp"
   )
 
 activity6 = Activity.create(
   title: 'Graffiti Tour',
   address: 'The streets of florintine',
   description: 'Completely free of charge. We only request a 20 shekel donation for logistics. Yay.',
-  remote_image_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ohsoarty.com%2Ftours%2Fflorentin-graffiti-tour-public-tour-2019-gb5a8&psig=AOvVaw02qxqFNEsINjeRSmttiI73&ust=1575374336507000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKiY0vH0luYCFQAAAAAdAAAAABAD"
+  remote_image_url: "https://images.squarespace-cdn.com/content/v1/57eb2e2215d5dbca6f4c6307/1561026174259-HIJRWQM7YGDZ0XAL6YCG/ke17ZwdGBToddI8pDm48kDHPSfPanjkWqhH6pl6g5ph7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mwONMR1ELp49Lyc52iWr5dNb1QJw9casjKdtTg1_-y4jz4ptJBmI9gQmbjSQnNGng/IMG_20180505_112504.jpg?format=1000w"
   )
 
 #-----------------------------------
@@ -115,13 +115,13 @@ activity7 = Activity.create(
   title: 'Prozdor Burger',
   address: 'Mendeli 23, Tel Aviv, Israel',
   description: 'We have a wide variety of tasty burger combinations - all for a decent price!',
-  remote_image_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.foodnetwork.com%2Frecipes%2Ffood-network-kitchen%2Fhamburgers-recipe2-2040357&psig=AOvVaw2GGwHcT4onePQehGhmsm21&ust=1575388240044000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDst9aol-YCFQAAAAAdAAAAABAD"
+  remote_image_url: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2004/2/25/0/bw2b07_hambugers1.jpg.rend.hgtvcom.826.620.suffix/1558017418187.jpeg"
     )
 activity8 = Activity.create(
   title: 'Thai House',
   address: 'Ben Yehuda 30, Tel Aviv, Israel',
   description: 'One of the best restaurants in the city. Owned by an Israeli/Thai couple that wanted to change thai food in the Jewish State! Amazing stuff here',
-  remote_image_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripadvisor.com%2FLocationPhotoDirectLink-g293984-d776507-i351235983-Thai_House-Tel_Aviv_Tel_Aviv_District.html&psig=AOvVaw0_pdlXPd0l0WrQstpnsCCk&ust=1575388083131000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiDmY2ol-YCFQAAAAAdAAAAABAD"
+  remote_image_url: "https://www.thai-house.co.il/wp-content/uploads/2019/08/gallery8.jpg"
   )
 activity9 = Activity.create(
   title: 'Mashya',
