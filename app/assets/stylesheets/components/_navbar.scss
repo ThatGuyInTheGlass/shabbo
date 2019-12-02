@@ -4,6 +4,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  align-content: center;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -11,5 +12,6 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 100px;
+  align-content: center;
 }

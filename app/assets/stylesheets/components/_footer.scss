@@ -4,11 +4,12 @@
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  padding: 0px 10px;
+  padding: 0px 5px;
   color: #FFFFFF;
   content-align: left;
   position: fixed;
   bottom: 0;
+  margin-top: 1px;
 }
 
 .button-footer {
@@ -28,3 +29,5 @@ body {
   flex-shrink: 0;
 }
 
+.content{
+}
