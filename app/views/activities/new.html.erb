@@ -1,2 +1,9 @@
-<h1>Activities#new</h1>
-<p>Find me in app/views/activities/new.html.erb</p>
+<div class="edit">
+  <div class="form">
+<h3>Share something with Shabbo!</h3>
+    <%= render 'form', activity: @activity %>
+  </div>
+  <div class="image">
+    <%= image_tag "share.svg" %>
+  </div>
+</div>

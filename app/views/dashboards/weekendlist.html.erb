@@ -14,7 +14,7 @@
       <div class="card-trip">
         <%=link_to "#", class: "card-trip" do %>
           <% if booking.activity.image_url.nil? %>
-              <img src="https://www.noushost.com/blog/wp-content/uploads/2018/01/broken_link.png" alt="Broken Link">
+            <%= image_tag "placeholder.svg" %>
             <%else%>
               <%= cl_image_tag booking.activity.image %>
           <%end%>
