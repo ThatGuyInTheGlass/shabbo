@@ -6,6 +6,7 @@ class User < ApplicationRecord
   mount_uploader :avatar, AvatarUploader
   has_many :user_categories
   has_many :categories, through: :user_categories
+  has_many :bookings
   has_many :activities, through: :bookings
   has_many :reviews
   validates :username, presence: true, uniqueness: true

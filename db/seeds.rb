@@ -1,4 +1,4 @@
-puts 'Cleaning the Shabbo database...'
+
 UserCategory.destroy_all
 ActivityCategory.destroy_all
 Booking.destroy_all
@@ -174,6 +174,27 @@ booking2 = Booking.create(
   user: user2,
   activity: activity5
   )
+
+booking3 = Booking.create(
+  user: user2,
+  activity: activity10
+  )
+
+booking4 = Booking.create(
+  user: user2,
+  activity: activity2
+  )
+
+booking5 = Booking.create(
+  user: user5,
+  activity: activity9
+  )
+
+booking6 = Booking.create(
+  user: user2,
+  activity: activity11
+  )
+
 
 ############# Categories ##################################
 puts 'Creating the Shabbo \'categories\''
