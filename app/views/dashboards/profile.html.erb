@@ -1,2 +1,16 @@
-<h1>Dashboards#profile</h1>
-<p>Find me in app/views/dashboards/profile.html.erb</p>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon align-content-center text-center">
+  <div class="index-navbar align-content-center d-flex">
+    <%= link_to "#", class: "navbar-brand" do %>
+      <%= image_tag "shabbo.png" %>
+    <% end %>
+  </div>
+</div>
+
+<div class= "info">
+<%= cl_image_tag @current_user.avatar, class: "avatar" %>
+
+<P><%= @current_user.email%></P>
+
+</div>
+
+
