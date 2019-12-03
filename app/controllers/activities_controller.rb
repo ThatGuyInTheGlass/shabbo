@@ -11,12 +11,16 @@ class ActivitiesController < ApplicationController
 
   def new
     @activity = Activity.new
+    @activity.activity_categories.build
     authorize @activity
   end
 
   def create
     @activity = Activity.new(activity_params)
     @activity.user = current_user
+    params["activity"]["activity_categories"]["category"].each do |category_id|
+     ActivityCategory.create(activity: @activity, category_id: category_id)
+    end
     if @activity.save
       redirect_to @activity
     else
