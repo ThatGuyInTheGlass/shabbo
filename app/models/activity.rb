@@ -15,5 +15,4 @@ class Activity < ApplicationRecord
       average
     end
   end
-
 end

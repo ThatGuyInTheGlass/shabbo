@@ -1,6 +1,6 @@
 class ActivitiesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
-  before_action :set_activity, only: [:show, :destroy, :create]
+  before_action :set_activity, only: [:show, :destroy, :create, :average]
 
   def index
     @activities = policy_scope(Activity)
@@ -15,6 +15,14 @@ class ActivitiesController < ApplicationController
   end
 
   def create
+    @activity = Activity.new(activity_params)
+    @activity.user = current_user
+    if @activity.save
+      redirect_to @activity
+    else
+      render :new
+    end
+    authorize @activity
   end
 
   def destroy
