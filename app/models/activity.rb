@@ -1,14 +1,19 @@
 class Activity < ApplicationRecord
   has_many :reviews, dependent: :destroy
+  has_many :activity_categories
+  has_many :categories, through: :activity_categories
+  belongs_to :user, optional: true
+  accepts_nested_attributes_for :categories
+
   mount_uploader :image, ImageUploader
+
   validates :title, presence: true
   validates :description, presence: true
   validates :address, presence: true
-  validates :image, presence: true
+  # validates :image
 
-  belongs_to :user, optional: true
   def rating_average
-    all = self.reviews.pluck(:stars)
+    all = reviews.pluck(:stars)
     if all.blank?
       0
     else
