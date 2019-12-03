@@ -9,5 +9,8 @@ class ActivityPolicy < ApplicationPolicy
     true
   end
 
+  def new?
+    true
+  end
 
 end
