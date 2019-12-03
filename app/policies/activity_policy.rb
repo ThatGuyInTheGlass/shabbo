@@ -9,7 +9,13 @@ class ActivityPolicy < ApplicationPolicy
     true
   end
 
+
+  def new?
+    true
+  end
+  
   def show?
     true
   end
+
 end
