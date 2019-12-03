@@ -1,2 +1,39 @@
-<h1>Dashboards#weekendlist</h1>
-<p>Find me in app/views/dashboards/weekendlist.html.erb</p>
+<div class="dashboard-banner"  >
+  <div class="dashboard-banner-text">
+    <h1 class="page-title-entry-title">Your Weekend List/h1>
+    <p class="page-sub-title">All of your selected </p>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="container">
+  <div class="row">
+    <% @bookings.each do |booking| %>
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="card-trip">
+        <%=link_to "#", class: "card-trip" do %>
+          <% if booking.activity.image_url.nil? %>
+              <img src="https://www.noushost.com/blog/wp-content/uploads/2018/01/broken_link.png" alt="Broken Link">
+            <%else%>
+              <%= cl_image_tag booking.activity.image %>
+          <%end%>
+        <%end%>
+        <div class="card-trip-infos">
+          <div>
+            <h2><%=link_to booking.activity.title, "#" %></h2>
+            <td>
+            <%#= link_to booking, method: :delete, data: { confirm: 'Are you sure you want to delete this booking?' } do %>
+              <p class="btn btn-warning">Unbook this service</p>
+              <%#end%>
+            </td>
+          </div>
+          <div>
+          <h2><%= booking.activity.address %></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+    <% end %>
+  </div>
+</div>
