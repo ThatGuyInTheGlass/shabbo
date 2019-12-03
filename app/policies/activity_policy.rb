@@ -21,15 +21,9 @@ class ActivityPolicy < ApplicationPolicy
   def index?
     true
   end
-  
+
   def destroy?
-    owner_or_admin?
-  end
-
-  private
-
-  def owner_or_admin?
-    user == record.user || user.admin
+    user == record.user
   end
 
 

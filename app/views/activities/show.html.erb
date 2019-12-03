@@ -8,6 +8,6 @@
 
 <%= cl_image_tag @activity.image %>
 
-<%= link_to activities_path, method: :delete, data: { confirm: 'Are you sure you want to delete this service?' } do %>
+<%= link_to activity_path(@activity), method: :delete, data: { confirm: 'Are you sure you want to delete this service?' } do %>
 <p class="btn btn-warning">Delete this service</p>
 <%end%>

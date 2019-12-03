@@ -9,9 +9,9 @@ class User < ApplicationRecord
   has_many :bookings
   has_many :activities, through: :bookings
   has_many :reviews
-  validates :username, presence: true, uniqueness: true
+  #validates :username, presence: true, uniqueness: true
   validates :email, presence: true, uniqueness: true
-  validates :first_name, presence: true, uniqueness: true
-  validates :last_name, presence: true, uniqueness: true
-  validates :avatar, presence: true
+  #validates :first_name, presence: true, uniqueness: true
+  #validates :last_name, presence: true, uniqueness: true
+  #validates :avatar, presence: true
 end
