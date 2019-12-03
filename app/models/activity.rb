@@ -6,6 +6,7 @@ class Activity < ApplicationRecord
   validates :address, presence: true
   validates :image, presence: true
 
+  belongs_to :user, optional: true
   def rating_average
     all = self.reviews.pluck(:stars)
     if all.blank?
@@ -15,5 +16,4 @@ class Activity < ApplicationRecord
       average
     end
   end
-
 end

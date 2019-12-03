@@ -5,7 +5,7 @@ class ActivityPolicy < ApplicationPolicy
     end
   end
 
-  def index?
+  def create?
     true
   end
 
@@ -18,6 +18,10 @@ class ActivityPolicy < ApplicationPolicy
     true
   end
 
+  def index?
+    true
+  end
+  
   def destroy?
     owner_or_admin?
   end
@@ -27,5 +31,6 @@ class ActivityPolicy < ApplicationPolicy
   def owner_or_admin?
     user == record.user || user.admin
   end
+
 
 end
