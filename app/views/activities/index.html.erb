@@ -1,36 +1,30 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon align-content-center text-center">
   <div class="index-navbar align-content-center d-flex">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "shabbo.png" %>
+    <%= link_to "#", class: "navbar-brand" do %>
+      <%= image_tag "shabbo.png" %>
     <% end %>
   </div>
 </div>
-
-<div class="content">
-<p>hello</p>
-<p>hello</p>
-<p>hello</p>
-<p>hello</p>
-<p>hello</p>
-<p>hello</p>
-<p>hello</p>
-<p>hello</p>
-<p>hello</p>
-
-<p>hello</p>
-<p>hello</p>
-<p>hello</p>
-
-<p>hello</p>
-<p>hello</p>
-<p>hello</p>
-
-<p>hello</p>
-<p>hello</p>
-<p>hello</p>
-
-<p>chao</p>
+<div class="content mb-5">
+  <div class="container">
+    <div class="row">
+      <% @activities.each do |activity| %>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card-trip">
+            <%=link_to activity, class: "card-trip" do %>
+              <%= cl_image_tag activity.image %>
+            <% end %>
+            <div class="card-trip-infos">
+              <div>
+                <h2><%=link_to activity.title, activity %></h2>
+                <% activity.rating_average.to_i.times do  %>
+                  <i class="fas fa-star"></i>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
-
-
-
