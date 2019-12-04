@@ -9,8 +9,8 @@
   <div class="d-flex" style="overflow-x: scroll;">
     <% @activities.each do |activity| %>
       <div class="card-trip">
-        <%=link_to activity, class: "card-trip" do %>
-          <%= cl_image_tag activity.image %>
+        <%= link_to activity, class: "card-img" do %>
+          <%= cl_image_tag activity.image, height: 80, crop: "fill" %>
         <% end %>
         <div class="card-trip-infos">
           <div>
@@ -21,6 +21,6 @@
           </div>
         </div>
       </div>
-    <% end %>
-  </div>
+    <% end %> <!-- activity -->
+  </div> <!-- d-flex -->
 </div>
