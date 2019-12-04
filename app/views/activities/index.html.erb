@@ -7,12 +7,13 @@
 </div>
 
 <!-- The VIBE -->
+<h2>The Vibe!</h2>
 <div class="content mb-5">
   <div class="d-flex" style="overflow-x: scroll;">
 
 
 <% @user_categories.each do |user_category|%>
-  <h2><%= user_category.name %></h2>
+
 
     <% user_category.activities.each do |activity| %>
       <div class="card-trip">
@@ -35,12 +36,13 @@
 </div>
 
 <!-- The remaining results  -->
-<div class="content mb-5">
-  <div class="d-flex" style="overflow-x: scroll;">
-
 
 <% @remaining_categories.each do |remain_category|%>
+<% if !remain_category.activities.empty? %>
   <h2><%= remain_category.name %></h2>
+  <div class="content mb-5">
+  <div class="d-flex" style="overflow-x: scroll;">
+
 
     <% remain_category.activities.each do |activity| %>
       <div class="card-trip">
@@ -58,6 +60,8 @@
           </div>
         </div>
       <% end %>
-  <% end %>
-  </div>
+       </div>
 </div>
+  <% end %>
+  <% end %>
+
