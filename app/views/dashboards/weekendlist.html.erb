@@ -19,9 +19,9 @@
           <div>
             <h2><%=link_to booking.activity.title, booking.activity %></h2>
             <td>
-            <%#= link_to booking, method: :delete, data: { confirm: 'Are you sure you want to delete this booking?' } do %>
-              <p class="btn btn-warning">Unbook this service</p>
-              <%#end%>
+            <%= link_to booking_path(booking), method: :delete, data: { confirm: 'Are you sure you want to delete this booking?' } do %>
+              <p class="btn btn-warning">unbook this activity</p>
+              <%end%>
             </td>
           </div>
           <div>

@@ -17,7 +17,7 @@
     <% user_category.activities.each do |activity| %>
       <div class="card-trip">
         <%= link_to activity, class: "card-img" do %>
-          <%= cl_image_tag activity.image, height: 80, crop: "fill" %>
+          <%= cl_image_tag activity.image, height: 90, crop: "fill" %>
         <% end %>
         <div class="card-trip-infos">
           <div>
@@ -25,6 +25,7 @@
             <% activity.rating_average.to_i.times do  %>
               <i class="fas fa-star"></i>
             <% end %>
+            <%= activity.address%>
             </div>
           </div>
         </div>
@@ -44,7 +45,7 @@
     <% remain_category.activities.each do |activity| %>
       <div class="card-trip">
         <%= link_to activity, class: "card-img" do %>
-          <%= cl_image_tag activity.image, height: 80, crop: "fill" %>
+          <%= cl_image_tag activity.image, height: 100, crop: "fill" %>
         <% end %>
         <div class="card-trip-infos">
           <div>
@@ -52,6 +53,7 @@
             <% activity.rating_average.to_i.times do  %>
               <i class="fas fa-star"></i>
             <% end %>
+            <p class="activityaddress"><%= activity.address%></p>
             </div>
           </div>
         </div>
