@@ -1,0 +1,46 @@
+<div class="container justify-content-left">
+  <%= simple_form_for([@service, @booking]) do |f| %>
+  <div class="form-inputs">
+    <label for="Time Needed">Exact time requested</label>
+    <br>
+    <input type="time" name="Time Needed">
+  </div>
+  <div class="form-inputs">
+    <label for="Date Needed">Exact date requested</label>
+    <br>
+    <input type="date" name="Date Needed">
+  </div>
+  <div class="form-inputs">
+    <label for="Hours Needed">Total hours needed for the service</label>
+    <br>
+    <input type="integer" name="Hours Needed" id="Hour">
+  </div>
+  <div class="form-inputs">
+    <label for="Total Cost">Total Cost</label>
+    <br>
+    <p name="Total Cost"></p>
+
+  <span id="total"> </span>
+
+    <div class="form-actions">
+      <%= f.button :submit, class: "btn btn-success" %>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+<script>
+  const price = parseInt(document.querySelector(".edit").dataset.wage, 10)
+  const hourlisten = document.getElementById('Hour');
+  hourlisten.addEventListener('keyup', (event) => {
+      // do something on click of an element
+      // console.log(`Your total cost is ${event x 15}`);
+      let hour = parseInt(event.target.value);
+      if (hour == null || Number.isNaN(hour)) {
+        hour = 0
+      }
+      let text = `Your total cost is: ${hour} hours x ${price}/per hour = $${price * hour}`;
+      let insert = document.getElementById('total')
+      insert.innerHTML = text
+    });
+  </script>
