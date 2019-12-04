@@ -10,8 +10,6 @@ class UserCategoriesController < ApplicationController
     @user_category = UserCategory.new(user: current_user, category_id: category_id)
     authorize @user_category
     end
-
-
     if @user.save
       redirect_to activities_path
     else
