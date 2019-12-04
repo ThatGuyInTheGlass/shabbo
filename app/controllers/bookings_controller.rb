@@ -16,7 +16,7 @@ class BookingsController < ApplicationController
     @booking.activity = Activity.find(params[:activity_id])
     authorize @booking
     @booking.save
-    redirect_to dashboards_path
+    redirect_to weekendlist_path
   end
 
   def destroy
