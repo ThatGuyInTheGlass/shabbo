@@ -8,7 +8,7 @@ Activity.destroy_all
 User.destroy_all
 
 ############# Users ##################################
-puts 'Creating some Shabbo users...'
+puts 'Creating some amazing Shabbo users...'
 user1 = User.create(
   email: 'jimmyj@gmail.com',
   password: '123456',

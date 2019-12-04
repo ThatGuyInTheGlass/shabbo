@@ -12,7 +12,18 @@ class ApplicationController < ActionController::Base
     # For additional in app/views/devise/registrations/edit.html.erb
     devise_parameter_sanitizer.permit(:account_update, keys: [:username, :first_name, :last_name, :avatar])
   end
+
   private
+
+  def after_sign_in_path_for(resource)
+    unless current_user.user_categories.exists?
+      new_user_category_path
+    else
+      # After finishing controller for new/create put raise, comment the root_path just to check if we are arriving here.
+      # Make sure to change from root_path to path to congrats page - make a route
+      root_path
+    end
+  end
 
   def skip_pundit?
     devise_controller? || params[:controller] =~ /(^(rails_)?admin)|(^pages$)/
