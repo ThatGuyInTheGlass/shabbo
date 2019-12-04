@@ -9,7 +9,7 @@
   content-align: left;
   position: fixed;
   bottom: 0;
-  margin-top: 1px;
+  margin-top: 100px;
 }
 
 .button-footer {
@@ -29,5 +29,6 @@ body {
   flex-shrink: 0;
 }
 
-.content{
+.yield-container{
+  padding-bottom: 20px;
 }
