@@ -5,9 +5,16 @@
     <% end %>
   </div>
 </div>
+
+<!-- The VIBE -->
 <div class="content mb-5">
   <div class="d-flex" style="overflow-x: scroll;">
-    <% @activities.each do |activity| %>
+
+
+<% @user_categories.each do |user_category|%>
+  <h2><%= user_category.name %></h2>
+
+    <% user_category.activities.each do |activity| %>
       <div class="card-trip">
         <%= link_to activity, class: "card-img" do %>
           <%= cl_image_tag activity.image, height: 80, crop: "fill" %>
@@ -18,9 +25,37 @@
             <% activity.rating_average.to_i.times do  %>
               <i class="fas fa-star"></i>
             <% end %>
+            </div>
           </div>
         </div>
-      </div>
-    <% end %> <!-- activity -->
-  </div> <!-- d-flex -->
+     <% end %>
+    <% end %>
+  </div>
+</div>
+
+<!-- The remaining results  -->
+<div class="content mb-5">
+  <div class="d-flex" style="overflow-x: scroll;">
+
+
+<% @remaining_categories.each do |remain_category|%>
+  <h2><%= remain_category.name %></h2>
+
+    <% remain_category.activities.each do |activity| %>
+      <div class="card-trip">
+        <%= link_to activity, class: "card-img" do %>
+          <%= cl_image_tag activity.image, height: 80, crop: "fill" %>
+        <% end %>
+        <div class="card-trip-infos">
+          <div>
+            <h2><%=link_to activity.title, activity %></h2>
+            <% activity.rating_average.to_i.times do  %>
+              <i class="fas fa-star"></i>
+            <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+  <% end %>
+  </div>
 </div>
