@@ -6,9 +6,8 @@
   </div>
 </div>
 <%= cl_image_tag @activity.image, class: "show-img" %>
-<%= link_to activity_path(@activity), method: :delete, data: { confirm: 'Are you sure you want to delete this service?' } do %>
-<p class="btn btn-primary text-right">Add to my weekend</p>
-<%end%>
+<%= link_to 'Book Now', activity_bookings_path(@activity), method: :post, class: "btn-primary", id: "bookbtn"%>
+
 <h2> About </h2>
 <%=@activity.description %>
 <br>
@@ -32,6 +31,7 @@
       </div>
       <div class="review-card-bottom">
         <p class="text-left"> <%= review.description %> </p>
+
       </div>
     </div>
     <% end %>
@@ -39,6 +39,9 @@
 </div>
 </div>
 </div>
+<%= link_to new_activity_review_path(@activity) do %>
+<p class="btn btn-primary text-right">Add review</p>
+<%end%>
 <br>
 <br>
 <br>
