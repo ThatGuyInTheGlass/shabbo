@@ -5,16 +5,18 @@ class UserCategoriesController < ApplicationController
   end
 
   def create
-    params["user"]["user_categories"]["category"].each do |category_id|
-      UserCategory.create(user: current_user, category_id: category_id)
+    @user = current_user
+    params["user_category"]["user_categories"]["category"].each do |category_id|
+    @user_category = UserCategory.new(user: current_user, category_id: category_id)
+    authorize @user_category
     end
+
 
     if @user.save
       redirect_to activities_path
     else
       render :new
     end
-    authorize @user
   end
 
   def edit
