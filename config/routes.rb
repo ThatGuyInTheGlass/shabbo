@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   end
   resources :user_categories, only: [:new, :create, :edit, :update]
   get "weekendlist", to: "dashboards#weekendlist", as: "weekendlist"
-  get "profile", to: "dashboards#profile", as: "profile"
+  get "profile/:id", to: "dashboards#profile", as: "profile"
   # get "signupfinished"
   resources :bookings, only: [:destroy]
 
