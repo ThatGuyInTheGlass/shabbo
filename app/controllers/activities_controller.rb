@@ -4,6 +4,9 @@ class ActivitiesController < ApplicationController
 
   def index
     @activities = policy_scope(Activity)
+    categories = Category.all
+    @user_categories = current_user.categories
+    @remaining_categories = categories.reject { |category| @user_categories.include?(category) }
   end
 
   def show
