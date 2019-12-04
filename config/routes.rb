@@ -15,5 +15,4 @@ Rails.application.routes.draw do
   get "profile/:id", to: "dashboards#profile", as: "profile"
   # get "signupfinished"
   resources :bookings, only: [:destroy]
-
 end
