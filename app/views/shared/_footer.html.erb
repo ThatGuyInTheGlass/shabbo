@@ -1,16 +1,24 @@
 <div class="footer w-100">
   <div class="footer-links w-100 d-flex flex-row justify-content-between">
     <div class= "button-footer">
+      <%= link_to activities_path do %>
     <%= image_tag "Vibe-Icon.png" %>
+    <%end%>
     </div>
     <div class= "button-footer">
+      <%= link_to new_activity_path do %>
     <%= image_tag "Add-Event-Icon.png" %>
+    <%end%>
     </div>
     <div class= "button-footer">
+    <%= link_to weekendlist_path do %>
     <%= image_tag "Saved-Icon.png" %>
+    <%end%>
     </div>
     <div class= "button-footer">
+      <%= link_to profile_path do %>
     <%= image_tag "Profile-icon.png" %>
+    <%end%>
     </div>
   </div>
 </div>

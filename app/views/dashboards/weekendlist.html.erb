@@ -1,6 +1,6 @@
 <div class="dashboard-banner"  >
   <div class="dashboard-banner-text">
-    <h1 class="page-title-entry-title">Your Weekend List/h1>
+    <h1 class="page-title-entry-title">Your Weekend List</h1>
     <p class="page-sub-title">All of your selected </p>
   </div>
 </div>
@@ -13,15 +13,11 @@
     <div class="col-12 col-md-6 col-lg-6">
       <div class="card-trip">
         <%=link_to "#", class: "card-trip" do %>
-          <% if booking.activity.image_url.nil? %>
-            <%= image_tag "placeholder.svg" %>
-            <%else%>
-              <%= cl_image_tag booking.activity.image %>
-          <%end%>
+          <%= cl_image_tag booking.activity.image, height: 110 %>
         <%end%>
         <div class="card-trip-infos">
           <div>
-            <h2><%=link_to booking.activity.title, "#" %></h2>
+            <h2><%=link_to booking.activity.title, booking.activity %></h2>
             <td>
             <%#= link_to booking, method: :delete, data: { confirm: 'Are you sure you want to delete this booking?' } do %>
               <p class="btn btn-warning">Unbook this service</p>
