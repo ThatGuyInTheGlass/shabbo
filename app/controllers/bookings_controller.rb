@@ -20,13 +20,6 @@ class BookingsController < ApplicationController
       redirect_to weekendlist_path
     end
     authorize @booking
-
-    @booking.user = current_user
-    @booking.activity = Activity.find(params[:activity_id])
-    authorize @booking
-    @booking.save
-    redirect_to weekendlist_path
-
   end
 
   def destroy
