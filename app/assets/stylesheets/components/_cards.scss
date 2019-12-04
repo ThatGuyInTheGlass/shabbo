@@ -83,11 +83,13 @@
   background-color: white;
   border-radius: 4px;
   padding: 20px;
+  margin-bottom: 10px;
+}
+.review-card-bottom{
+  padding-bottom: 10px;
 }
 
 .review-cont {
-  overflow: scroll;
-  max-height: 280px;
   width:100%;
 }
 .fa-star{
