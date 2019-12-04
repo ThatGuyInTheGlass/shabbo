@@ -1,0 +1,24 @@
+<%= simple_form_for(@user_category) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <% if @user_category.errors.any? %>
+    <ul>
+      <% @user_category.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <div class="form-inputs">
+   <div class="form-inputs">
+
+     <%= f.simple_fields_for(:user_categories) do |uc| %>
+       <%=  uc.input :category, label: "Select your category, user_name", collection: Category.all , input_html: {multiple: true} %>
+     <% end %>
+
+   <div class="form-actions">
+     <%= f.button :submit, class: "btn btn-primary" %>
+   </div>
+  </div>
+<% end %>

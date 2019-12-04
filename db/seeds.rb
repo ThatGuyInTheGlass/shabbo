@@ -150,18 +150,39 @@ activity12 = Activity.create(
 ############# Reviews ##################################
 puts 'Creating some user reviews...'
 review1 = Review.create(
-  title:"Great Job",
-  description: "This was a great service",
+  title:"Great time",
+  description: "This was a great time",
   stars:"5",
   user: user4,
   )
 
 review2 = Review.create(
-  title:"I dont agree with the user above",
-  description: "This was a ripoff!",
-  stars:"2",
-  user: user1,
+  title:"I'm fucking high bro.",
+  description: "This rave was unbelievable. I rolled so hard on exctacy bro",
+  stars:"5",
+  user: user7,
   activity: activity4
+  )
+review3 = Review.create(
+  title:"I dont agree with the user above",
+  description: "This was a ripoff! I didn't find any drugs man",
+  stars:"2",
+  user: user5,
+  activity: activity4
+  )
+review4 = Review.create(
+  title:"My fav DJ's were there. OMG",
+  description: "So much base in my damn ears. I definitely did damage to my hearing ability. Great time!",
+  stars:"5",
+  user: user3,
+  activity: activity4
+  )
+review5 = Review.create(
+  title:"yeah baby",
+  description: "I wrote a review.",
+  stars:"2",
+  user: user2,
+  activity: activity8
   )
 ############# Bookings ##################################
 puts 'Creating some shabbo bookings...'

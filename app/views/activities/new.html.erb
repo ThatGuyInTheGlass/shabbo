@@ -1,46 +1,10 @@
 <div class="edit">
   <div class="form">
-<h3>Share something with Shabbo!</h3>
-  <%= simple_form_for(@activity) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-
-  <% if @activity.errors.any? %>
-    <ul>
-      <% @activity.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
-  <% end %>
-
-  <div class="form-inputs">
-    <%= f.input :title, placeholder: "What do you want to share to shabbo?" %>
-  </div>
-
-    <div>
-      <%= f.input :address, label: "Address (Doesn't have to be exact)", placeholder: "Ex: \'32 Ben Yehuda, Tel Aviv\' or \'The TLV Boardwalk\'" %>
+    <div class="form">
+      <%= render 'form', activity: @activity %>
     </div>
-
-    <div>
-      <%= f.input :description, placeholder: "Describe what you are sharing" %>
+    <div class="image">
+      <%= image_tag "share.svg" %>
     </div>
-
-    <div>
-      <%= f.input :image, label: "TEST LABEL" %>
-      <%= f.input :image_cache, as: :hidden %>
-    </div>
-
-    <%= f.simple_fields_for(:activity_categories) do |uc| %>
-      <%=  uc.input :category, label: "TEST LABEL", collection: Category.all , input_html: {multiple: true} %>
-    <% end %>
-
-  <div class="form-actions">
-    <%= f.button :submit, class: "btn btn-primary" %>
-  </div>
-  <% end %>
-
-  </div>
-  <div class="image">
-    <%= image_tag "share.svg" %>
   </div>
 </div>
