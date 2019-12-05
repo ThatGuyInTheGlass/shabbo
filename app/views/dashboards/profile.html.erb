@@ -2,9 +2,10 @@
 
 <div class= "info">
 <%= cl_image_tag @current_user.avatar, class: "avatar" %>
-
-<P><%= @current_user.email%></P>
-
+<%= @current_user.first_name %>
+<p><%= @current_user.email%></p>
+<% UserCategory.where(user: current_user).each do |uc| %>
+<p><%= uc.category.name %></p>
+<% end %>
 </div>
-
 
