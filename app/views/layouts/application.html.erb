@@ -14,24 +14,23 @@
   </head>
 
   <body>
+
     <% unless current_page?"/users/sign_in" %>
     <%= render 'shared/navbar' %>
     <% end %>
 
+
   <% unless current_page?(root_path) %><body><% else %><body style="margin: 0 !important"><% end %>
-    <%= render 'shared/navbar' unless current_page?(root_path)%>
+    <%= render 'shared/navbar' unless current_page?(root_path) || current_page?("/users/sign_in") || current_page?("/users/sign_up") %>
 
     <%= render 'shared/flashes' %>
-    <% unless current_page?(root_path) %><div class="yield-container"> <% end %>
+    <% unless current_page?(root_path)|| current_page?("/users/sign_in") || current_page?("/users/sign_up")%><div class="yield-container"> <% end %>
       <%= yield %>
     </div>
     <%= javascript_include_tag 'application' %>
 
-    <% unless current_page?"/users/sign_in"%>
-    <%= render 'shared/footer' %>
-    <% end %>
 
-    <%= render 'shared/footer' unless current_page?(root_path)%>
+    <%= render 'shared/footer' unless current_page?(root_path) || current_page?("/users/sign_in") || current_page?("/users/sign_up")%>
 
   </body>
 </html>

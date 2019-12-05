@@ -12,11 +12,11 @@
   <% end %>
 
   <div class="form-inputs">
-    <%= f.input :title, placeholder: "What do you want to share to shabbo?" %>
+    <%= f.input :title, label: "Title of entry", placeholder: "What do you want to share to shabbo?" %>
   </div>
 
     <div>
-      <%= f.input :address, label: "Address (Doesn't have to be exact)", placeholder: "Ex: \'32 Ben Yehuda, Tel Aviv\' or \'The TLV Boardwalk\'" %>
+      <%= f.input :address, label: "Address (Doesn't have to be exact!)", placeholder: "Ex: \'32 Ben Yehuda, Tel Aviv\' or \'The TLV Boardwalk\'" %>
     </div>
 
     <div>
@@ -24,12 +24,12 @@
     </div>
 
     <div>
-      <%= f.input :image, label: "TEST LABEL" %>
+      <%= f.input :image, label: "Upload Image" %>
       <%= f.input :image_cache, as: :hidden %>
     </div>
 
     <%= f.simple_fields_for(:activity_categories) do |uc| %>
-      <%=  uc.input :category, label: "TEST LABEL", collection: Category.all , input_html: {multiple: true} %>
+      <%=  uc.input :category, label: "Select up to three categories that describe your event", collection: Category.all , input_html: {multiple: true} %>
     <% end %>
 
   <div class="form-actions">
