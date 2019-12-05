@@ -1,4 +1,12 @@
 <div class="landingpage">
   <%= image_tag "landingpage.svg" %>
+    <button class= "signup-btn">
+    <%= link_to new_user_registration_path do %>
+    <%= image_tag "Sign-up-btn.svg" %>
+  <%end%>
+    <button class= "login-btn">
+    <%= link_to new_user_session_path do %>
+    <%= image_tag "Login_Btn.svg" %>
+  <%end%>
+  </button>
 </div>
-
