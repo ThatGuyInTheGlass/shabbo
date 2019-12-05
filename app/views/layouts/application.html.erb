@@ -15,7 +15,7 @@
 
   <body>
 
-    <% unless current_page?"/users/sign_in" %>
+    <% unless current_page?("/users/sign_in") || current_page?(root_path) ||current_page?("/users/sign_up") %>
     <%= render 'shared/navbar' %>
     <% end %>
 
