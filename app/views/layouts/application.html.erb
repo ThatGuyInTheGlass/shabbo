@@ -7,22 +7,31 @@
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Lobster&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
+
   <body>
     <% unless current_page?"/users/sign_in"%>
     <%= render 'shared/navbar' %>
     <% end %>
+
+  <% unless current_page?(root_path) %><body><% else %><body style="margin: 0 !important"><% end %>
+    <%= render 'shared/navbar' unless current_page?(root_path)%>
+
     <%= render 'shared/flashes' %>
-    <div class="yield-container">
+    <% unless current_page?(root_path) %><div class="yield-container"> <% end %>
       <%= yield %>
     </div>
     <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
+
     <% unless current_page?"/users/sign_in"%>
     <%= render 'shared/footer' %>
     <% end %>
+
+    <%= render 'shared/footer' unless current_page?(root_path)%>
+
   </body>
 </html>
