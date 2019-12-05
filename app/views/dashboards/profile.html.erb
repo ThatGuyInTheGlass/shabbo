@@ -1,11 +1,55 @@
+<!-- <div class="">
+  <div class="profile-center">
+    <div class= "info">
+      <div class="name-profile text-center">
+      </div>
+      <p><%= @current_user.email%></p>
+      <% UserCategory.where(user: current_user).each do |uc| %>
+      <p><%= uc.category.name %></p>
+      <% end %>
+    </div>
+  </div>
+</div> -->
 
+<div class="profile-frame">
+  <div class="d-flex flex-column align-items-center profile-center">
+    <div class="avatar-profile">
+      <%= cl_image_tag @current_user.avatar, class: "avatar" %>
+    </div>
+    <div class="avatar-name">
+      <%= @current_user.first_name %>
+    </div>
+    <h9> Interests </h9>
+    <div class= "d-flex ">
+    <% UserCategory.where(user: current_user).each do |uc| %>
+      <p><%= uc.category.name %> |</p>
+      <% end %>
+    </div>
+      <h9> Email </h9>
+      <%= @current_user.email %>
 
-<div class= "info">
-<%= cl_image_tag @current_user.avatar, class: "avatar" %>
-<%= @current_user.first_name %>
-<p><%= @current_user.email%></p>
-<% UserCategory.where(user: current_user).each do |uc| %>
-<p><%= uc.category.name %></p>
-<% end %>
+    <div class="user-categories d-flex justify-content-around">
+      <p class="p-3"><%= @current_user.first_name %>'s activities</p>
+    </div>
+    <div class="content mb-5">
+      <div class="d-flex" style="overflow-x: scroll;">
+        <% Activity.where(user: @current_user).each do |activity| %>
+          <div class="card-trip">
+            <%= link_to activity, class: "card-img" do %>
+              <%= cl_image_tag activity.image, height: 100, crop: "fill" %>
+            <% end %>
+            <div class="card-trip-infos">
+              <div>
+                <h2><%=link_to activity.title, activity %></h2>
+                <% activity.rating_average.to_i.times do  %>
+                  <i class="fas fa-star"></i>
+                <% end %>
+                <p class="activityaddress"><%= activity.address%></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
-

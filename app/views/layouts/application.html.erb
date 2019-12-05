@@ -12,13 +12,17 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
+    <% unless current_page?"/users/sign_in"%>
     <%= render 'shared/navbar' %>
+    <% end %>
     <%= render 'shared/flashes' %>
     <div class="yield-container">
       <%= yield %>
     </div>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
+    <% unless current_page?"/users/sign_in"%>
     <%= render 'shared/footer' %>
+    <% end %>
   </body>
 </html>
