@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
     else
       # After finishing controller for new/create put raise, comment the root_path just to check if we are arriving here.
       # Make sure to change from root_path to path to congrats page - make a route
-      root_path
+      activities_path
     end
   end
 
