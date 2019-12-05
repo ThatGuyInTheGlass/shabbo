@@ -15,6 +15,11 @@
 
   <body>
 
+    <% unless current_page?"/users/sign_in" %>
+    <%= render 'shared/navbar' %>
+    <% end %>
+
+
   <% unless current_page?(root_path) %><body><% else %><body style="margin: 0 !important"><% end %>
     <%= render 'shared/navbar' unless current_page?(root_path) || current_page?("/users/sign_in") || current_page?("/users/sign_up") %>
 

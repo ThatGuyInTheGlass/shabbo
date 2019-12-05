@@ -14,7 +14,7 @@
    <div class="form-inputs">
 
      <%= f.simple_fields_for(:user_categories) do |uc| %>
-       <%=  uc.input :category, label: "Select your category, user_name", collection: Category.all , input_html: {multiple: true} %>
+       <%=  uc.input :category, label: "Select your category, #{current_user.first_name}", collection: Category.all , input_html: {multiple: true} %>
      <% end %>
 
    <div class="form-actions">

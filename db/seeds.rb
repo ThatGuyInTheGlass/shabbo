@@ -147,6 +147,37 @@ activity12 = Activity.create(
   description: 'Look - Israelis may not be able to do steaks very well - but this is the best shot!',
   remote_image_url: "https://cdn.vox-cdn.com/thumbor/_hU9GxUw1BcKvxBsDBcXIoTzbMM=/0x0:960x640/870x653/filters:focal(404x244:556x396):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585051/M25__photo_credit_M25_n.0.0.0.jpg"
   )
+activity13 = Activity.create(
+  title: 'Capoeira',
+  address: 'Charles Park',
+  description: 'Get a Capoeira class this weekend for free',
+  remote_image_url: "http://brazilexpedition.com/wp-content/uploads/2019/10/tour1-photo1.jpg"
+  )
+activity14 = Activity.create(
+  title: 'Capoeira',
+  address: 'Charles Park',
+  description: 'Get a Capoeira class this weekend for free',
+  remote_image_url: "http://brazilexpedition.com/wp-content/uploads/2019/10/tour1-photo1.jpg"
+  )
+activity15 = Activity.create(
+  title: 'Cicling Tel Aviv',
+  address: 'Tel Aviv Municipality',
+  description: 'A group are planning to cycle all through tel aviv!',
+  remote_image_url: "https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Article+Image+Update/Cycling/Century+Ride+Rookies/carousel.jpg"
+  )
+
+activity17 = Activity.create(
+  title: 'Swimming in the beach',
+  address: 'Gordon Beach',
+  description: "Let's dodge sharks!",
+  remote_image_url: "https://cdn.shopify.com/s/files/1/0233/5881/files/brownlee_sea_2_grande.jpg?v=1474970910"
+  )
+activity18 = Activity.create(
+  title: 'Trainning at the park',
+  address: "Meir's park",
+  description: "An afternoon of a lot of trainning and fun!",
+  remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg"
+  )
 ############# Reviews ##################################
 puts 'Creating some user reviews...'
 review1 = Review.create(
@@ -327,6 +358,22 @@ activitycategory11 = ActivityCategory.create(
 activitycategory12 = ActivityCategory.create(
   category: category2,
   activity: activity12
+  )
+activitycategory13 = ActivityCategory.create(
+  category: category8,
+  activity: activity14
+  )
+activitycategory14 = ActivityCategory.create(
+  category: category8,
+  activity: activity15
+  )
+activitycategory16 = ActivityCategory.create(
+  category: category8,
+  activity: activity17
+  )
+activitycategory17 = ActivityCategory.create(
+  category: category8,
+  activity: activity18
   )
 
 ################# User Categories ##################################
