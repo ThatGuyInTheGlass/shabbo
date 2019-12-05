@@ -1,14 +1,8 @@
-<div class="landingpage">
+<div class="landingpage d-flex flex-column">
 
   <%= image_tag "landingpage.svg" %>
-    <button class= "signup-btn">
-    <%= link_to new_user_registration_path do %>
-    <%= image_tag "Sign-up-btn.svg" %>
-  <%end%>
-    <button class= "login-btn">
-    <%= link_to new_user_session_path do %>
-    <%= image_tag "Login_Btn.svg" %>
-  <%end%>
-  </button>
-
+  <div class="sign-in">
+    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary" %>
+    <%= link_to "Login", new_user_session_path, class: "btn btn-primary" %>
+  </div>
 </div>
