@@ -178,6 +178,36 @@ activity18 = Activity.create(
   description: "An afternoon of a lot of trainning and fun!",
   remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg"
   )
+activity19 = Activity.create(
+  title: 'Saturday Russian Roulette Meetup',
+  address: "Le Wagon",
+  description: "An educational event where 10 will arrive but only 9 will leave on their feet. Come and take the challenge today!",
+  remote_image_url: "https://static.tvtropes.org/pmwiki/pub/images/dogs_playing_russian_roulette.png"
+  )
+# activity20 = Activity.create(
+#   title: 'Trainning at the park',
+#   address: "Meir's park",
+#   description: "An afternoon of a lot of trainning and fun!",
+#   remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg"
+#   )
+# activity21 = Activity.create(
+#   title: 'Trainning at the park',
+#   address: "Meir's park",
+#   description: "An afternoon of a lot of trainning and fun!",
+#   remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg"
+
+# activity22 = Activity.create(
+#   title: 'Trainning at the park',
+#   address: "Meir's park",
+#   description: "An afternoon of a lot of trainning and fun!",
+#   remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg"
+#   )
+# activity23 = Activity.create(
+#   title: 'Trainning at the park',
+#   address: "Meir's park",
+#   description: "An afternoon of a lot of trainning and fun!",
+#   remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg"
+#   )
 ############# Reviews ##################################
 puts 'Creating some user reviews...'
 review1 = Review.create(
@@ -214,6 +244,27 @@ review5 = Review.create(
   stars:"2",
   user: user2,
   activity: activity8
+  )
+review6 = Review.create(
+  title:"Amazing idea. I know two guys who would love this game",
+  description: "We would love to host one of these game at the Shabbo HQ office in Le Wagon Tel Aviv",
+  stars:"5",
+  user: user7,
+  activity: activity19
+  )
+review7 = Review.create(
+  title:"I honestly thought this was a casino night",
+  description: "I was so wrong. My tinder date is dead now.",
+  stars:"1",
+  user: user1,
+  activity: activity19
+  )
+review8 = Review.create(
+  title:"yeah baby",
+  description: "I wrote a review.",
+  stars:"2",
+  user: user3,
+  activity: activity19
   )
 ############# Bookings ##################################
 puts 'Creating some shabbo bookings...'
@@ -374,6 +425,10 @@ activitycategory16 = ActivityCategory.create(
 activitycategory17 = ActivityCategory.create(
   category: category8,
   activity: activity18
+  )
+activitycategory18 = ActivityCategory.create(
+  category: category10,
+  activity: activity19
   )
 
 ################# User Categories ##################################
