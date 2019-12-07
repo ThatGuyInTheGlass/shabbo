@@ -1,0 +1,28 @@
+<div class="container" id='stars-form'>
+  <%= simple_form_for([@activity, @review]) do |f| %>
+    <%= f.error_notification %>
+    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+    <% if @activity.errors.any? %>
+      <ul>
+        <% @service.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <div class="form-inputs">
+      <%= f.input :title %>
+      <%= f.input :description %>
+      <%= f.input :stars, collection: (1..5).to_a, id: "review_stars" %>
+    </div>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="form-actions col-4">
+        <%= f.button :submit, class: "btn btn-success" %>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  <% end %>
+</div>
+

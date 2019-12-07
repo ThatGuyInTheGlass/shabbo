@@ -8,6 +8,9 @@
 <br>
 <br>
 <h2> Reviews </h2>
+<%= link_to new_activity_review_path(@activity) do %>
+<p class="btn btn-primary text-right">Add review</p>
+<%end%>
 <div class="reviews d-flex align-items-baseline justify-content-center">
   <div class="review-cont">
     <% @activity.reviews.each do |review| %>
@@ -17,11 +20,15 @@
         <div class="d-flex justify-content-between">
         <p class="text-left"> <strong><%= review.title %></strong>  </p>
         </div>
-        <div class="text-left">
-          <%= @activity.address %>
-        </div>
+        <p>Rating:</p>
+        <div class="d-flex">
+        <% @activity.rating_average.to_i.times do  %>
+              <i class="fas fa-star"></i>
+            <% end %>
+          </div>
       </div>
       <div class="review-card-bottom">
+        <p>Description:</p>
         <p class="text-left"> <%= review.description %> </p>
 
       </div>
@@ -31,9 +38,6 @@
 </div>
 </div>
 </div>
-<%= link_to new_activity_review_path(@activity) do %>
-<p class="btn btn-primary text-right">Add review</p>
-<%end%>
 <br>
 <br>
 <br>
