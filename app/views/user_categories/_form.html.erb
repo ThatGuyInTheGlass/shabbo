@@ -11,20 +11,17 @@
   <% end %>
 
   <div class="form-inputs">
-   <div class="form-inputs">
-
-     <%= f.simple_fields_for(:user_categories) do |uc| %>
-       <%=  uc.input :category, label: "What is your vibe for the weekend, #{current_user.first_name}?", collection: Category.all , input_html: {multiple: true} %>
-     <% end %>
-
-    <div class="form-inputs">
-    <label for="Time Needed">When do you want your events for?</label>
-    <br>
-    <input type="radio" name="Friday" value="Friday"> Friday-ShiShi<br>
-    <input type="radio" name="Saturday" value="Saturday"> Saturday-Shabbat<br>
-    <input type="radio" name="Both" value="Both"> Both
-  </div>
-   <div class="form-inputs">
+    <label for="Time Needed">What day are you looking to Shabbotize this weekend?</label>
+        <input type="radio" name="Friday" value="Friday"> Friday-ShiShi<br>
+         <input type="radio" name="Saturday" value="Saturday"> Saturday-Shabbat<br>
+        <input type="radio" name="Both" value="Both"> Both
+    </div>
+     <div class="form-inputs">
+       <%= f.simple_fields_for(:user_categories) do |uc| %>
+          <%=  uc.input :category, label: "What is your vibe for the weekend, #{current_user.first_name}?", collection: Category.all , input_html: {multiple: true} %>
+       <% end %>
+    </div>
+     <div class="form-inputs">
     <label for="Time Needed">Search for additional information</label>
     <br>
     <input type="search" name="search baby" placeholder="Type some keywords!">
@@ -35,3 +32,5 @@
    </div>
   </div>
 <% end %>
+
+
