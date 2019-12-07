@@ -15,10 +15,14 @@
         <% end %>
         <div class="card-trip-infos">
           <div>
+            <div class="activity-name">
             <h2><%=link_to activity.title, activity %></h2>
+          </div>
+          <div class="activity-stars">
             <% activity.rating_average.to_i.times do  %>
               <i class="fas fa-star"></i>
             <% end %>
+          </div>
             <%= activity.address%>
             </div>
           </div>
@@ -44,10 +48,14 @@
         <% end %>
         <div class="card-trip-infos">
           <div>
+            <div class="activity-name">
             <h2><%=link_to activity.title, activity %></h2>
+          </div>
+          <div class="activity-starts">
             <% activity.rating_average.to_i.times do  %>
               <i class="fas fa-star"></i>
             <% end %>
+          </div>
             <%= activity.address%>
             </div>
           </div>

@@ -28,19 +28,3 @@
   </div>
   <% end %>
 </div>
-
-<script>
-  const price = parseInt(document.querySelector(".edit").dataset.wage, 10)
-  const hourlisten = document.getElementById('Hour');
-  hourlisten.addEventListener('keyup', (event) => {
-      // do something on click of an element
-      // console.log(`Your total cost is ${event x 15}`);
-      let hour = parseInt(event.target.value);
-      if (hour == null || Number.isNaN(hour)) {
-        hour = 0
-      }
-      let text = `Your total cost is: ${hour} hours x ${price}/per hour = $${price * hour}`;
-      let insert = document.getElementById('total')
-      insert.innerHTML = text
-    });
-  </script>
