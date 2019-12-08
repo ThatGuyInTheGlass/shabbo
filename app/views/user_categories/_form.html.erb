@@ -18,12 +18,15 @@
     </div>
 
   <div class="form-inputs">
-    <label for="Time Needed">What day are you looking to Shabbotize this weekend?</label>
-        <input class="input-mw mb-2" type="status" name="Friday" value="Friday-ShiShi">
-         <input class="input-mw mb-2" type="status" name="Saturday" value="Saturday-Shabbat">
-        <input class="input-mw mb-2" type="status" name="Both" value="Both!">
-    </div>
-
+    <label for="SelectDay">What day are you looking to Shabbotize this weekend?</label>
+    <form class= "SelectDay" action="SelectDay">
+      <select name="Days">
+        <option value="Fri">ShiShi (Friday)</option>
+        <option value="Sat">Shabbat (Saturday)</option>
+        <option value="Both">Gam Ve Gam (Both!)</option>
+      </select>
+    </form>
+  </div>
 
 
      <div class="form-inputs">
