@@ -13,11 +13,34 @@ class UserCategoriesController < ApplicationController
     redirect_to activities_path
   end
 
-  def edit
-    @user_category = current_user.user_categories.first
-    @user_categories = current_user.user_categories
+  def filter
+  @indexes = current_user.categories.pluck(:name).map  { |uc| CATEGORIES.index(uc)}
+
+  current_user.user_categories.destroy_all
+
+
+  new
+  #   @user_category = current_user.user_categories.first
+  #   @user_categories = current_user.user_categories
   end
 
   def update_categories
   end
+
+  CATEGORIES =
+["Yoga",
+"Restaurants",
+"Bars",
+"Friday/Shabbat Dinners",
+"Lessons",
+"Clubs",
+"Parks",
+"Sports",
+"Special Events",
+"Meetups",
+"Beach Life",
+"Other"]
 end
+
+
+
