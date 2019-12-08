@@ -22,7 +22,7 @@
        <%= f.simple_fields_for(:user_categories) do |uc| %>
           <%=  uc.input :category, as: :check_boxes, label: "What is your vibe for the weekend, #{current_user.first_name}?", collection: Category.all , input_html: {multiple: true} %>
        <% end %>
-    </div>
+    </div
 
      <div class="form-inputs">
     <label for="Time Needed">Search for additional information</label>
@@ -36,4 +36,13 @@
   </div>
 <% end %>
 
+<script>
 
+const checkBoxes = document.querySelectorAll(".form-check");
+  checkBoxes.forEach((checkbox) => {
+    checkbox.addEventListener('click', (event) => {
+    event.currentTarget.classList.toggle("active");
+  });
+});
+
+</script>
