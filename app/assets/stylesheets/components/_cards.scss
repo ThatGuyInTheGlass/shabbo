@@ -99,3 +99,53 @@
   font-size: 6px
 }
 
+.card-weekend {
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  min-width: 335px;
+  max-width: 335px;
+  max-height: 150px;
+  margin: 20px;
+  height: 210px;
+  border-radius: 10px;
+}
+
+.weekend-card-inten {
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-weekend .card-weekend-infos {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-weekend img {
+  max-width:100px;
+  max-height: 80px;
+  min-width:100px;
+  min-height: 80px;
+}
+
+.weekend-info h3{
+  font-size: 15px;
+
+}
+
+.weekend-btn {
+  padding-top: 9px;
+  margin-left: 220px;
+}
+
+.weekend-info {
+  margin-left: 5px;
+}
+.rating-weekend {
+  margin-left: 5px;
+  margin-top: -10px;
+}
+
