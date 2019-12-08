@@ -136,16 +136,25 @@
 
 }
 
-.weekend-btn {
-  padding-top: 9px;
-  margin-left: 220px;
+.unbook{
+  margin-left: --100px;
+  margin-top: 40px;
+  text-color: grey !important;
 }
 
 .weekend-info {
   margin-left: 5px;
 }
+
+.url{
+  margin-left: 10px;
+}
 .rating-weekend {
   margin-left: 5px;
   margin-top: -10px;
+}
+
+.btn-url {
+  width:140px !important;
 }
 

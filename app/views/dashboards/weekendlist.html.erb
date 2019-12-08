@@ -28,12 +28,20 @@
           </div>
           </div>
           <div>
-            <div class="weekend-btn align-content-right">
+            <div class="weekend-btn d-flex  align-content-between">
+              <div class="url">
+              <td>
+            <a href="<%= booking.activity.url %> " target="_blank">
+            <p class="btn btn-primary btn-block btn-url">Go To WebPage</p></a>
+          </td>
+          </div>
+          <div class="unbook">
             <td>
             <%= link_to booking_path(booking), method: :delete, data: { confirm: 'Are you sure you want to delete this booking?' } do %>
-              <p class="btn btn-warning">Unbook</p>
+              <p>Unbook</p>
               <%end%>
             </td>
+            </div>
           </div>
           </div>
           <div>
