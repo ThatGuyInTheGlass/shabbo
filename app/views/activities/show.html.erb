@@ -15,13 +15,16 @@
   <div class="review-cont">
     <% @activity.reviews.each do |review| %>
     <div class="review-card">
-      <div class="review-card-top d-flex flex-column mb-0">
+      <div class="review-card-top flex-column mb-0">
           <p class="text-left"> <%= cl_image_tag review.user.avatar, class: "review-avatar" %> </p>
-        <div class="d-flex justify-content-between">
+        <div class=" justify-content-between">
+        <div class ="review-name">
+          <p class="text-left"> by <%= review.user.first_name %> </p>
+        </div>
         <p class="text-left"> <strong><%= review.title %></strong>  </p>
         </div>
         <p>Rating:</p>
-        <div class="d-flex">
+        <div class="rating-stars d-flex">
         <% @activity.rating_average.to_i.times do  %>
               <i class="fas fa-star"></i>
             <% end %>
@@ -29,7 +32,9 @@
       </div>
       <div class="review-card-bottom">
         <p>Description:</p>
+        <div class= "review-text">
         <p class="text-left"> <%= review.description %> </p>
+      </div>
 
       </div>
     </div>

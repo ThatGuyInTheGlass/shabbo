@@ -1,3 +1,5 @@
+<div class="container-weekend">
+
 <div class="dashboard-banner"  >
   <div class="dashboard-banner-text">
     <h1 class="page-title-entry-title">Your Weekend List</h1>
@@ -5,29 +7,37 @@
   </div>
 </div>
 <br>
-<br>
 
 <div class="container">
   <div class="row">
     <% @bookings.each do |booking| %>
-    <div class="col-12 col-md-6 col-lg-6">
-      <div class="card-trip">
-        <%=link_to "#", class: "card-trip" do %>
+    <div class=>
+      <div class="card-weekend">
+        <div class="d-flex">
+        <%=link_to "#", class: "weekend-card-intern" do %>
           <%= cl_image_tag booking.activity.image, height: 110 %>
         <%end%>
-        <div class="card-trip-infos">
+        <div class="weekend-info">
+            <h2><%=link_to booking.activity.title.truncate(18,separator: " "), booking.activity %></h2>
+          <h3><%= booking.activity.address.truncate(35) %></h3>
+          <div class="rating-weekend">
+          <% booking.activity.rating_average.to_i.times do  %>
+              <i class="fas fa-star"></i>
+            <% end %>
+          </div>
+          </div>
+          </div>
           <div>
-            <h2><%=link_to booking.activity.title, booking.activity %></h2>
+            <div class="weekend-btn align-content-right">
             <td>
             <%= link_to booking_path(booking), method: :delete, data: { confirm: 'Are you sure you want to delete this booking?' } do %>
-              <p class="btn btn-warning">unbook this activity</p>
+              <p class="btn btn-warning">Unbook</p>
               <%end%>
             </td>
           </div>
+          </div>
           <div>
-          <h2><%= booking.activity.address %></h2>
         </div>
-      </div>
     </div>
   </div>
     <% end %>

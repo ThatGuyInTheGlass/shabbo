@@ -12,7 +12,6 @@
 
 
     <%= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
-    <%= javascript_pack_tag 'application' %>
 
   </head>
 
@@ -30,10 +29,11 @@
     <% unless current_page?(root_path)|| current_page?("/users/sign_in") || current_page?("/users/sign_up") || current_page?("/user_categories/new") %><div class="yield-container"> <% end %>
       <%= yield %>
     </div>
-    <%= javascript_include_tag 'application' %>
 
 
     <%= render 'shared/footer' unless current_page?(root_path) || current_page?("/users/sign_in") || current_page?("/users/sign_up") || current_page?("/user_categories/new") %>
 
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_pack_tag 'application' %>
   </body>
 </html>
