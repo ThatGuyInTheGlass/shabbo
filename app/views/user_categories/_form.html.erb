@@ -10,27 +10,29 @@
     </ul>
   <% end %>
 
-  <div class="form-inputs">
-    <label for="Time Needed">What day are you looking to Shabbotize this weekend?</label>
-        <input type="status" name="Friday" value="Friday-ShiShi">
-         <input type="status" name="Saturday" value="Saturday-Shabbat">
-        <input type="status" name="Both" value="Both!">
-    </div>
 
-
-     <div class="form-inputs">
+    <div class="form-inputs">
        <%= f.simple_fields_for(:user_categories) do |uc| %>
           <%=  uc.input :category, as: :check_boxes, label: "What is your vibe for the weekend, #{current_user.first_name}?", collection: Category.all , input_html: {multiple: true} %>
        <% end %>
-    </div
+    </div>
+
+  <div class="form-inputs">
+    <label for="Time Needed">What day are you looking to Shabbotize this weekend?</label>
+        <input class="input-mw mb-2" type="status" name="Friday" value="Friday-ShiShi">
+         <input class="input-mw mb-2" type="status" name="Saturday" value="Saturday-Shabbat">
+        <input class="input-mw mb-2" type="status" name="Both" value="Both!">
+    </div>
+
+
 
      <div class="form-inputs">
     <label for="Time Needed">Search for additional information</label>
     <br>
-    <input type="search" name="search baby" placeholder="Type some keywords!">
+    <input class="input-mw" type="search" name="search baby" placeholder="Type some keywords!">
   </div>
 
-   <div class="form-actions">
+   <div class="form-actions text-center">
      <%= f.button :submit,"Yalla Capara!", class: "btn btn-primary" %>
    </div>
   </div>
@@ -42,6 +44,7 @@ const checkBoxes = document.querySelectorAll(".form-check");
   checkBoxes.forEach((checkbox) => {
     checkbox.addEventListener('click', (event) => {
     event.currentTarget.classList.toggle("active");
+    event.currentTarget.firstChild.checked = event.currentTarget.firstChild.checked ? false : true
   });
 });
 

@@ -36,9 +36,15 @@
 
 .check_boxes .check_boxes {
   display:none;
+  // min-width: 110px;
+  // min-height: 100px;
+  // margin-left: auto;
+  // z-index: 10;
 }
 
-
+.input-mw {
+  min-width: 100%;
+}
 }
 
 
