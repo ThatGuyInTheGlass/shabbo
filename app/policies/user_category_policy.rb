@@ -12,4 +12,8 @@ class UserCategoryPolicy < ApplicationPolicy
   def create?
     true
   end
+
+  def filter?
+    user
+  end
 end
