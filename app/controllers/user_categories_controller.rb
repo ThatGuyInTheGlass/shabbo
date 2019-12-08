@@ -5,7 +5,7 @@ class UserCategoriesController < ApplicationController
   end
 
   def create
-    params["user_category"]["user_categories"]["category"].each do |category_id|
+    params["user_category"]["user_categories"]["category"][1..-1].each do |category_id|
       user_category = UserCategory.new(user: current_user, category_id: category_id)
       user_category.save
       authorize user_category
@@ -14,8 +14,10 @@ class UserCategoriesController < ApplicationController
   end
 
   def edit
+    @user_category = current_user.user_categories.first
+    @user_categories = current_user.user_categories
   end
 
-  def update
+  def update_categories
   end
 end

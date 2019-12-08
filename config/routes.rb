@@ -10,7 +10,13 @@ Rails.application.routes.draw do
     resources :bookings, only: [:create]
     resources :reviews, only: [:new, :create]
   end
-  resources :user_categories, only: [:new, :create, :edit, :update]
+  resources :user_categories, only: [:new, :create] do
+    collection do
+      get "edit"
+      patch "update_categories"
+    end
+  end
+
   get "weekendlist", to: "dashboards#weekendlist", as: "weekendlist"
   get "profile", to: "dashboards#profile", as: "profile"
   # get "signupfinished"

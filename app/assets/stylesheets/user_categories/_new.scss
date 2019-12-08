@@ -1,7 +1,6 @@
 .user_category_new {
 
 
-
 .user_category_user_categories_category {
   display: flex;
   justify-content: space-between;
@@ -10,21 +9,44 @@
 }
 
 .form-check {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 110px;
+  min-height: 110px;
+  max-width: 110px;
+  max-height: 110px;
   background: #b7b7b7;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 50%;
   opacity: .4;
   flex: 0 0 30%;
   text-align: center;
+  margin-bottom: 10px;
   &:hover {
     opacity: 1;
     cursor: pointer;
   }
   &.active {
-  background: black;
+  background: #1185E0;
   color: white;
   opacity: 1;
   }
 }
 
+.check_boxes .check_boxes {
+  display:none;
+  // min-width: 110px;
+  // min-height: 100px;
+  // margin-left: auto;
+  // z-index: 10;
 }
+
+.input-mw {
+  min-width: 100%;
+}
+}
+
+
+
+
