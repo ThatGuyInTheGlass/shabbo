@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   end
   resources :user_categories, only: [:new, :create] do
     collection do
-      get "edit"
+      get "filter"
       patch "update_categories"
     end
   end
