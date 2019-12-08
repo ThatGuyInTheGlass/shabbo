@@ -10,6 +10,7 @@ class Activity < ApplicationRecord
   validates :title, presence: true
   validates :description, presence: true
   validates :address, presence: true
+  validates :url, presence: true
   # validates :image
 
   def rating_average
