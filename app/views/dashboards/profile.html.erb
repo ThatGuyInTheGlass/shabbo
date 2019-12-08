@@ -32,7 +32,7 @@
       <p class="p-3"><%= @current_user.first_name %>'s activities</p>
     </div>
     <div class="content mb-5">
-      <div class="d-flex" style="overflow-x: scroll;">
+      <div class="d-flex row-cards">
         <% Activity.where(user: @current_user).each do |activity| %>
           <div class="card-trip">
             <%= link_to activity, class: "card-img" do %>
