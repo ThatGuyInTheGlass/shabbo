@@ -5,6 +5,7 @@ class UserCategoriesController < ApplicationController
   end
 
   def create
+    raise
     if params["user_category"]["user_categories"]["category"].length == 1 && params["user_category"]["user_categories"]["category"][0] == ""
       @user_category = UserCategory.new
       authorize @user_category

@@ -12,9 +12,7 @@ class Activity < ApplicationRecord
   validates :description, presence: true
   validates :address, presence: true
 
-  validates :day, presence: true, inclusion: { in: ["Fri", "Sat", "Both"] }
-
-
+  validates :day, presence: true, inclusion: { in: ["ShiShi-Friday", "Shabbat-Saturday", "'Gam Ve Gam'-Both"] }
   # validates :image
 
   def rating_average
