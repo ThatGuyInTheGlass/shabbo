@@ -67,130 +67,166 @@ user7 = User.create(
   )
 ############# Activities ##################################
 puts 'Creating some REA\'s...'
-activity1 = Activity.create(
+activity1 = Activity.create!(
   title: 'Pita Express',
   address: 'Right on the TLV Boardwalk',
   description: 'One of the better pitas in Tel Aviv!',
-  remote_image_url: "http://4.bp.blogspot.com/_t3C7S5jos3o/TQHTasUIPBI/AAAAAAAAErM/XRjPVqmebDk/s1600/1029001158.jpg"
+  remote_image_url: "http://4.bp.blogspot.com/_t3C7S5jos3o/TQHTasUIPBI/AAAAAAAAErM/XRjPVqmebDk/s1600/1029001158.jpg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
 
-activity2 = Activity.create(
+activity2 = Activity.create!(
   title: 'Yoga Class',
   address: 'Ben Yehuda 32',
   description: 'You will feel completely enlightened',
-  remote_image_url: "https://rudrayog.com/wp-content/uploads/2018/12/c700x420.jpg"
+  remote_image_url: "https://rudrayog.com/wp-content/uploads/2018/12/c700x420.jpg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
 
-activity3 = Activity.create(
+activity3 = Activity.create!(
   title: 'Surfing Lessons',
   address: 'The Hilton Beach',
   description: 'I will have you doing handstands on a surfboard within six weeks. Promise. Cut my dick off if im wrong!',
-  remote_image_url: "https://static.wixstatic.com/media/c40a27_b4a4567f2062464693bd1e8fad4f1386~mv2.jpg/v1/fill/w_960,h_642,al_c,q_85/c40a27_b4a4567f2062464693bd1e8fad4f1386~mv2.webp"
+  remote_image_url: "https://static.wixstatic.com/media/c40a27_b4a4567f2062464693bd1e8fad4f1386~mv2.jpg/v1/fill/w_960,h_642,al_c,q_85/c40a27_b4a4567f2062464693bd1e8fad4f1386~mv2.webp",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
 
-activity4 = Activity.create(
+activity4 = Activity.create!(
   title: 'Rave!!!!',
   address: 'The Block',
   description: 'We know how to turn up so you can turn down baby!',
-  remote_image_url: "https://www.thenittygrittyguide.co/wp-content/uploads/2019/05/hanny-naibaho-388579-unsplash-810x540.jpg"
+  remote_image_url: "https://www.thenittygrittyguide.co/wp-content/uploads/2019/05/hanny-naibaho-388579-unsplash-810x540.jpg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
 
-activity5 = Activity.create(
+activity5 = Activity.create!(
   title: 'Salsa Class',
   address: 'Havana Club',
   description: 'Taught by the famous Benji Alvo',
-  remote_image_url: "https://static.wixstatic.com/media/e2e417_698d80de7f3745c5a3e7080e6b579a8d.jpg/v1/fill/w_556,h_236,al_c,q_80,usm_0.66_1.00_0.01/e2e417_698d80de7f3745c5a3e7080e6b579a8d.webp"
+  remote_image_url: "https://static.wixstatic.com/media/e2e417_698d80de7f3745c5a3e7080e6b579a8d.jpg/v1/fill/w_556,h_236,al_c,q_80,usm_0.66_1.00_0.01/e2e417_698d80de7f3745c5a3e7080e6b579a8d.webp",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
 
-activity6 = Activity.create(
+activity6 = Activity.create!(
   title: 'Graffiti Tour',
   address: 'The streets of florintine',
   description: 'Completely free of charge. We only request a 20 shekel donation for logistics. Yay.',
-  remote_image_url: "https://images.squarespace-cdn.com/content/v1/57eb2e2215d5dbca6f4c6307/1561026174259-HIJRWQM7YGDZ0XAL6YCG/ke17ZwdGBToddI8pDm48kDHPSfPanjkWqhH6pl6g5ph7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mwONMR1ELp49Lyc52iWr5dNb1QJw9casjKdtTg1_-y4jz4ptJBmI9gQmbjSQnNGng/IMG_20180505_112504.jpg?format=1000w"
+  remote_image_url: "https://images.squarespace-cdn.com/content/v1/57eb2e2215d5dbca6f4c6307/1561026174259-HIJRWQM7YGDZ0XAL6YCG/ke17ZwdGBToddI8pDm48kDHPSfPanjkWqhH6pl6g5ph7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mwONMR1ELp49Lyc52iWr5dNb1QJw9casjKdtTg1_-y4jz4ptJBmI9gQmbjSQnNGng/IMG_20180505_112504.jpg?format=1000w",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
 
 #-----------------------------------
 
-activity7 = Activity.create(
+activity7 = Activity.create!(
   title: 'Prozdor Burger',
   address: 'Mendeli 23, Tel Aviv, Israel',
   description: 'We have a wide variety of tasty burger combinations - all for a decent price!',
-  remote_image_url: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2004/2/25/0/bw2b07_hambugers1.jpg.rend.hgtvcom.826.620.suffix/1558017418187.jpeg"
+  remote_image_url: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2004/2/25/0/bw2b07_hambugers1.jpg.rend.hgtvcom.826.620.suffix/1558017418187.jpeg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
     )
-activity8 = Activity.create(
+activity8 = Activity.create!(
   title: 'Thai House',
   address: 'Ben Yehuda 30, Tel Aviv, Israel',
   description: 'One of the best restaurants in the city. Owned by an Israeli/Thai couple that wanted to change thai food in the Jewish State! Amazing stuff here',
-  remote_image_url: "https://www.thai-house.co.il/wp-content/uploads/2019/08/gallery8.jpg"
+  remote_image_url: "https://www.thai-house.co.il/wp-content/uploads/2019/08/gallery8.jpg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
-activity9 = Activity.create(
+activity9 = Activity.create!(
   title: 'Mashya',
   address: 'Mendeli 10, Tel Aviv, Israel',
   description: 'Yossi Shitrit\'s most famous restaurant!',
-  remote_image_url: "https://cdn.vox-cdn.com/thumbor/eAUeGnBp07jLqaNiHL9JavxMUD0=/0x0:1024x768/870x653/filters:focal(431x303:593x465):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585037/Mashya__photocred_2DanPerez_.0.0.0.jpg"
+  remote_image_url: "https://cdn.vox-cdn.com/thumbor/eAUeGnBp07jLqaNiHL9JavxMUD0=/0x0:1024x768/870x653/filters:focal(431x303:593x465):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585037/Mashya__photocred_2DanPerez_.0.0.0.jpg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
-activity10 = Activity.create(
+activity10 = Activity.create!(
   title: 'HaKosem',
   address: 'Shlomo ha-Melekh St 1, Tel Aviv, Israel',
   description: 'Highly regarded as the best falafel in the city. Also - the biggest tourist trap...',
-  remote_image_url: "https://cdn.vox-cdn.com/thumbor/60eMLLok0PJQMoN0W91K49lHtCk=/0x0:1280x854/870x653/filters:focal(538x325:742x529):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585039/Hakosem_2___Yaron_Brenner.0.0.0.jpeg"
+  remote_image_url: "https://cdn.vox-cdn.com/thumbor/60eMLLok0PJQMoN0W91K49lHtCk=/0x0:1280x854/870x653/filters:focal(538x325:742x529):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585039/Hakosem_2___Yaron_Brenner.0.0.0.jpeg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
-activity11 = Activity.create(
+activity11 = Activity.create!(
   title: 'Yaffo Tel Aviv',
   address: 'Yigal Alon 98, Tel Aviv, Israel',
   description: 'Meir Cohen\'s masterpiece',
-  remote_image_url: "https://cdn.vox-cdn.com/thumbor/xwRbgM93rOwQZjrYiUR7wSOHUIc=/0x0:2000x1742/870x653/filters:focal(840x711:1160x1031):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585047/JAFFA_TEL-AVIV_REST_017.0.0.0.jpg"
+  remote_image_url: "https://cdn.vox-cdn.com/thumbor/xwRbgM93rOwQZjrYiUR7wSOHUIc=/0x0:2000x1742/870x653/filters:focal(840x711:1160x1031):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585047/JAFFA_TEL-AVIV_REST_017.0.0.0.jpg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
-activity12 = Activity.create(
+activity12 = Activity.create!(
   title: 'Arayes at M25',
   address: 'Carmel Alley 30, Tel Aviv, Israel',
   description: 'Look - Israelis may not be able to do steaks very well - but this is the best shot!',
-  remote_image_url: "https://cdn.vox-cdn.com/thumbor/_hU9GxUw1BcKvxBsDBcXIoTzbMM=/0x0:960x640/870x653/filters:focal(404x244:556x396):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585051/M25__photo_credit_M25_n.0.0.0.jpg"
+  remote_image_url: "https://cdn.vox-cdn.com/thumbor/_hU9GxUw1BcKvxBsDBcXIoTzbMM=/0x0:960x640/870x653/filters:focal(404x244:556x396):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585051/M25__photo_credit_M25_n.0.0.0.jpg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
-activity13 = Activity.create(
+activity13 = Activity.create!(
   title: 'Capoeira',
   address: 'Charles Park',
   description: 'Get a Capoeira class this weekend for free',
-  remote_image_url: "http://brazilexpedition.com/wp-content/uploads/2019/10/tour1-photo1.jpg"
+  remote_image_url: "http://brazilexpedition.com/wp-content/uploads/2019/10/tour1-photo1.jpg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
-activity14 = Activity.create(
+activity14 = Activity.create!(
   title: 'Capoeira',
   address: 'Charles Park',
   description: 'Get a Capoeira class this weekend for free',
-  remote_image_url: "http://brazilexpedition.com/wp-content/uploads/2019/10/tour1-photo1.jpg"
+  remote_image_url: "http://brazilexpedition.com/wp-content/uploads/2019/10/tour1-photo1.jpg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
-activity15 = Activity.create(
+activity15 = Activity.create!(
   title: 'Cicling Tel Aviv',
   address: 'Tel Aviv Municipality',
   description: 'A group are planning to cycle all through tel aviv!',
-  remote_image_url: "https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Article+Image+Update/Cycling/Century+Ride+Rookies/carousel.jpg"
+  remote_image_url: "https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Article+Image+Update/Cycling/Century+Ride+Rookies/carousel.jpg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
 
-activity17 = Activity.create(
+activity17 = Activity.create!(
   title: 'Swimming in the beach',
   address: 'Gordon Beach',
   description: "Let's dodge sharks!",
-  remote_image_url: "https://cdn.shopify.com/s/files/1/0233/5881/files/brownlee_sea_2_grande.jpg?v=1474970910"
+  remote_image_url: "https://cdn.shopify.com/s/files/1/0233/5881/files/brownlee_sea_2_grande.jpg?v=1474970910",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
-activity18 = Activity.create(
+activity18 = Activity.create!(
   title: 'Trainning at the park',
   address: "Meir's park",
   description: "An afternoon of a lot of trainning and fun!",
-  remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg"
+  remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
-activity19 = Activity.create(
+activity19 = Activity.create!(
   title: 'Saturday Russian Roulette Meetup',
   address: "Le Wagon",
   description: "An educational event where 10 will arrive but only 9 will leave on their feet. Come and take the challenge today!",
-  remote_image_url: "https://static.tvtropes.org/pmwiki/pub/images/dogs_playing_russian_roulette.png"
+  remote_image_url: "https://static.tvtropes.org/pmwiki/pub/images/dogs_playing_russian_roulette.png",
+  day: ["Fri", "Sat", "Both"].sample,
+  user: User.all.sample
   )
-# activity20 = Activity.create(
+# activity20 = Activity.create!(
 #   title: 'Trainning at the park',
 #   address: "Meir's park",
 #   description: "An afternoon of a lot of trainning and fun!",
 #   remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg"
 #   )
-# activity21 = Activity.create(
+# activity21 = Activity.create!(
 #   title: 'Trainning at the park',
 #   address: "Meir's park",
 #   description: "An afternoon of a lot of trainning and fun!",
