@@ -9,7 +9,7 @@ User.destroy_all
 
 ############# Users ##################################
 puts 'Creating some amazing Shabbo users...'
-user1 = User.create(
+user1 = User.create!(
   email: 'jimmyj@gmail.com',
   password: '123456',
   first_name: 'Jimbo',
@@ -17,7 +17,7 @@ user1 = User.create(
   username: 'BigJimbo',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_3-512.png'
   )
-user2 = User.create(
+user2 = User.create!(
   email: 'noah@gmail.com',
   password: '123456',
   first_name: 'Noah',
@@ -25,7 +25,7 @@ user2 = User.create(
   username: 'xOnoahnash0x',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_9-512.png'
   )
-user3 = User.create(
+user3 = User.create!(
   email: 'lindsey@protonmail.com',
   password: '123456',
   first_name: 'Lindsey',
@@ -33,7 +33,7 @@ user3 = User.create(
   username: 'levy_henry1989',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_woman_female_afro-512.png'
   )
-user4 = User.create(
+user4 = User.create!(
   email: 'ben@chile.com',
   password: '123456',
   first_name: 'Ben',
@@ -41,7 +41,7 @@ user4 = User.create(
   username: 'Chilean-A-hole',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_2-512.png'
   )
-user5 = User.create(
+user5 = User.create!(
   email: 'ross@gmail.com',
   password: '123456',
   first_name: 'Ross',
@@ -49,7 +49,7 @@ user5 = User.create(
   username: 'RossyBaby',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male-512.png'
   )
-user6 = User.create(
+user6 = User.create!(
   email: 'joy@lewagon.com',
   password: '123456',
   first_name: 'Joy',
@@ -57,7 +57,7 @@ user6 = User.create(
   username: 'LeWagonNumb1',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_woman_female_1-512.png'
   )
-user7 = User.create(
+user7 = User.create!(
   email: 'david@lewagon.com',
   password: '123456',
   first_name: 'David',
@@ -246,56 +246,57 @@ activity19 = Activity.create!(
 #   )
 ############# Reviews ##################################
 puts 'Creating some user reviews...'
-review1 = Review.create(
+review1 = Review.create!(
   title:"Great time",
   description: "This was a great time",
   stars:"5",
   user: user4,
+  activity: activity8
   )
 
-review2 = Review.create(
+review2 = Review.create!(
   title:"I'm fucking high bro.",
   description: "This rave was unbelievable. I rolled so hard on exctacy bro",
   stars:"5",
   user: user7,
   activity: activity4
   )
-review3 = Review.create(
+review3 = Review.create!(
   title:"I dont agree with the user above",
   description: "This was a ripoff! I didn't find any drugs man",
   stars:"2",
   user: user5,
   activity: activity4
   )
-review4 = Review.create(
+review4 = Review.create!(
   title:"My fav DJ's were there. OMG",
   description: "So much base in my damn ears. I definitely did damage to my hearing ability. Great time!",
   stars:"5",
   user: user3,
   activity: activity4
   )
-review5 = Review.create(
+review5 = Review.create!(
   title:"yeah baby",
   description: "I wrote a review.",
   stars:"2",
   user: user2,
   activity: activity8
   )
-review6 = Review.create(
+review6 = Review.create!(
   title:"Amazing idea. I know two guys who would love this game",
   description: "We would love to host one of these game at the Shabbo HQ office in Le Wagon Tel Aviv",
   stars:"5",
   user: user7,
   activity: activity19
   )
-review7 = Review.create(
+review7 = Review.create!(
   title:"I honestly thought this was a casino night",
   description: "I was so wrong. My tinder date is dead now.",
   stars:"1",
   user: user1,
   activity: activity19
   )
-review8 = Review.create(
+review8 = Review.create!(
   title:"yeah baby",
   description: "I wrote a review.",
   stars:"2",
@@ -304,32 +305,32 @@ review8 = Review.create(
   )
 ############# Bookings ##################################
 puts 'Creating some shabbo bookings...'
-booking1 = Booking.create(
+booking1 = Booking.create!(
   user: user1,
   activity: activity3
   )
 
-booking2 = Booking.create(
+booking2 = Booking.create!(
   user: user2,
   activity: activity5
   )
 
-booking3 = Booking.create(
+booking3 = Booking.create!(
   user: user2,
   activity: activity10
   )
 
-booking4 = Booking.create(
+booking4 = Booking.create!(
   user: user2,
   activity: activity2
   )
 
-booking5 = Booking.create(
+booking5 = Booking.create!(
   user: user5,
   activity: activity9
   )
 
-booking6 = Booking.create(
+booking6 = Booking.create!(
   user: user2,
   activity: activity11
   )
@@ -338,131 +339,131 @@ booking6 = Booking.create(
 ############# Categories ##################################
 puts 'Creating the Shabbo \'categories\''
 
-category1 = Category.create(
+category1 = Category.create!(
   name:'Yoga'
   )
 
-category2 = Category.create(
+category2 = Category.create!(
   name:'Restaurants'
   )
 
-category3 = Category.create(
+category3 = Category.create!(
   name:'Bars'
   )
 
-category4 = Category.create(
+category4 = Category.create!(
   name:'Friday/Shabbat Dinners'
   )
 
-category5 = Category.create(
+category5 = Category.create!(
   name: 'Lessons'
   )
 
-category6 = Category.create(
+category6 = Category.create!(
   name:'Clubs'
   )
 
-category7 = Category.create(
+category7 = Category.create!(
   name:'Parks'
   )
 
-category8 = Category.create(
+category8 = Category.create!(
   name:'Sports'
   )
 
-category9 = Category.create(
+category9 = Category.create!(
   name:'Special Events'
   )
 
-category10 = Category.create(
+category10 = Category.create!(
   name:'Meetups'
   )
 
-category11 = Category.create(
+category11 = Category.create!(
   name:'Beach Life'
   )
-category12 = Category.create(
+category12 = Category.create!(
   name:'Other'
   )
 ############# Activity Categories ##################################
 puts 'Creating categories that fit the shabbo activity...'
 
-activitycategory1 = ActivityCategory.create(
+activitycategory1 = ActivityCategory.create!(
   category: category1,
   activity: activity2
   )
 
-activitycategory2 = ActivityCategory.create(
+activitycategory2 = ActivityCategory.create!(
   category: category2,
   activity: activity1
   )
 
-activitycategory3 = ActivityCategory.create(
+activitycategory3 = ActivityCategory.create!(
   category: category11,
   activity: activity3
   )
 
-activitycategory4 = ActivityCategory.create(
+activitycategory4 = ActivityCategory.create!(
   category: category6,
   activity: activity4
   )
 
-activitycategory5 = ActivityCategory.create(
+activitycategory5 = ActivityCategory.create!(
   category: category5,
   activity: activity3
   )
 
-activitycategory6 = ActivityCategory.create(
+activitycategory6 = ActivityCategory.create!(
   category: category5,
   activity: activity5
   )
 
-activitycategory7 = ActivityCategory.create(
+activitycategory7 = ActivityCategory.create!(
   category: category2,
   activity: activity7
   )
 
-activitycategory8 = ActivityCategory.create(
+activitycategory8 = ActivityCategory.create!(
   category: category2,
   activity: activity8
   )
 
-activitycategory9 = ActivityCategory.create(
+activitycategory9 = ActivityCategory.create!(
   category: category2,
   activity: activity9
   )
 
-activitycategory10 = ActivityCategory.create(
+activitycategory10 = ActivityCategory.create!(
   category: category2,
   activity: activity10
   )
 
-activitycategory11 = ActivityCategory.create(
+activitycategory11 = ActivityCategory.create!(
   category: category2,
   activity: activity11
   )
 
-activitycategory12 = ActivityCategory.create(
+activitycategory12 = ActivityCategory.create!(
   category: category2,
   activity: activity12
   )
-activitycategory13 = ActivityCategory.create(
+activitycategory13 = ActivityCategory.create!(
   category: category8,
   activity: activity14
   )
-activitycategory14 = ActivityCategory.create(
+activitycategory14 = ActivityCategory.create!(
   category: category8,
   activity: activity15
   )
-activitycategory16 = ActivityCategory.create(
+activitycategory16 = ActivityCategory.create!(
   category: category8,
   activity: activity17
   )
-activitycategory17 = ActivityCategory.create(
+activitycategory17 = ActivityCategory.create!(
   category: category8,
   activity: activity18
   )
-activitycategory18 = ActivityCategory.create(
+activitycategory18 = ActivityCategory.create!(
   category: category10,
   activity: activity19
   )
@@ -471,62 +472,62 @@ activitycategory18 = ActivityCategory.create(
 puts 'Creating catergoies that a Shabbo user selects.'
 
 
-user_interest1 = UserCategory.create(
+user_interest1 = UserCategory.create!(
   category: category1,
   user: user1
   )
 
-user_interest2 = UserCategory.create(
+user_interest2 = UserCategory.create!(
   category: category7,
   user: user1
   )
 
-user_interest3 = UserCategory.create(
+user_interest3 = UserCategory.create!(
   category: category10,
   user: user1
   )
 
-user_interest4 = UserCategory.create(
+user_interest4 = UserCategory.create!(
   category: category3,
   user: user2
   )
 
-userinterest5 = UserCategory.create(
+userinterest5 = UserCategory.create!(
   category: category5,
   user: user2
   )
 
-userinterest6 = UserCategory.create(
+userinterest6 = UserCategory.create!(
   category: category7,
   user: user2
   )
 
-userinterest7 = UserCategory.create(
+userinterest7 = UserCategory.create!(
   category: category10,
   user: user3
   )
 
-userinterest8 = UserCategory.create(
+userinterest8 = UserCategory.create!(
   category: category2,
   user: user4
   )
 
-userinterest9 = UserCategory.create(
+userinterest9 = UserCategory.create!(
   category: category8,
   user: user4
   )
 
-userinterest10 = UserCategory.create(
+userinterest10 = UserCategory.create!(
   category: category10,
   user: user4
   )
 
-userinterest11 = UserCategory.create(
+userinterest11 = UserCategory.create!(
   category: category4,
   user: user5
   )
 
-userinterest12 = UserCategory.create(
+userinterest12 = UserCategory.create!(
   category: category8,
   user: user5
   )
