@@ -181,6 +181,8 @@
   margin: 0px;
   font-size: 7px;
   margin-left: 10px;
+  min-height: 25px !important;
+  border-radius: 2px;
 }
 
 .activityaddress{
@@ -189,5 +191,13 @@
 
 .btn-edit{
   min-height: 23px !important;
+}
+
+.activity-stars {
+  margin-top: -25px;
+}
+
+.card-btn {
+  margin-top: -15px;
 }
 
