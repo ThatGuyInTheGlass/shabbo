@@ -40,7 +40,7 @@
             <% end %>
             <div class="card-trip-infos">
               <div>
-                <h2><%=link_to activity.title, activity %></h2>
+                <h2><%=link_to activity.title.truncate(18,separator: " "), activity %></h2>
                 <% activity.rating_average.to_i.times do  %>
                   <i class="fas fa-star"></i>
                 <% end %>
