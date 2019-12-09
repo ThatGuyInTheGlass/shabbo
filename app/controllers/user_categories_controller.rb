@@ -5,7 +5,8 @@ class UserCategoriesController < ApplicationController
   end
 
   def create
-    raise
+    current_user.update(preferred_day: params[:day])
+
     if params["user_category"]["user_categories"]["category"].length == 1 && params["user_category"]["user_categories"]["category"][0] == ""
       @user_category = UserCategory.new
       authorize @user_category
