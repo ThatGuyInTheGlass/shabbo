@@ -4,3 +4,17 @@
   right: 16px;
   z-index: 1000;
 }
+
+
+#max-error {
+  color: red;
+  display: none;
+}
+
+#min-error {
+  color:red;
+}
+
+.swal-button--confirm {
+  opacity: 0 !important;
+}
