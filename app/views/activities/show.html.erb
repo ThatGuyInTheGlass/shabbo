@@ -1,18 +1,19 @@
 
 <%= cl_image_tag @activity.image, class: "show-img" %>
+<h1 class="show-title text-center">  <%= @activity.title %> </h1>
 <%= link_to 'Book Now', activity_bookings_path(@activity), method: :post, class: "btn-primary", id: "bookbtn"%>
 
-<h1>  <%= @activity.title %> </h1>
 <p> Shared by:<%= link_to @activity.user.username, profile_path(@activity.user) %></p>
 <h2> About </h2>
 <%=@activity.description %>
 <br>
 <br>
 <br>
-<h2> Reviews </h2>
-<%= link_to new_activity_review_path(@activity) do %>
-<p class="btn btn-primary text-right">Add review</p>
-<%end%>
+
+<div class="d-flex align-items-baseline">
+<h2> Reviews </h2><p>(<%= link_to 'Review this!', new_activity_review_path(@activity), id: "review-btn"%>)</p>
+</div>
+
 <div class="reviews d-flex align-items-baseline justify-content-center">
   <div class="review-cont">
     <% @activity.reviews.each do |review| %>
