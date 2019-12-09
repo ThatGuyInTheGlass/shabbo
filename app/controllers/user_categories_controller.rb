@@ -5,12 +5,19 @@ class UserCategoriesController < ApplicationController
   end
 
   def create
-    params["user_category"]["user_categories"]["category"][1..-1].each do |category_id|
-      user_category = UserCategory.new(user: current_user, category_id: category_id)
-      user_category.save
-      authorize user_category
-    end
+    if params["user_category"]["user_categories"]["category"].length == 1 && params["user_category"]["user_categories"]["category"][0] == ""
+      @user_category = UserCategory.new
+      authorize @user_category
+      @message = "Select at least one of your interests!"
+      render 'new'
+    else
+      params["user_category"]["user_categories"]["category"][1..-1].each do |category_id|
+        user_category = UserCategory.new(user: current_user, category_id: category_id)
+        user_category.save
+        authorize user_category
+      end
     redirect_to activities_path
+    end
   end
 
   def filter

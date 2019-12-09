@@ -13,7 +13,9 @@
 
     <div class="form-inputs">
        <%= f.simple_fields_for(:user_categories) do |uc| %>
-          <%=  uc.input :category, as: :check_boxes, label: "What is your vibe for the weekend, #{current_user.first_name}?", collection: Category.all , input_html: {multiple: true} %>
+          <p id="max-error">You cannot select more than 3 of your interests, sorry!</p>
+          <p id="min-error"> <%= @message%> </p>
+          <%=  uc.input :category, as: :check_boxes, label: "What is your vibe for the weekend, #{current_user.first_name}?", collection: Category.all , input_html: {multiple: true, required: true} %>
        <% end %>
     </div>
 
@@ -46,8 +48,15 @@
 const checkBoxes = document.querySelectorAll(".form-check");
   checkBoxes.forEach((checkbox) => {
     checkbox.addEventListener('click', (event) => {
-    event.currentTarget.classList.toggle("active");
-    event.currentTarget.firstChild.checked = event.currentTarget.firstChild.checked ? false : true
+    const actives = document.querySelectorAll(".active")
+    console.log(actives.length)
+    if (actives.length >= 3 && !event.currentTarget.classList.contains('active')) {
+      document.getElementById('max-error').style.display = "inline-block"
+    } else {
+      event.currentTarget.classList.toggle("active");
+      event.currentTarget.firstChild.checked = event.currentTarget.firstChild.checked ? false : true
+    }
+
   });
 });
 
