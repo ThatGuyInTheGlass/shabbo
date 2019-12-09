@@ -10,7 +10,9 @@ class Activity < ApplicationRecord
   validates :title, presence: true
   validates :description, presence: true
   validates :address, presence: true
+
   validates :day, presence: true, inclusion: { in: ["Fri", "Sat", "Both"] }
+
 
   # validates :image
 

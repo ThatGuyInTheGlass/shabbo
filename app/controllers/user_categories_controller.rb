@@ -18,7 +18,6 @@ class UserCategoriesController < ApplicationController
 
   current_user.user_categories.destroy_all
 
-
   new
   #   @user_category = current_user.user_categories.first
   #   @user_categories = current_user.user_categories
