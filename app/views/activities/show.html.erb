@@ -2,6 +2,8 @@
 <%= cl_image_tag @activity.image, class: "show-img" %>
 <%= link_to 'Book Now', activity_bookings_path(@activity), method: :post, class: "btn-primary", id: "bookbtn"%>
 
+<h1>  <%= @activity.title %> </h1>
+<p> Shared by:<%= link_to @activity.user.username, profile_path(@activity.user) %></p>
 <h2> About </h2>
 <%=@activity.description %>
 <br>

@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  # get 'user_categories/new'
-  # get 'user_categories/create'
-  # get 'user_categories/edit'
-  # get 'user_categories/update'
+
   devise_for :users
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -16,10 +13,9 @@ Rails.application.routes.draw do
       patch "update_categories"
     end
   end
-
   get "weekendlist", to: "dashboards#weekendlist", as: "weekendlist"
-  get "profile", to: "dashboards#profile", as: "profile"
-  # get "signupfinished"
+  get "profiles/:id", to: "dashboards#profile", as: "profile"
+  # get "signupfinished/"
   resources :bookings, only: [:destroy]
 
 end
