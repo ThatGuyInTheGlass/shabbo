@@ -51,4 +51,10 @@ const checkBoxes = document.querySelectorAll(".form-check");
   });
 });
 
+const labels = document.querySelectorAll(".form-check-label")
+labels.forEach((label)=> {
+  label.addEventListener('click', (event) => {
+    event.currentTarget.parentElement.click()
+  });
+});
 </script>
