@@ -44,6 +44,7 @@
               <% end %>
             </div>
               <p class="activityaddress"><%= activity.address.truncate(18,separator: " ")%></p>
+              <% if @user==current_user %>
               <div class=" card-btn d-flex">
                 <div class="editservice">
                   <%= link_to  edit_activity_path(activity) do %>
@@ -59,6 +60,7 @@
                   </td>
                 </div>
               </div>
+              <% end %>
             </div>
           </div>
         </div>

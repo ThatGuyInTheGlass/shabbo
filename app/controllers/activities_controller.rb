@@ -32,9 +32,9 @@ class ActivitiesController < ApplicationController
   end
 
   def destroy
-    @activity.destroy
-    redirect_to profile_path
     authorize @activity
+    @activity.destroy
+    redirect_to profile_path(current_user)
   end
 
   def edit
