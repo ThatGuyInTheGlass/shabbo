@@ -10,7 +10,7 @@
 <% @user_categories.each do |user_category|%>
 
 
-    <% user_category.activities.each do |activity| %>
+    <% user_category.activities.where(day: current_user.preferred_day).each do |activity| %>
       <div class="card-trip">
         <%= link_to activity, class: "card-img" do %>
           <%= cl_image_tag activity.image, height: 90, crop: "fill" %>

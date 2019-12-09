@@ -5,7 +5,8 @@ class UserCategoriesController < ApplicationController
   end
 
   def create
-    raise
+    current_user.update(preferred_day: params[:day])
+
     if params["user_category"]["user_categories"]["category"].length == 1 && params["user_category"]["user_categories"]["category"][0] == ""
       @user_category = UserCategory.new
       authorize @user_category
@@ -17,36 +18,36 @@ class UserCategoriesController < ApplicationController
         user_category.save
         authorize user_category
       end
-    redirect_to activities_path
+      redirect_to activities_path
     end
   end
 
   def filter
-  @indexes = current_user.categories.pluck(:name).map  { |uc| CATEGORIES.index(uc)}
+    @indexes = current_user.categories.pluck(:name).map { |uc| CATEGORIES.index(uc)}
+    current_user.update(preferred_day: params[:day])
+    current_user.user_categories.destroy_all
 
-  current_user.user_categories.destroy_all
+    new
+  # @user_category = current_user.user_categories.first
+  # @user_categories = current_user.user_categories
+end
 
-  new
-  #   @user_category = current_user.user_categories.first
-  #   @user_categories = current_user.user_categories
-  end
+def update_categories
+end
 
-  def update_categories
-  end
-
-  CATEGORIES =
+CATEGORIES =
 ["Yoga",
-"Restaurants",
-"Bars",
-"Friday/Shabbat Dinners",
-"Lessons",
-"Clubs",
-"Parks",
-"Sports",
-"Special Events",
-"Meetups",
-"Beach Life",
-"Other"]
+  "Restaurants",
+  "Bars",
+  "Friday/Shabbat Dinners",
+  "Lessons",
+  "Clubs",
+  "Parks",
+  "Sports",
+  "Special Events",
+  "Meetups",
+  "Beach Life",
+  "Other"]
 end
 
 
