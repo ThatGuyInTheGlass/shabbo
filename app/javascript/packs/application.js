@@ -10,11 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
 initSweetalert('#sweet-alert-shabbo', {
   title: "A nice alert",
   text: "This is a great alert, isn't it?",
-  icon: "success"
+  icon: "success",
+  showConfirmButton: false
 }, (value) => {
   if (value) {
     const form = document.getElementById('new_user_category')
     form.submit()
-    // const link = document.querySelector('#sweet-alert-shabbo');
-    // link.click();
   }});
+
+const clickSweet = () => {
+  document.querySelector('.swal-button--confirm').click()
+}
+
+const sumbit = document.getElementById('sweet-alert-shabbo')
+sumbit.addEventListener('click', (event) => {
+setTimeout(clickSweet, 2500)
+});
