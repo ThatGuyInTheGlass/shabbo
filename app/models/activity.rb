@@ -1,8 +1,9 @@
 class Activity < ApplicationRecord
   has_many :reviews, dependent: :destroy
-  has_many :activity_categories
+  has_many :activity_categories, dependent: :destroy
   has_many :categories, through: :activity_categories
   belongs_to :user, optional: true
+  has_many :bookings, dependent: :destroy
   accepts_nested_attributes_for :categories
 
   mount_uploader :image, ImageUploader
