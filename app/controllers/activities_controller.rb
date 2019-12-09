@@ -1,5 +1,5 @@
 class ActivitiesController < ApplicationController
-  before_action :set_activity, only: [:show, :destroy, :average]
+  before_action :set_activity, only: [:show, :destroy, :average, :edit]
 
   def index
     @activities = policy_scope(Activity)
@@ -33,8 +33,20 @@ class ActivitiesController < ApplicationController
 
   def destroy
     @activity.destroy
-    redirect_to activities_path
+    redirect_to profile_path
     authorize @activity
+  end
+
+  def edit
+    authorize @activity
+  end
+
+  def update
+    if @activity.update(activity_params)
+      redirect_to @activity
+    else
+      render :edit
+    end
   end
 
   private
