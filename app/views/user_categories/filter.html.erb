@@ -12,6 +12,17 @@
   const indexes = JSON.parse(document.querySelector(".container").dataset.indexes)
   indexes.forEach((index) => {
     formChecks[index].classList.toggle("active");
-    formChecks[index].firstChild.checked = true
+    formChecks[index].firstChild.checked = true;
+    console.log( formChecks[index].firstChild)
 });
+
+const checkBoxez = document.querySelectorAll(".check_boxes")
+
+checkBoxez.forEach((checkbox) => {
+  if (checkbox.checked) {
+    checkbox.parentElement.classList.add("active")
+  }
+})
+
+
 </script>

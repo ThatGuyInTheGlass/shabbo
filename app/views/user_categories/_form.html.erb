@@ -49,7 +49,7 @@ const checkBoxes = document.querySelectorAll(".form-check");
   checkBoxes.forEach((checkbox) => {
     checkbox.addEventListener('click', (event) => {
     const actives = document.querySelectorAll(".active")
-    console.log(actives.length)
+    // console.log(actives.length)
     if (actives.length >= 3 && !event.currentTarget.classList.contains('active')) {
       document.getElementById('max-error').style.display = "inline-block"
     } else {
