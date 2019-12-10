@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
   initStarRating();
 })
 
-initSweetalert('#sweet-alert-shabbo', {
-  title: "A nice alert",
-  text: "This is a great alert, isn't it?",
+const sweetAlert = initSweetalert('#sweet-alert-shabbo', {
+  title: "Yesh!",
+  text: "Your interests have been saved",
   icon: "success",
   showConfirmButton: false
 }, (value) => {
