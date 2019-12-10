@@ -32,19 +32,20 @@
     <% end %>
 
 
-  <% unless current_page?(root_path) || current_page?("/users/sign_in") || current_page?("/users/sign_up") || current_page?("/user_categories/new") %>
-    <body>
-  <% else %>
-    <body style="margin: 0 !important">
-  <% end %>
-    <%= render 'shared/navbar' unless current_page?(root_path) || current_page?("/users/sign_in") || current_page?("/users/sign_up") || current_page?("/user_categories/new")%>
+    <% unless current_page?(root_path) || current_page?("/users/sign_in") || current_page?("/users/sign_up") || current_page?("/user_categories/new") %>
+        <body>
+     <% else %>
+        <body style="margin: 0 !important">
+    <% end %>
+      <%= render 'shared/navbar' unless current_page?(root_path) || current_page?("/users/sign_in") || current_page?("/users/sign_up") || current_page?("/user_categories/new")%>
+      <%= render 'shared/flashes' %>
+      <% unless current_page?(root_path)|| current_page?("/users/sign_in") || current_page?("/users/sign_up") || current_page?("/user_categories/new") %>
+      <div class="yield-container">
+      <% end %>
 
-    <%= render 'shared/flashes' %>
-    <% unless current_page?(root_path)|| current_page?("/users/sign_in") || current_page?("/users/sign_up") || current_page?("/user_categories/new") %><div class="yield-container"> <% end %>
-      <%= yield %>
-    </div>
+        <%= yield %>
 
-
+      </div>
     <%= render 'shared/footer' unless current_page?(root_path) || current_page?("/users/sign_in") || current_page?("/users/sign_up") || current_page?("/user_categories/new") %>
 
     <%= javascript_include_tag 'application' %>
