@@ -3,15 +3,23 @@
 <h1 class="show-title text-center">  <%= @activity.title %> </h1>
 <%= link_to 'Book Now', activity_bookings_path(@activity), method: :post, class: "btn-primary", id: "bookbtn"%>
 
-<p> Shared by:<%= link_to @activity.user.username, profile_path(@activity.user) %></p>
-<h2> About </h2>
+<p> Shared by: <%= link_to @activity.user.username, profile_path(@activity.user) %></p>
+  <h2 class="show-titles"> Categorie(s) </h2>
+<div class= "d-flex mt-2 justify-content-around user-categories-tag">
+  <div class="activity-categories d-flex">
+    <% ActivityCategory.where(activity: @activity).each do |uc| %>
+      <p class="profile-category mr-1 ml-1"><%= uc.category.name.truncate(17) %></p>
+      <% end %>
+    </div>
+    </div>
+<h2 class="show titles"> About </h2>
 <%=@activity.description %>
 <br>
 <br>
 <br>
 
 <div class="d-flex align-items-baseline">
-<h2> Reviews </h2><p>(<%= link_to 'Review this!', new_activity_review_path(@activity), id: "review-btn"%>)</p>
+<h2 class="show-titles"> Reviews </h2> &nbsp;&nbsp; <p>(<%= link_to 'Review this!', new_activity_review_path(@activity), id: "review-btn"%>)</p>
 </div>
 
 <div class="reviews d-flex align-items-baseline justify-content-center">
