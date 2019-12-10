@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 initSweetalert('#sweet-alert-shabbo', {
-  title: "A nice alert",
-  text: "This is a great alert, isn't it?",
+  title: "Shabbo is thinking...",
+  text: "Gathering some results that suit your interests!",
   icon: "success",
   showConfirmButton: false
 }, (value) => {
