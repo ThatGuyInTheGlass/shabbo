@@ -20,10 +20,12 @@ class ActivitiesController < ApplicationController
   def create
     @activity = Activity.new(activity_params)
     @activity.user = current_user
-    params["activity"]["activity_categories"]["category"].each do |category_id|
-     ActivityCategory.create(activity: @activity, category_id: category_id)
-    end
     if @activity.save
+      params["activity"]["activity_categories"]["category"].each do |category_id|
+        unless category_id == ''
+          ActivityCategory.create(activity: @activity, category_id: category_id)
+        end
+      end
       redirect_to @activity
     else
       render :new

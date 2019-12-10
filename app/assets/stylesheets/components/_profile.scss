@@ -11,7 +11,7 @@
 
 .avatar-profile {
   position: relative;
-  top: -45px;
+  top: -60px;
 }
 
 
@@ -19,4 +19,30 @@
   width: 100vw;
 }
 
+.avatar-name{
+  margin-top: -55px;
+}
 
+.interest-profile{
+
+  margin-top: 15px;
+}
+
+.user-activities{
+  margin-top: 10px;
+}
+
+.signout-user {
+  margin-left: 200px;
+}
+
+.activity-title {
+  margin-left: 2px;
+}
+
+.profile-category {
+  color: black;
+  background-color: rgba(170, 208, 253, 0.6);
+  padding: 2px 5px;
+
+}
