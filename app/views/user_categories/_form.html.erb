@@ -23,20 +23,12 @@
     <label for="SelectDay">What day are you looking to Shabbotize this weekend?</label>
     <form class= "SelectDay" action="SelectDay">
       <select name="day">
-        <option value="ShiShi-Friday">ShiShi-Friday</option>
-        <option value="Shabbat-Saturday">Shabbat-Saturday</option>
-        <option value="'Gam Ve Gam'-Both">'Gam Ve Gam'-Both</option>
+        <option value="Only Friday">Only Friday</option>
+        <option value="Only Saturday">Only Saturday</option>
+        <option value="Friday & Saturday">Friday & Saturday</option>
       </select>
     </form>
   </div>
-
-
-     <div class="form-inputs">
-    <label for="Time Needed">Search for additional information</label>
-    <br>
-    <input class="input-mw" type="search" name="search baby" placeholder="Type some keywords!">
-  </div>
-
    <div class="form-actions text-center">
      <%= f.button :submit,"Yalla Capara!",id: "sweet-alert-shabbo", class: "btn btn-primary" %>
    </div>

@@ -12,7 +12,7 @@ class Activity < ApplicationRecord
   validates :description, presence: true
   validates :address, presence: true
   validates :image, presence: true
-  validates :day, presence: true, inclusion: { in: ["ShiShi-Friday", "Shabbat-Saturday", "'Gam Ve Gam'-Both"] }
+  validates :day, presence: true, inclusion: { in: ["Only Friday", "Only Saturday", "Friday & Saturday"] }
 
   def rating_average
     all = reviews.pluck(:stars)
