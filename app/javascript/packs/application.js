@@ -26,3 +26,13 @@ const sumbit = document.getElementById('sweet-alert-shabbo')
 sumbit.addEventListener('click', (event) => {
 setTimeout(clickSweet, 2500)
 });
+
+
+const labelz = document.querySelectorAll(".form-check-label")
+labelz.forEach((label)=> {
+  label.addEventListener('click', (event) => {
+   // / event.currentTarget.parentElement.click()
+   console.log(event.currentTarget.previousElementSibling.checked )
+    event.currentTarget.previousElementSibling.checked = event.currentTarget.previousElementSibling.checked ? false : true
+  });
+});
