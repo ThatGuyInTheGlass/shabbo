@@ -42,9 +42,9 @@ user4 = User.create!(
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_2-512.png'
   )
 user5 = User.create!(
-  email: 'jimmyj@gmail.com',
+  email: 'yuvalj@gmail.com',
   password: '123456',
-  first_name: 'Jimbo',
+  first_name: 'Yuval',
   last_name: 'Jacobs',
   username: 'JJ57213',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male-512.png'
@@ -299,6 +299,9 @@ activity27 = Activity.create!(
   user: users.sample
 
 )
+
+#categories: Lessons
+
 activity28 = Activity.create!(
   title: 'Hebrew Lessons',
   address: "Any where in Gush Dan. I come to you!",
@@ -308,77 +311,92 @@ activity28 = Activity.create!(
   user: users.sample
 
 )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
 
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
+#categories: Lessons, Meetups
 
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
+activity29 = Activity.create!(
+  title: 'Coding Meetup at The Streets',
+  address: '7 Zevulun Street, Tel Aviv-Yafo',
+  description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+  remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+  day: "Friday & Saturday",
+  user: users.sample
 
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
+)
 
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
+#categories: Special Event, Restaurant, Other
 
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
+activity30 = Activity.create!(
+  title: 'Seceret Restaurant',
+  address: 'Florintine area - secret location!',
+  description: 'The brand new, no name restaurant in the Florentin neighborhood of south Tel Aviv, is unusual for several reasons. For one, it has an open kitchen located in the center of the restaurant, with tables and chairs around it; it has no menu; and the dishes change according to the chef’s whims. Also, it’s only open to the public one night a week: Saturdays! ',
+  remote_image_url: "https://images.squarespace-cdn.com/content/v1/54e662d6e4b03a84d297abc0/1424386074496-VPDHFC7IDHKQGII13PC0/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/IMG_3616.jpg?format=1000w",
+  day: "Only Saturday",
+  user: users.sample
+)
+#categories: Yoga, Lessons
 
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
+activity31 = Activity.create!(
+  title: 'Yoga by Tali Sutra',
+  address: 'Ben Yehuda 32',
+  description: 'World famous instagram yogie is coming to Le Wagon to offer a group lesson! Inquire for more details!',
+  remote_image_url: "https://i.pinimg.com/236x/a0/27/56/a02756bd306bf207aac424f41085dae4--yoga-for-kids-kid-yoga.jpg",
+  day: "Only Saturday",
+  user: users.sample
+)
 
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
+# ==============================================(Ross Created Activities)====================================
 
+#categories: Meetups, Special Events, Other
+
+activity32 = Activity.create!(
+  title: 'Poker Night at Bet Heseg',
+  address: 'Rothschild 46, Tel Aviv - Yafo',
+  description: 'Simple. 150 shek buy in. Real ones only! Snacks on the house :) ',
+  remote_image_url: "https://i.pinimg.com/236x/e8/8b/56/e88b562b3cbdb46fc2ab915f447c1805.jpg",
+  day: "Only Saturday",
+  user: user1
+)
+
+#categories: Friday/ShabbatDinner, Meetups
+
+activity33 = Activity.create!(
+  title: 'Shabbat Dinner at Mataan\'s Apt',
+  address: 'Maon 5',
+  description: 'White City Productions Invite you to a 5 year tradition. *Fuck Boy Alert*',
+  remote_image_url: "https://i.pinimg.com/236x/a8/95/fe/a895febde156fad201b9c5a60b9d1296--to-miss-each-other.jpg",
+  day: "Only Friday",
+  user: user1
+)
+
+#categories: Beachlife, Other
+
+activity34 = Activity.create!(
+  title: 'Tsevet Lohamim Training Watch Party',
+  address: 'Hof Ha-gordon',
+  description: 'Come watch me take my anger out on kids',
+  remote_image_url: "https://www.chinadaily.com.cn/photo/2012-08/17/content_15684589_2.htm",
+  day: "Only Friday",
+  user: user1
+)
+# =======================================(END OF ROSS EVENTS)====================================
+
+activity35 = Activity.create!(
+  title: 'Shalvata',
+  address: 'The Port - Tel Aviv - Yafo',
+  description: 'A very fashionable and fun club located in the Nemal, overlooking the Mediterranean – tends to attract an older crowd. Large parties most nights, and cool afternoon parties during the weekend. And there are loads of tables if you want to chill and catch up with friends.',
+  url: "https://shalvata.co.il/",
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/Screenshot-2016-06-23-08.28.01-1024x334.png",
+  day: "Only Friday",
+  user: users.sample
+)
+# activity35 = Activity.create!(
+#   title: '',
+#   address: '',
+#   description: '',
+#   remote_image_url: "",
+#   day: "Only Saturday",
+#   user: users.sample
 # )
 # activity26 = Activity.create!(
 #   title: 'Dalida ',
@@ -720,10 +738,31 @@ review8 = Review.create!(
   user: user3,
   activity: activity19
   )
+review9 = Review.create!(
+  title:"So many french people!",
+  description: "I don't say it as a bad thing. It's just I got so drunk I geniunely was convinced I was in FRANCE",
+  stars:"5",
+  user: user7, #david
+  activity: activity35
+  )
+review10 = Review.create!(
+  title:"No Pisco!",
+  description: "I came all the way from chile to try the best Pisco in Isreal. Someone told me that Shalvata had it. Oh, they were so so wrong. The only drink they offered was watered down gin and tonics. A Dios Miooooooooooooo",
+  stars:"2",
+  user: user4, #ben
+  activity: activity35
+  )
+review11 = Review.create!(
+  title:"This guy named Adar got me in",
+  description: "He's apparently Mr. Tel Aviv!",
+  stars:"5",
+  user: user5, #yuval
+  activity: activity35
+  )
 ############# Bookings ##################################
 puts 'Creating some shabbo bookings...'
 booking1 = Booking.create!(
-  user: user1,
+  user: user2,
   activity: activity3
   )
 
@@ -941,71 +980,112 @@ activitycategory32 = ActivityCategory.create!(
   category: category5,
   activity: activity28
   )
-# activitycategory30 = ActivityCategory.create!(
-#   category: category2,
-#   activity: activity26
-#   )
-
+activitycategory33 = ActivityCategory.create!(
+  category: category5,
+  activity: activity29
+  )
+activitycategory34 = ActivityCategory.create!(
+  category: category10,
+  activity: activity29
+  )
+activitycategory35 = ActivityCategory.create!(
+  category: category2,
+  activity: activity30
+  )
+activitycategory36 = ActivityCategory.create!(
+  category: category9,
+  activity: activity30
+  )
+activitycategory37 = ActivityCategory.create!(
+  category: category1,
+  activity: activity31
+  )
+activitycategory38 = ActivityCategory.create!(
+  category: category5,
+  activity: activity31
+  )
+activitycategory39 = ActivityCategory.create!(
+  category: category9,
+  activity: activity32
+  )
+activitycategory40 = ActivityCategory.create!(
+  category: category10,
+  activity: activity32
+  )
+activitycategor41 = ActivityCategory.create!(
+  category: category12,
+  activity: activity32
+  )
+activitycategory41 = ActivityCategory.create!(
+  category: category4,
+  activity: activity33
+  )
+activitycategory42 = ActivityCategory.create!(
+  category: category10,
+  activity: activity33
+  )
+activitycategory43 = ActivityCategory.create!(
+  category: category11,
+  activity: activity34
+  )
+activitycategory44 = ActivityCategory.create!(
+  category: category12,
+  activity: activity34
+  )
+activitycategory45 = ActivityCategory.create!(
+  category: category6,
+  activity: activity35
+  )
 ################# User Categories ##################################
 puts 'Creating catergoies that a Shabbo user selects.'
 
 
 user_interest1 = UserCategory.create!(
-  category: category1,
+  category: category2,
   user: user1
   )
 
 user_interest2 = UserCategory.create!(
-  category: category7,
-  user: user1
-  )
-
-user_interest3 = UserCategory.create!(
-  category: category10,
-  user: user1
-  )
-
-user_interest4 = UserCategory.create!(
   category: category3,
   user: user2
   )
 
-userinterest5 = UserCategory.create!(
+userinterest3 = UserCategory.create!(
   category: category5,
   user: user2
   )
 
-userinterest6 = UserCategory.create!(
+userinterest4 = UserCategory.create!(
   category: category7,
   user: user2
   )
 
-userinterest7 = UserCategory.create!(
+userinterest5 = UserCategory.create!(
   category: category10,
   user: user3
   )
 
-userinterest8 = UserCategory.create!(
+userinterest6 = UserCategory.create!(
   category: category2,
   user: user4
   )
 
-userinterest9 = UserCategory.create!(
+userinterest7 = UserCategory.create!(
   category: category8,
   user: user4
   )
 
-userinterest10 = UserCategory.create!(
+userinterest8 = UserCategory.create!(
   category: category10,
   user: user4
   )
 
-userinterest11 = UserCategory.create!(
+userinterest9 = UserCategory.create!(
   category: category4,
   user: user5
   )
 
-userinterest12 = UserCategory.create!(
+userinterest10 = UserCategory.create!(
   category: category8,
   user: user5
   )
