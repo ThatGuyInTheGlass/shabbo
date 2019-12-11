@@ -37,7 +37,7 @@
           <%= link_to activity, class: "card-img" do %>
           <%= cl_image_tag activity.image, height: 100 %>
           <% end %>
-          <div class="card-trip-infos">
+          <div class="card-trip-infos p-2">
             <div>
               <div class="activity-title">
               <h2><%=link_to activity.title.truncate(18,separator: " "), activity %></h2>
@@ -46,9 +46,13 @@
               <p><%= activity.day %></p>
             </div>
             <div class="activity-stars">
+              <% if activity.rating_average.to_i == 0 %>
+              &nbsp;
+            <% else %>
               <% activity.rating_average.to_i.times do  %>
-              <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               <% end %>
+            <% end %>
             </div>
               <p class="activityaddress"><%= activity.address.truncate(18,separator: " ")%></p>
               <% if @user==current_user %>

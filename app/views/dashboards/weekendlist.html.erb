@@ -14,7 +14,9 @@
       <div class="card-weekend">
         <div class="d-flex">
         <%=link_to "#", class: "weekend-card-intern" do %>
+          <div class="weekend-image">
           <%= cl_image_tag booking.activity.image, height: 110 %>
+        </div>
         <%end%>
         <div class="weekend-info">
             <h2><%=link_to booking.activity.title.truncate(18,separator: " "), booking.activity %></h2>
