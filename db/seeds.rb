@@ -290,6 +290,377 @@ activity26 = Activity.create!(
 
 )
 
+activity27 = Activity.create!(
+  title: 'Dok',
+  address: '8 Ibn Gabirol Street, Tel Aviv-Yafo',
+  description: 'The restaurant, which was previously Carpaccio Bar,  is very intimate with just two small tables inside, a bar which seats seven, and a few tables outside on the sidewalk. Asaf explained that he wanted to create a “boutique” feel to the place for real foodies looking for more experimental dishes. The menu, which changes seasonally, includes baked kohlrabi with crumbled cheese, poppy seeds, thyme, and hot pepper (27NIS), and Chef Asaf’s personal favourite, the lamb wrapped in herbs on a bed of burnt eggplant cream and salad (62NIS).',
+  remote_image_url: "https://i.pinimg.com/236x/cf/67/9a/cf679a0e16c9469d333d4014206755d8--plate-art-funny-food.jpg",
+  day: "Only Saturday",
+  user: users.sample
+
+)
+activity28 = Activity.create!(
+  title: 'Hebrew Lessons',
+  address: "Any where in Gush Dan. I come to you!",
+  description: 'I have ',
+  remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+  day: "Friday & Saturday",
+  user: users.sample
+
+)
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+# activity26 = Activity.create!(
+#   title: 'Dalida ',
+#   address: '7 Zevulun Street, Tel Aviv-Yafo',
+#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+#   day: "Friday & Saturday",
+#   user: users.sample
+
+# )
+
+
 ############# Reviews ##################################
 puts 'Creating some user reviews...'
 review1 = Review.create!(
@@ -550,18 +921,30 @@ activitycategory27 = ActivityCategory.create!(
   category: category9,
   activity: activity24
   )
-activitycategory27 = ActivityCategory.create!(
+activitycategory28 = ActivityCategory.create!(
   category: category7,
   activity: activity25
   )
-activitycategory27 = ActivityCategory.create!(
+activitycategory29 = ActivityCategory.create!(
   category: category8,
   activity: activity25
   )
-activitycategory27 = ActivityCategory.create!(
+activitycategory30 = ActivityCategory.create!(
   category: category2,
   activity: activity26
   )
+activitycategory31 = ActivityCategory.create!(
+  category: category2,
+  activity: activity27
+  )
+activitycategory32 = ActivityCategory.create!(
+  category: category5,
+  activity: activity28
+  )
+# activitycategory30 = ActivityCategory.create!(
+#   category: category2,
+#   activity: activity26
+#   )
 
 ################# User Categories ##################################
 puts 'Creating catergoies that a Shabbo user selects.'
