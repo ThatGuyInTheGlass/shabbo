@@ -24,7 +24,7 @@
 </div>
 
 <div>
-  <%= f.input :url, placeholder: "If there is an URL to your event, place it here!" %>
+  <%= f.input :url, class: "ml-0", placeholder: "If there is an URL to your event, place it here!" %>
 </div>
 
 <div>
@@ -42,14 +42,10 @@
 
 
 
-<div class="form-actions-create">
+<div class="form-actions-create text-center">
   <%= f.button :submit, class: "btn btn-primary big-btn" %>
 </div>
 
 <%end%>
 
 
-
-</div>
-<div class="image">
-  <%= image_tag "share.svg" %>
