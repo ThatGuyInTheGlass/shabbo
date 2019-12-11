@@ -423,48 +423,47 @@ activity39 = Activity.create!(
   day: "Only Saturday",
   user: users.sample
 )
-# activity40 = Activity.create!(
-#   theitle: '',
-#   address: '',
-#   description: '',
-#   remote_image_url: "",
-#   day: "Only Saturday",
-#   user: users.sample
-# )
-# activity40 = Activity.create!(
-#   theitle: '',
-#   address: '',
-#   description: '',
-#   remote_image_url: "",
-#   day: "Only Saturday",
-#   user: users.sample
-# )
-# activity40 = Activity.create!(
-#   theitle: '',
-#   address: '',
-#   description: '',
-#   remote_image_url: "",
-#   day: "Only Saturday",
-#   user: users.sample
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
-
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
-
-# )
+activity40 = Activity.create!(
+  theitle: 'Sputnik',
+  address: 'Allenby St 112, Tel Aviv-Yafo',
+  description: 'Hidden down a small alley off Allenby, near the corner of Rothschild, Sputnik opened in 2016, and has already achieved a cult-status amongst the Tel Aviv hipster crew as a space to chill, drink, catchup with friends, and listen to good music – including the occasional live act and top Tel Aviv DJ. It’s recommended to book a table in advance, as the place gets packed by 10pm and there are usually large queues outside.',
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2017/04/Screen-Shot-2017-05-31-at-16.01.21.png",
+  day: "Friday & Saturday",
+  user: users.sample
+)
+activity41 = Activity.create!(
+  theitle: 'Borgore at Kulialma',
+  address: 'Mikveh Israel 10, Tel Aviv-Yafo, Israel',
+  description: 'Cool underground bar on the corner of Yehuda Halevi and Allenby. Sweet outdoor area to chill in the summer, really cool vibes with awesome DJs, beautiful graffiti on the walls, tasty cheap pizza and salad, and Tubi slushies.',
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/22453_1797397_1407080296216750_1920173247_n-1.jpg",
+  day: "Friday & Saturday",
+  user: users.sample
+)
+activity42 = Activity.create!(
+  theitle: 'Rubi',
+  address: 'Yermiyahu Street 7, Tel Aviv-Yafo, Israel',
+  description: 'Cool underground bar on the corner of Yehuda Halevi and Allenby. Sweet outdoor area to chill in the summer, really cool vibes with awesome DJs, beautiful graffiti on the walls, tasty cheap pizza and salad, and Tubi slushies.',
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/Rubi_1454784101.jpeg",
+  day: "Friday & Saturday",
+  user: users.sample
+)
+activity43 = Activity.create!(
+  title: 'Beit Maariv',
+  address: 'Derech Menachem Begin 51,Tel Aviv-Yafo',
+  description: 'Located in the space that used to be the home of one of Israel’s largest daily newspapers, Beit Maariv is the newest large club venue in our city. The club showcases both local and foreign house and techno DJs and has a large main room with a bar and seating area and a smaller room with its own music and vibe behind the DJ booth.',
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2017/04/36993_13925660_177033829381810_5429646867881372852_o.jpg",
+  day: "Friday & Saturday",
+  user: users.sample
+)
+activity44 = Activity.create! (
+  title: 'Park Cleanup ',
+  address: 'Ha-Harkon'
+  description: 'Come find out how you can keep your city green!',
+  remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+  day: "Friday & Saturday",
+  user: users.sample
+]
+)
 # activity26 = Activity.create!(
 #   title: 'Dalida ',
 #   address: '7 Zevulun Street, Tel Aviv-Yafo',
