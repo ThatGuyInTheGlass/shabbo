@@ -391,7 +391,7 @@ activity35 = Activity.create!(
   user: users.sample
 )
 # activity35 = Activity.create!(
-#   title: '',
+#   theitle: '',
 #   address: '',
 #   description: '',
 #   remote_image_url: "",
@@ -808,7 +808,7 @@ category3 = Category.create!(
   )
 
 category4 = Category.create!(
-  name:'Friday/Shabbat Dinners'
+  name:'Shabbat Dinners'
   )
 
 category5 = Category.create!(
