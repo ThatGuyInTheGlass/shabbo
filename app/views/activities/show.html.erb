@@ -1,6 +1,6 @@
 <%= cl_image_tag @activity.image, class: "show-img" %>
 <h1 class="show-title text-center">  <%= @activity.title %> </h1>
-<%= link_to 'Book Now', activity_bookings_path(@activity), method: :post, class: "btn-primary", id: "bookbtn"%>
+<%= link_to 'Add to my Weekend', activity_bookings_path(@activity), method: :post, class: "btn-primary", id: "bookbtn"%>
 <div class="extra-info ml-2">
 <p> <strong>Shared by:</strong> <%= link_to @activity.user.username, profile_path(@activity.user) %></p>
 <div class="days-show">
