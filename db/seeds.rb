@@ -376,7 +376,7 @@ activity34 = Activity.create!(
   title: 'Tsevet Lohamim Training Watch Party',
   address: 'Hof Ha-gordon',
   description: 'Come watch me take my anger out on kids',
-  remote_image_url: "https://www.chinadaily.com.cn/photo/2012-08/17/content_15684589_2.htm",
+  remote_image_url: "https://www.armytimes.com/resizer/TEpOGgfSElr0OwrqKzwOJsVDsJ4=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/73T5J66RR5FIXPN6TLKCOE3RPA.jpg",
   day: "Only Friday",
   user: user1
 )
