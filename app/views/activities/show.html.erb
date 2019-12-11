@@ -1,7 +1,20 @@
 <%= cl_image_tag @activity.image, class: "show-img" %>
 <h1 class="show-title text-center">  <%= @activity.title %> </h1>
 <%= link_to 'Book Now', activity_bookings_path(@activity), method: :post, class: "btn-primary", id: "bookbtn"%>
-<p> Shared by: <%= link_to @activity.user.username, profile_path(@activity.user) %></p>
+<div class="extra-info ml-2">
+<p> <strong>Shared by:</strong> <%= link_to @activity.user.username, profile_path(@activity.user) %></p>
+<div class="days-show">
+  <p> <strong>Day(s) of activity:</strong> <%=@activity.day %> </p>
+</div>
+<div class="average-evaluation d-flex">
+  <p> <strong> Average Rating:</strong>&nbsp;</p>
+  <div class="show-stars">
+  <% @activity.rating_average.to_i.times do  %>
+    <i class="fas fa-star"></i>
+  <% end %>
+</div>
+</div>
+</div>
 <h2 class="show-titles"> Categorie(s) </h2>
 <div class= "d-flex mt-2 justify-content-around user-categories-tag">
   <div class="activity-categories d-flex">
