@@ -257,7 +257,7 @@ activity22 = Activity.create!(
 )
 activity23 = Activity.create!(
   title: 'Cookie Decoration!',
-  address: 'Immanuel Church - Bar Hoffman 15, Tel Aviv',
+  address: 'Immanuel Church,Bar Hoffman 15, Tel Aviv',
   description: 'More than just a meal. Shabbat Experience. Welcoming you to our rooftop for a traditional Friday night meal that doesn’t end with food, rather begins with friends, new and old.Friday night, doors open and you are invited to our pre-dinner kiddush chill as we wait for our company to gather and mix.',
   remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/1575900605_78500767_2570367996343926_5709172895540838400_o.jpg",
   day: "Only Saturday",
@@ -416,10 +416,10 @@ activity38 = Activity.create!(
   user: users.sample
 )
 activity39 = Activity.create!(
-  theitle: '',
-  address: '',
-  description: '',
-  remote_image_url: "",
+  theitle: 'Running/Yoga Mix Saturdayssss',
+  address: 'The Zahala Country Club',
+  description: 'ONLY 60 Shekels! A world class machine cardio workout followed by yoga recovery! Must try!',
+  remote_image_url: "https://inteng-storage.s3.amazonaws.com/img/iea/V0OyzMNpGQ/sizes/running-band-technique_resize_md.jpg",
   day: "Only Saturday",
   user: users.sample
 )
@@ -944,7 +944,7 @@ activitycategory25 = ActivityCategory.create!(
   activity: activity22
   )
 activitycategory25 = ActivityCategory.create!(
-  category: category4,
+  category: category5,
   activity: activity23
   )
 activitycategory26 = ActivityCategory.create!(
@@ -1031,6 +1031,86 @@ activitycategory45 = ActivityCategory.create!(
   category: category6,
   activity: activity35
   )
+activitycategory46 = ActivityCategory.create!(
+  category: category1,
+  activity: activity36
+  )
+activitycategory47 = ActivityCategory.create!(
+  category: category5,
+  activity: activity36
+  )
+activitycategory48 = ActivityCategory.create!(
+  category: category1,
+  activity: activity37
+  )
+activitycategory49 = ActivityCategory.create!(
+  category: category5,
+  activity: activity37
+  )
+activitycategory50 = ActivityCategory.create!(
+  category: category1,
+  activity: activity38
+  )
+activitycategory51 = ActivityCategory.create!(
+  category: category9,
+  activity: activity38
+  )
+activitycategory52 = ActivityCategory.create!(
+  category: category1,
+  activity: activity39
+  )
+activitycategory53 = ActivityCategory.create!(
+  category: category8,
+  activity: activity39
+  )
+# activitycategory54 = ActivityCategory.create!(
+#   category: category6,
+#   activity: activity39
+#   )
+# activitycategory55 = ActivityCategory.create!(
+#   category: category6,
+#   activity: activity39
+#   )
+# activitycategory55 = ActivityCategory.create!(
+#   category: category6,
+#   activity: activity39
+#   )
+# activitycategory55 = ActivityCategory.create!(
+#   category: category6,
+#   activity: activity39
+#   )
+# activitycategory55 = ActivityCategory.create!(
+#   category: category6,
+#   activity: activity39
+#   )
+# activitycategory55 = ActivityCategory.create!(
+#   category: category6,
+#   activity: activity39
+#   )
+# activitycategory55 = ActivityCategory.create!(
+#   category: category6,
+#   activity: activity39
+#   )
+# activitycategory55 = ActivityCategory.create!(
+#   category: category6,
+#   activity: activity39
+#   )
+# activitycategory55 = ActivityCategory.create!(
+#   category: category6,
+#   activity: activity39
+#   )
+# activitycategory55 = ActivityCategory.create!(
+#   category: category6,
+#   activity: activity39
+#   )
+# activitycategory55 = ActivityCategory.create!(
+#   category: category6,
+#   activity: activity39
+#   )
+# activitycategory55 = ActivityCategory.create!(
+#   category: category6,
+#   activity: activity39
+#   )
 ################# User Categories ##################################
 puts 'Creating catergoies that a Shabbo user selects.'
 
