@@ -16,11 +16,12 @@
         <%end%>
         <div class="weekend-info">
             <h2><%=link_to booking.activity.title.truncate(18,separator: " "), booking.activity %></h2>
-          <h3><%= booking.activity.address.truncate(35) %></h3>
+            <h3><%=booking.activity.day %>
           <div class="rating-weekend">
           <% booking.activity.rating_average.to_i.times do  %>
               <i class="fas fa-star"></i>
             <% end %>
+          <h3><%= booking.activity.address.truncate(35) %></h3>
           </div>
           </div>
           </div>
