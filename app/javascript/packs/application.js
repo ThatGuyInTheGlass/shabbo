@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 initSweetalert('#sweet-alert-shabbo', {
   title: "Shabbo is thinking...",
-  text: "Gathering some results that suit your interests!",
+  text: "Gathering the very best of what Israel has to offer you this shabbat!",
   icon: "success",
   showConfirmButton: false
 }, (value) => {
@@ -24,7 +24,7 @@ const clickSweet = () => {
 
 const sumbit = document.getElementById('sweet-alert-shabbo')
 sumbit.addEventListener('click', (event) => {
-setTimeout(clickSweet, 2500)
+setTimeout(clickSweet, 3300)
 });
 
 

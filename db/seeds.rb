@@ -10,12 +10,12 @@ User.destroy_all
 ############# Users ##################################
 puts 'Creating some amazing Shabbo users...'
 user1 = User.create!(
-  email: 'jimmyj@gmail.com',
+  email: 'rosstheboss@gmail.com',
   password: '123456',
-  first_name: 'Jimbo',
-  last_name: 'Johns',
-  username: 'BigJimbo',
-  remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_3-512.png'
+  first_name: 'Ross',
+  last_name: 'Allen',
+  username: 'Rmallen617',
+  remote_avatar_url: "https://avatars3.githubusercontent.com/u/51274895?s=460&v=4"
   )
 user2 = User.create!(
   email: 'noah@gmail.com',
@@ -38,15 +38,15 @@ user4 = User.create!(
   password: '123456',
   first_name: 'Ben',
   last_name: 'Alvo',
-  username: 'Chilean-A-hole',
+  username: 'ChileanGangster',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_2-512.png'
   )
 user5 = User.create!(
-  email: 'ross@gmail.com',
+  email: 'jimmyj@gmail.com',
   password: '123456',
-  first_name: 'Ross',
-  last_name: 'Allen',
-  username: 'RossyBaby',
+  first_name: 'Jimbo',
+  last_name: 'Jacobs',
+  username: 'JJ57213',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male-512.png'
   )
 user6 = User.create!(
@@ -68,20 +68,20 @@ user7 = User.create!(
 ############# Activities ##################################
 puts 'Creating some REA\'s...'
 activity1 = Activity.create!(
-  title: 'Pita Express',
-  address: 'Right on the TLV Boardwalk',
-  description: 'One of the better pitas in Tel Aviv!',
-  remote_image_url: "http://4.bp.blogspot.com/_t3C7S5jos3o/TQHTasUIPBI/AAAAAAAAErM/XRjPVqmebDk/s1600/1029001158.jpg",
-  day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
+  title: 'Samba trio Brasil',
+  address: 'Paspartu - Rabbi hanina 7, Tel Aviv',
+  description: 'Samba Brasil Trio brings the authentic concept of Brazilian music. Musicians playing around the table and the crowd is singing along and feeling the energy of the samba. The musicans are Paulinho Ferreira, Dudi Shaul and Ben Ben Franklin',
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/78468372_3357720627603900_1597342627085156352_n.jpg",
+  day: "Only Friday",
   user: User.all.sample
   )
 
 activity2 = Activity.create!(
   title: 'Yoga Class',
   address: 'Ben Yehuda 32',
-  description: 'You will feel completely enlightened',
+  description: 'You will feel completely enlightened. Ignore the fact that the teacher is an obnoixious instagram clout chaser',
   remote_image_url: "https://rudrayog.com/wp-content/uploads/2018/12/c700x420.jpg",
-  day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
+  day: "Friday & Saturday",
   user: User.all.sample
   )
 
@@ -90,14 +90,14 @@ activity3 = Activity.create!(
   address: 'The Hilton Beach',
   description: 'I will have you doing handstands on a surfboard within six weeks. Promise. Cut my dick off if im wrong!',
   remote_image_url: "https://static.wixstatic.com/media/c40a27_b4a4567f2062464693bd1e8fad4f1386~mv2.jpg/v1/fill/w_960,h_642,al_c,q_85/c40a27_b4a4567f2062464693bd1e8fad4f1386~mv2.webp",
-  day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
+  day: "Only Saturday",
   user: User.all.sample
   )
 
 activity4 = Activity.create!(
-  title: 'Rave!!!!',
+  title: 'Drug Free Rave',
   address: 'The Block',
-  description: 'We know how to turn up so you can turn down baby!',
+  description: 'Don\'t you hate that guy who says \'I get high off life\' and steals your girl? Become that guy! Come party at the block without cocaine!' ,
   remote_image_url: "https://www.thenittygrittyguide.co/wp-content/uploads/2019/05/hanny-naibaho-388579-unsplash-810x540.jpg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
   user: User.all.sample
@@ -113,8 +113,8 @@ activity5 = Activity.create!(
   )
 
 activity6 = Activity.create!(
-  title: 'Graffiti Tour',
-  address: 'The streets of florintine',
+  title: 'Graffiti Tour of florintine',
+  address: 'Were gonna meet at Maon 5. Right after the party at this Jap\'s house',
   description: 'Completely free of charge. We only request a 20 shekel donation for logistics. Yay.',
   remote_image_url: "https://images.squarespace-cdn.com/content/v1/57eb2e2215d5dbca6f4c6307/1561026174259-HIJRWQM7YGDZ0XAL6YCG/ke17ZwdGBToddI8pDm48kDHPSfPanjkWqhH6pl6g5ph7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mwONMR1ELp49Lyc52iWr5dNb1QJw9casjKdtTg1_-y4jz4ptJBmI9gQmbjSQnNGng/IMG_20180505_112504.jpg?format=1000w",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
@@ -126,7 +126,7 @@ activity6 = Activity.create!(
 activity7 = Activity.create!(
   title: 'Prozdor Burger',
   address: 'Mendeli 23, Tel Aviv, Israel',
-  description: 'We have a wide variety of tasty burger combinations - all for a decent price!',
+  description: 'The restaurant is designed like an American dinner, with pleasant and light music. We have a wide variety of tasty burger combinations - all for a decent price!',
   remote_image_url: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2004/2/25/0/bw2b07_hambugers1.jpg.rend.hgtvcom.826.620.suffix/1558017418187.jpeg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
   user: User.all.sample
@@ -220,12 +220,14 @@ activity19 = Activity.create!(
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
   user: User.all.sample
   )
-# activity20 = Activity.create!(
-#   title: 'Trainning at the park',
-#   address: "Meir's park",
-#   description: "An afternoon of a lot of trainning and fun!",
-#   remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg"
-#   )
+activity20 = Activity.create!(
+  title: 'Pita Express',
+  address: 'Right on the TLV Boardwalk',
+  description: 'One of the better pitas in Tel Aviv!',
+  remote_image_url: "http://4.bp.blogspot.com/_t3C7S5jos3o/TQHTasUIPBI/AAAAAAAAErM/XRjPVqmebDk/s1600/1029001158.jpg",
+  day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
+  user: User.all.sample
+  )
 # activity21 = Activity.create!(
 #   title: 'Trainning at the park',
 #   address: "Meir's park",
