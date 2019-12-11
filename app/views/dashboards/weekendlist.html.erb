@@ -14,24 +14,25 @@
         </div>
         <div class="weekend-info p-2">
           <div class="d-flex justify-content-between">
-            <h2><%=link_to booking.activity.title.truncate(18,separator: " "), booking.activity %></h2>
+            <h4><%=link_to booking.activity.title.truncate(18,separator: " "), booking.activity %></h4>
             <%= link_to booking_path(booking), method: :delete, data: { confirm: 'Are you sure you want to delete this booking?' } do %>
-              <p>x</p>
+              <p class="x-button">X</p>
             <% end %>
           </div>
           <div class="d-flex justify-content-between">
-            <div>
-              <h3><%=booking.activity.day %></h3>
-                <% booking.activity.rating_average.to_i.times do  %>
+            <div class="d-flex flex-column justify-content-between" style="height: 88px">
+              <p><%=booking.activity.day %></p>
+                <div class="stars"><% booking.activity.rating_average.to_i.times do  %>
                   <i class="fas fa-star"></i>
                 <% end %>
-              <h3><%= booking.activity.address.truncate(35) %></h3>
+                </div>
+              <p class="m-0"><%= booking.activity.address.truncate(35) %></p>
             </div>
-            <div class="weekend-btn">
+            <div class="weekend-btn d-flex align-items-end">
               <div class="url">
                 <% unless booking.activity.url.blank? %>
                   <a href="http://<%= booking.activity.url %>" target="_blank">
-                  <p class="btn btn-primary">See more</p></a>
+                  <p class="btn btn-primary my-0">See more</p></a>
                 <% end %>
               </div>
             </div>
