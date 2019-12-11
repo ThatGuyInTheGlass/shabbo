@@ -387,7 +387,7 @@ activity35 = Activity.create!(
   description: 'A very fashionable and fun club located in the Nemal, overlooking the Mediterranean – tends to attract an older crowd. Large parties most nights, and cool afternoon parties during the weekend. And there are loads of tables if you want to chill and catch up with friends.',
   url: "https://shalvata.co.il/",
   remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/Screenshot-2016-06-23-08.28.01-1024x334.png",
-  day: "Only Friday",
+  day: "Friday & Saturday",
   user: users.sample
 )
 # activity35 = Activity.create!(
