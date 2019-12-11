@@ -68,6 +68,10 @@ user7 = User.create!(
 
 users = [user2, user3, user4, user5, user6, user7]
 ############# Activities ##################################
+
+
+#====================(FRIST WEEK ADDS)===================
+
 puts 'Creating some REA\'s...'
 activity1 = Activity.create!(
   title: 'Samba trio Brasil',
@@ -123,7 +127,7 @@ activity6 = Activity.create!(
   user: users.sample
   )
 
-#-----------------------------------
+#====================================================(SECOND WEEK ADDS)=================================================================================================================
 
 activity7 = Activity.create!(
   title: 'Prozdor Burger',
@@ -229,6 +233,8 @@ activity20 = Activity.create!(
   remote_image_url: "http://4.bp.blogspot.com/_t3C7S5jos3o/TQHTasUIPBI/AAAAAAAAErM/XRjPVqmebDk/s1600/1029001158.jpg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
   user: users.sample
+
+#=========================================================(LAST DAY ADDS)=================================================================================================================
   )
 activity21 = Activity.create!(
   title: 'Christmas in Jaffa 2019',
@@ -506,6 +512,55 @@ activitycategory17 = ActivityCategory.create!(
 activitycategory18 = ActivityCategory.create!(
   category: category10,
   activity: activity19
+  )
+activitycategory19 = ActivityCategory.create!(
+  category: category2,
+  activity: activity20
+  )
+activitycategory20 = ActivityCategory.create!(
+  category: category9,
+  activity: activity21
+  )
+activitycategory22 = ActivityCategory.create!(
+  category: category12,
+  activity: activity21
+  )
+
+activitycategory23 = ActivityCategory.create!(
+  category: category9,
+  activity: activity22
+  )
+activitycategory24 = ActivityCategory.create!(
+  category: category5,
+  activity: activity22
+  )
+activitycategory25 = ActivityCategory.create!(
+  category: category12,
+  activity: activity22
+  )
+activitycategory25 = ActivityCategory.create!(
+  category: category4,
+  activity: activity23
+  )
+activitycategory26 = ActivityCategory.create!(
+  category: category10,
+  activity: activity23
+  )
+activitycategory27 = ActivityCategory.create!(
+  category: category9,
+  activity: activity24
+  )
+activitycategory27 = ActivityCategory.create!(
+  category: category7,
+  activity: activity25
+  )
+activitycategory27 = ActivityCategory.create!(
+  category: category8,
+  activity: activity25
+  )
+activitycategory27 = ActivityCategory.create!(
+  category: category2,
+  activity: activity26
   )
 
 ################# User Categories ##################################
