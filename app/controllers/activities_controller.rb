@@ -1,5 +1,5 @@
 class ActivitiesController < ApplicationController
-  before_action :set_activity, only: [:show, :destroy, :average, :edit]
+  before_action :set_activity, only: [:show, :destroy, :average, :edit, :update]
 
   def index
     @activities = policy_scope(Activity)
