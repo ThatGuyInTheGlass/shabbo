@@ -65,6 +65,8 @@ user7 = User.create!(
   username: 'ThatFrenchGuy',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_beard_hipster-512.png'
   )
+
+users = [user2, user3, user4, user5, user6, user7]
 ############# Activities ##################################
 puts 'Creating some REA\'s...'
 activity1 = Activity.create!(
@@ -73,7 +75,7 @@ activity1 = Activity.create!(
   description: 'Samba Brasil Trio brings the authentic concept of Brazilian music. Musicians playing around the table and the crowd is singing along and feeling the energy of the samba. The musicans are Paulinho Ferreira, Dudi Shaul and Ben Ben Franklin',
   remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/78468372_3357720627603900_1597342627085156352_n.jpg",
   day: "Only Friday",
-  user: User.all.sample
+  user: users.sample
   )
 
 activity2 = Activity.create!(
@@ -82,7 +84,7 @@ activity2 = Activity.create!(
   description: 'You will feel completely enlightened. Ignore the fact that the teacher is an obnoixious instagram clout chaser',
   remote_image_url: "https://rudrayog.com/wp-content/uploads/2018/12/c700x420.jpg",
   day: "Friday & Saturday",
-  user: User.all.sample
+  user: users.sample
   )
 
 activity3 = Activity.create!(
@@ -91,7 +93,7 @@ activity3 = Activity.create!(
   description: 'I will have you doing handstands on a surfboard within six weeks. Promise. Cut my dick off if im wrong!',
   remote_image_url: "https://static.wixstatic.com/media/c40a27_b4a4567f2062464693bd1e8fad4f1386~mv2.jpg/v1/fill/w_960,h_642,al_c,q_85/c40a27_b4a4567f2062464693bd1e8fad4f1386~mv2.webp",
   day: "Only Saturday",
-  user: User.all.sample
+  user: users.sample
   )
 
 activity4 = Activity.create!(
@@ -100,7 +102,7 @@ activity4 = Activity.create!(
   description: 'Don\'t you hate that guy who says \'I get high off life\' and steals your girl? Become that guy! Come party at the block without cocaine!' ,
   remote_image_url: "https://www.thenittygrittyguide.co/wp-content/uploads/2019/05/hanny-naibaho-388579-unsplash-810x540.jpg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 
 activity5 = Activity.create!(
@@ -109,7 +111,7 @@ activity5 = Activity.create!(
   description: 'Taught by the famous Benji Alvo',
   remote_image_url: "https://static.wixstatic.com/media/e2e417_698d80de7f3745c5a3e7080e6b579a8d.jpg/v1/fill/w_556,h_236,al_c,q_80,usm_0.66_1.00_0.01/e2e417_698d80de7f3745c5a3e7080e6b579a8d.webp",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 
 activity6 = Activity.create!(
@@ -118,7 +120,7 @@ activity6 = Activity.create!(
   description: 'Completely free of charge. We only request a 20 shekel donation for logistics. Yay.',
   remote_image_url: "https://images.squarespace-cdn.com/content/v1/57eb2e2215d5dbca6f4c6307/1561026174259-HIJRWQM7YGDZ0XAL6YCG/ke17ZwdGBToddI8pDm48kDHPSfPanjkWqhH6pl6g5ph7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mwONMR1ELp49Lyc52iWr5dNb1QJw9casjKdtTg1_-y4jz4ptJBmI9gQmbjSQnNGng/IMG_20180505_112504.jpg?format=1000w",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 
 #-----------------------------------
@@ -126,18 +128,18 @@ activity6 = Activity.create!(
 activity7 = Activity.create!(
   title: 'Prozdor Burger',
   address: 'Mendeli 23, Tel Aviv, Israel',
-  description: 'The restaurant is designed like an American dinner, with pleasant and light music. We have a wide variety of tasty burger combinations - all for a decent price!',
+  description: 'Prozdor is designed like an American dinner, with pleasant and light music. We have a wide variety of tasty burger combinations - all for a decent price!',
   remote_image_url: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2004/2/25/0/bw2b07_hambugers1.jpg.rend.hgtvcom.826.620.suffix/1558017418187.jpeg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
     )
 activity8 = Activity.create!(
   title: 'Thai House',
   address: 'Ben Yehuda 30, Tel Aviv, Israel',
-  description: 'One of the best restaurants in the city. Owned by an Israeli/Thai couple that wanted to change thai food in the Jewish State! Amazing stuff here',
+  description: 'One of the most recoginizable and regarded restaurants in the city. Owned by an Israeli/Thai couple that wanted to change thai food in the Jewish State! Amazing stuff here',
   remote_image_url: "https://www.thai-house.co.il/wp-content/uploads/2019/08/gallery8.jpg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 activity9 = Activity.create!(
   title: 'Mashya',
@@ -145,7 +147,7 @@ activity9 = Activity.create!(
   description: 'Yossi Shitrit\'s most famous restaurant!',
   remote_image_url: "https://cdn.vox-cdn.com/thumbor/eAUeGnBp07jLqaNiHL9JavxMUD0=/0x0:1024x768/870x653/filters:focal(431x303:593x465):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585037/Mashya__photocred_2DanPerez_.0.0.0.jpg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 activity10 = Activity.create!(
   title: 'HaKosem',
@@ -153,7 +155,7 @@ activity10 = Activity.create!(
   description: 'Highly regarded as the best falafel in the city. Also - the biggest tourist trap...',
   remote_image_url: "https://cdn.vox-cdn.com/thumbor/60eMLLok0PJQMoN0W91K49lHtCk=/0x0:1280x854/870x653/filters:focal(538x325:742x529):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585039/Hakosem_2___Yaron_Brenner.0.0.0.jpeg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 activity11 = Activity.create!(
   title: 'Yaffo Tel Aviv',
@@ -161,7 +163,7 @@ activity11 = Activity.create!(
   description: 'Meir Cohen\'s masterpiece',
   remote_image_url: "https://cdn.vox-cdn.com/thumbor/xwRbgM93rOwQZjrYiUR7wSOHUIc=/0x0:2000x1742/870x653/filters:focal(840x711:1160x1031):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585047/JAFFA_TEL-AVIV_REST_017.0.0.0.jpg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 activity12 = Activity.create!(
   title: 'Arayes at M25',
@@ -169,7 +171,7 @@ activity12 = Activity.create!(
   description: 'Look - Israelis may not be able to do steaks very well - but this is the best shot!',
   remote_image_url: "https://cdn.vox-cdn.com/thumbor/_hU9GxUw1BcKvxBsDBcXIoTzbMM=/0x0:960x640/870x653/filters:focal(404x244:556x396):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585051/M25__photo_credit_M25_n.0.0.0.jpg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 activity13 = Activity.create!(
   title: 'Capoeira',
@@ -177,7 +179,7 @@ activity13 = Activity.create!(
   description: 'Get a Capoeira class this weekend for free',
   remote_image_url: "http://brazilexpedition.com/wp-content/uploads/2019/10/tour1-photo1.jpg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 activity14 = Activity.create!(
   title: 'Capoeira',
@@ -185,15 +187,15 @@ activity14 = Activity.create!(
   description: 'Get a Capoeira class this weekend for free',
   remote_image_url: "http://brazilexpedition.com/wp-content/uploads/2019/10/tour1-photo1.jpg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 activity15 = Activity.create!(
-  title: 'Cicling Tel Aviv',
+  title: 'Cycling Tel Aviv',
   address: 'Tel Aviv Municipality',
   description: 'A group are planning to cycle all through tel aviv!',
-  remote_image_url: "https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Article+Image+Update/Cycling/Century+Ride+Rookies/carousel.jpg",
+  remote_image_url: "https://image.redbull.com/rbcom/010/2016-07-29/1331809211169_4/0010/1/1300/542/1/manyakhin-fuchs-fischer-and-shchebelin-racing-stage-14-red-bull-trans-siberian-extreme.jpg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 
 activity17 = Activity.create!(
@@ -202,7 +204,7 @@ activity17 = Activity.create!(
   description: "Let's dodge sharks!",
   remote_image_url: "https://cdn.shopify.com/s/files/1/0233/5881/files/brownlee_sea_2_grande.jpg?v=1474970910",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 activity18 = Activity.create!(
   title: 'Trainning at the park',
@@ -210,15 +212,15 @@ activity18 = Activity.create!(
   description: "An afternoon of a lot of trainning and fun!",
   remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 activity19 = Activity.create!(
-  title: 'Saturday Russian Roulette Meetup',
-  address: "Le Wagon",
+  title: 'Saturday Russian Roulette!',
+  address: "Le Wagon - David's Office",
   description: "An educational event where 10 will arrive but only 9 will leave on their feet. Come and take the challenge today!",
   remote_image_url: "https://static.tvtropes.org/pmwiki/pub/images/dogs_playing_russian_roulette.png",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
 activity20 = Activity.create!(
   title: 'Pita Express',
@@ -226,26 +228,62 @@ activity20 = Activity.create!(
   description: 'One of the better pitas in Tel Aviv!',
   remote_image_url: "http://4.bp.blogspot.com/_t3C7S5jos3o/TQHTasUIPBI/AAAAAAAAErM/XRjPVqmebDk/s1600/1029001158.jpg",
   day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
-  user: User.all.sample
+  user: users.sample
   )
-# activity21 = Activity.create!(
-#   title: 'Trainning at the park',
-#   address: "Meir's park",
-#   description: "An afternoon of a lot of trainning and fun!",
-#   remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg"
+activity21 = Activity.create!(
+  title: 'Christmas in Jaffa 2019',
+  address: 'St. George Church - Jaffa',
+  description: 'Tempting aromas, the festive glow, all the wonderful sounds of the season and delicious Christmas treats.Full program TBA.',
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/1575449804_76783711_10162409292260062_8707218084290625536_n.jpg",
+  day: "Friday & Saturday",
+  user: users.sample
 
-# activity22 = Activity.create(
-#   title: 'Trainning at the park',
-#   address: "Meir's park",
-#   description: "An afternoon of a lot of trainning and fun!",
-#   remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg"
-#   )
-# activity23 = Activity.create(
-#   title: 'Trainning at the park',
-#   address: "Meir's park",
-#   description: "An afternoon of a lot of trainning and fun!",
-#   remote_image_url: "https://i.ytimg.com/vi/yjG5JdaLmaE/maxresdefault.jpg"
-#   )
+)
+activity22 = Activity.create!(
+  title: 'Shabbat Dinner at Heseg House',
+  address: 'The Kerem House, Tel Aviv Israel',
+  description: 'More than just a meal. Shabbat Experience. Welcoming you to our rooftop for a traditional Friday night meal that doesn’t end with food, rather begins with friends, new and old.Friday night, doors open and you are invited to our pre-dinner kiddush chill as we wait for our company to gather and mix.',
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/1575900045_67842985_1148646868669734_4648210136844730368_o.jpg",
+  day: "Only Friday",
+  user: users.sample
+
+)
+activity23 = Activity.create!(
+  title: 'Cookie Decoration!',
+  address: 'Immanuel Church - Bar Hoffman 15, Tel Aviv',
+  description: 'More than just a meal. Shabbat Experience. Welcoming you to our rooftop for a traditional Friday night meal that doesn’t end with food, rather begins with friends, new and old.Friday night, doors open and you are invited to our pre-dinner kiddush chill as we wait for our company to gather and mix.',
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/1575900605_78500767_2570367996343926_5709172895540838400_o.jpg",
+  day: "Only Saturday",
+  user: users.sample
+)
+activity24 = Activity.create!(
+  title: "Back to the Future: 50th Anniversary of Moon Landing",
+  address: 'The White City Center, Tel Aviv',
+  description: 'After a four-day voyage aboard the Apollo 11 spacecraft, Neil Armstrong and Buzz Aldrin landed on the moon, planting the American flag on its surface as a message to those who will follow. The year is 1969, and Armstrong is the first person to step onto the lunar surface.',
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/1575450148_78490284_2924773347532924_293268639077892096_o.jpg",
+  day: "Only Saturday",
+  user: users.sample
+
+)
+activity25 = Activity.create!(
+  title: 'Saturday Baseball in the park',
+  address: 'Baseball Fields in park Ha-Yarkon.',
+  description: ' Bring your glove and protections. We are making this a weekly thing baby! All we ask is that you get here on time :)',
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/1575900605_78500767_2570367996343926_5709172895540838400_o.jpg",
+  day: "Only Saturday",
+  user: users.sample
+
+)
+activity26 = Activity.create!(
+  title: 'Dalida ',
+  address: '7 Zevulun Street, Tel Aviv-Yafo',
+  description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
+  remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+  day: "Friday & Saturday",
+  user: users.sample
+
+)
+
 ############# Reviews ##################################
 puts 'Creating some user reviews...'
 review1 = Review.create!(
