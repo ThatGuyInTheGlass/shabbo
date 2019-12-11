@@ -5,13 +5,9 @@
     <h1 class="page-title-entry-title text-center">Your plan for the weekend!</h1>
   </div>
 </div>
-<br>
 
-<div class="container">
-  <div class="row">
     <% @bookings.each do |booking| %>
-    <div class=>
-      <div class="card-weekend">
+      <div class="card-weekend mb-2">
         <div class="d-flex">
         <%=link_to "#", class: "weekend-card-intern" do %>
           <div class="weekend-image">
@@ -50,7 +46,6 @@
           <div>
         </div>
     </div>
-  </div>
     <% end %>
   </div>
 </div>
