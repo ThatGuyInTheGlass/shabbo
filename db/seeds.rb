@@ -392,7 +392,7 @@ activity35 = Activity.create!(
   user: users.sample
 )
 activity36 = Activity.create!(
-  theitle: 'Yoga In The Park - Two days in a row',
+  title: 'Yoga In The Park - Two days in a row',
   address: 'Gan Meir, Tel Aviv - Yafo',
   description: 'Pretty self explainitory! Lets do it!',
   remote_image_url: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F70425005%2F285695703145%2F1%2Foriginal.20190829-231618?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C24%2C720%2C360&s=87c66923e3ba1479fd37ae03a27d0ad3",
@@ -400,7 +400,7 @@ activity36 = Activity.create!(
   user: users.sample
 )
 activity37 = Activity.create!(
-  theitle: '(YA) Yogie\'s Anonymous' ,
+  title: '(YA) Yogie\'s Anonymous' ,
   address: 'Secret Location',
   description: 'Please send us an email if you are struggling from be a smug twat who has to tell everyone they do yoga 2 hours a day. We will cure your disease! Get help Today!',
   remote_image_url: "https://www.logoarena.com/contestimages/public_new/826/180_1341562895_ya1.png",
@@ -408,7 +408,7 @@ activity37 = Activity.create!(
   user: users.sample
 )
 activity38 = Activity.create!(
-  theitle: 'Friday Bikram',
+  title: 'Friday Bikram',
   address: 'Yafo',
   description: 'Discover new and different ways to advance your practice.  As always, modifications are welcome.  You don’t have to consider yourself a level 2 student to attend this class.',
   remote_image_url: "http://www.yogaforallbeings.com/wp-content/uploads/2014/04/yoga-for-all-beings-logo.png",
@@ -416,7 +416,7 @@ activity38 = Activity.create!(
   user: users.sample
 )
 activity39 = Activity.create!(
-  theitle: 'Running/Yoga Mix Saturdayssss',
+  title: 'Running/Yoga Mix Saturdayssss',
   address: 'The Zahala Country Club',
   description: 'ONLY 60 Shekels! A world class machine cardio workout followed by yoga recovery! Must try!',
   remote_image_url: "https://inteng-storage.s3.amazonaws.com/img/iea/V0OyzMNpGQ/sizes/running-band-technique_resize_md.jpg",
@@ -424,7 +424,7 @@ activity39 = Activity.create!(
   user: users.sample
 )
 activity40 = Activity.create!(
-  theitle: 'Sputnik',
+  title: 'Sputnik',
   address: 'Allenby St 112, Tel Aviv-Yafo',
   description: 'Hidden down a small alley off Allenby, near the corner of Rothschild, Sputnik opened in 2016, and has already achieved a cult-status amongst the Tel Aviv hipster crew as a space to chill, drink, catchup with friends, and listen to good music – including the occasional live act and top Tel Aviv DJ. It’s recommended to book a table in advance, as the place gets packed by 10pm and there are usually large queues outside.',
   remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2017/04/Screen-Shot-2017-05-31-at-16.01.21.png",
@@ -432,7 +432,7 @@ activity40 = Activity.create!(
   user: users.sample
 )
 activity41 = Activity.create!(
-  theitle: 'Borgore at Kulialma',
+  title: 'Borgore at Kulialma',
   address: 'Mikveh Israel 10, Tel Aviv-Yafo, Israel',
   description: 'Cool underground bar on the corner of Yehuda Halevi and Allenby. Sweet outdoor area to chill in the summer, really cool vibes with awesome DJs, beautiful graffiti on the walls, tasty cheap pizza and salad, and Tubi slushies.',
   remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/22453_1797397_1407080296216750_1920173247_n-1.jpg",
@@ -440,7 +440,7 @@ activity41 = Activity.create!(
   user: users.sample
 )
 activity42 = Activity.create!(
-  theitle: 'Rubi',
+  title: 'Rubi',
   address: 'Yermiyahu Street 7, Tel Aviv-Yafo, Israel',
   description: 'Cool underground bar on the corner of Yehuda Halevi and Allenby. Sweet outdoor area to chill in the summer, really cool vibes with awesome DJs, beautiful graffiti on the walls, tasty cheap pizza and salad, and Tubi slushies.',
   remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/Rubi_1454784101.jpeg",
@@ -455,9 +455,9 @@ activity43 = Activity.create!(
   day: "Friday & Saturday",
   user: users.sample
 )
-activity44 = Activity.create! (
-  title: 'Park Cleanup ',
-  address: 'Ha-Harkon'
+activity44 = Activity.create!(
+  title: 'Park Cleanup',
+  address: 'Ha-Harkon',
   description: 'Come find out how you can keep your city green!',
   remote_image_url: "https://previews.123rf.com/images/mariiaboiko/mariiaboiko1903/mariiaboiko190300350/120920262-man-volunteer-cleaning-up-the-trash-in-park-picking-up-rubbish-outdoors-ecology-and-environment-conc.jpg",
   day: "Friday & Saturday",
