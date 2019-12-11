@@ -193,6 +193,33 @@
   margin-left: 2px;
 }
 
+.x-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.profile-activity-image {
+  position: relative;
+}
+
+.profile-activity-image .x-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-weight: bolder;
+  background-color: $blue;
+  border: 2px solid white;
+  z-index: 10;
+}
+
 .activity-address{
   margin-left: 2px;
 }

@@ -15,10 +15,10 @@
       <h9> Email:  </h9><%= @user.email %>
     </div>
     <div class="interest-profile ">
-    <h9> Interests </h9>
+      <h9> Interests </h9>
     </div>
     <div class= "d-flex mt-2 justify-content-around user-categories-tag">
-    <% UserCategory.where(user: @user).each do |uc| %>
+      <% UserCategory.where(user: @user).each do |uc| %>
       <p class="profile-category mr-1 ml-1"><%= uc.category.name.truncate(17) %></p>
       <% end %>
     </div>
@@ -26,52 +26,47 @@
 
     <div class="user-categories d-flex justify-content-around">
       <div class="user-activities">
-      <p class="p-3"> Your Created Activities: </p>
-    </div>
+        <p class="p-3">Activities you created:</p>
+      </div>
     </div>
     <div class="content mb-5">
       <div class="d-flex row-cards">
 
         <% Activity.where(user: @user).each do |activity| %>
         <div class="card-trip">
-          <%= link_to activity, class: "card-img" do %>
-          <%= cl_image_tag activity.image, height: 100 %>
-          <% end %>
+          <div class="profile-activity-image">
+            <%= link_to activity, class: "card-img" do %>
+              <%= cl_image_tag activity.image, height: 100 %>
+            <% end %>
+            <%= link_to activity, method: :delete, data: { confirm: 'Are you sure you want to delete this activity?' } do %>
+              <p class="x-button">x</p>
+            <% end %>
+          </div>
           <div class="card-trip-infos p-2">
             <div>
               <div class="activity-title">
-              <h2><%=link_to activity.title.truncate(18,separator: " "), activity %></h2>
+                <h2><%=link_to activity.title.truncate(18,separator: " "), activity %></h2>
               </div>
               <div class="activity-day">
-              <p><%= activity.day %></p>
-            </div>
-            <div class="activity-stars">
-              <% if activity.rating_average.to_i == 0 %>
-              &nbsp;
-            <% else %>
-              <% activity.rating_average.to_i.times do  %>
-                <i class="fas fa-star"></i>
-              <% end %>
-            <% end %>
-            </div>
-              <p class="activityaddress"><%= activity.address.truncate(18,separator: " ")%></p>
-              <% if @user==current_user %>
-              <div class=" card-btn d-flex">
-                <div class="editservice">
-                  <%= link_to  edit_activity_path(activity) do %>
-                  <div class="btn-1 btn-primary btn-edit d-flex justify-content-center align-items-center">Edit</div>
-                  <%end%>
-                </div>
-
-                <div class="deleteservice">
-                  <td>
-                    <%= link_to  activity, method: :delete, data: { confirm: 'Are you sure you want to delete this activity?' } do %>
-                    <p class="btn btn-warning">Delete activity</p>
-                    <%end%>
-                  </td>
-                </div>
+                <p><%= activity.day %></p>
               </div>
-              <% end %>
+              <div class="activity-stars">
+                <% if activity.rating_average.to_i == 0 %>
+                &nbsp;
+                <% else %>
+                <% activity.rating_average.to_i.times do  %>
+                <i class="fas fa-star"></i>
+                <% end %>
+                <% end %>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="activityaddress"><%= activity.address.truncate(18,separator: " ")%></p>
+                <% if @user==current_user %>
+                  <%= link_to  edit_activity_path(activity) do %>
+                    <p><i class="fas fa-edit"></i></p>
+                  <% end %>
+                <% end %>
+              </div>
             </div>
           </div>
         </div>
