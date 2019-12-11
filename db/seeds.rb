@@ -14,7 +14,7 @@ user1 = User.create!(
   password: '123456',
   first_name: 'Ross',
   last_name: 'Allen',
-  username: 'Rmallen617',
+  username: 'Ross A.',
   remote_avatar_url: "https://avatars3.githubusercontent.com/u/51274895?s=460&v=4"
   )
 user2 = User.create!(
@@ -22,7 +22,7 @@ user2 = User.create!(
   password: '123456',
   first_name: 'Noah',
   last_name: 'Nash',
-  username: 'xOnoahnash0x',
+  username: 'Noah N.',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_9-512.png'
   )
 user3 = User.create!(
@@ -30,7 +30,7 @@ user3 = User.create!(
   password: '123456',
   first_name: 'Lindsey',
   last_name: 'Henry',
-  username: 'levy_henry1989',
+  username: 'Lindsey H.',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_woman_female_afro-512.png'
   )
 user4 = User.create!(
@@ -38,7 +38,7 @@ user4 = User.create!(
   password: '123456',
   first_name: 'Ben',
   last_name: 'Alvo',
-  username: 'ChileanGangster',
+  username: 'Ben A.',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_2-512.png'
   )
 user5 = User.create!(
@@ -46,7 +46,7 @@ user5 = User.create!(
   password: '123456',
   first_name: 'Yuval',
   last_name: 'Jacobs',
-  username: 'JJ57213',
+  username: 'Yuval J',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male-512.png'
   )
 user6 = User.create!(
@@ -54,7 +54,7 @@ user6 = User.create!(
   password: '123456',
   first_name: 'Joy',
   last_name: 'Phua',
-  username: 'LeWagonNumb1',
+  username: 'Joy P.',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_woman_female_1-512.png'
   )
 user7 = User.create!(
@@ -62,11 +62,12 @@ user7 = User.create!(
   password: '123456',
   first_name: 'David',
   last_name: 'Sellam',
-  username: 'ThatFrenchGuy',
+  username: 'David Sellam',
   remote_avatar_url: 'https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_beard_hipster-512.png'
   )
 
 users = [user2, user3, user4, user5, user6, user7]
+
 ############# Activities ##################################
 
 
@@ -390,7 +391,39 @@ activity35 = Activity.create!(
   day: "Friday & Saturday",
   user: users.sample
 )
-# activity35 = Activity.create!(
+activity36 = Activity.create!(
+  theitle: 'Yoga In The Park - Two days in a row',
+  address: 'Gan Meir, Tel Aviv - Yafo',
+  description: 'Pretty self explainitory! Lets do it!',
+  remote_image_url: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F70425005%2F285695703145%2F1%2Foriginal.20190829-231618?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C24%2C720%2C360&s=87c66923e3ba1479fd37ae03a27d0ad3",
+  day: "Friday & Saturday",
+  user: users.sample
+)
+activity37 = Activity.create!(
+  theitle: '(YA) Yogie\'s Anonymous' ,
+  address: 'Secret Location',
+  description: 'Please send us an email if you are struggling from be a smug twat who has to tell everyone they do yoga 2 hours a day. We will cure your disease! Get help Today!',
+  remote_image_url: "https://www.logoarena.com/contestimages/public_new/826/180_1341562895_ya1.png",
+  day: "Only Saturday",
+  user: users.sample
+)
+activity38 = Activity.create!(
+  theitle: 'Friday Bikram',
+  address: 'Yafo',
+  description: 'Discover new and different ways to advance your practice.  As always, modifications are welcome.  You don’t have to consider yourself a level 2 student to attend this class.',
+  remote_image_url: "http://www.yogaforallbeings.com/wp-content/uploads/2014/04/yoga-for-all-beings-logo.png",
+  day: "Only Friday",
+  user: users.sample
+)
+activity39 = Activity.create!(
+  theitle: '',
+  address: '',
+  description: '',
+  remote_image_url: "",
+  day: "Only Saturday",
+  user: users.sample
+)
+# activity40 = Activity.create!(
 #   theitle: '',
 #   address: '',
 #   description: '',
@@ -398,59 +431,21 @@ activity35 = Activity.create!(
 #   day: "Only Saturday",
 #   user: users.sample
 # )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
+# activity40 = Activity.create!(
+#   theitle: '',
+#   address: '',
+#   description: '',
+#   remote_image_url: "",
+#   day: "Only Saturday",
 #   user: users.sample
-
 # )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
+# activity40 = Activity.create!(
+#   theitle: '',
+#   address: '',
+#   description: '',
+#   remote_image_url: "",
+#   day: "Only Saturday",
 #   user: users.sample
-
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
-
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
-
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
-
-# )
-# activity26 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
-
 # )
 # activity26 = Activity.create!(
 #   title: 'Dalida ',
