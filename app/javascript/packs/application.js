@@ -2,10 +2,6 @@ import "bootstrap";
 import { initStarRating } from '../plugins/init_star_rating';
 import { initSweetalert } from '../plugins/init_sweetalert';
 
-document.addEventListener("DOMContentLoaded", () => {
-
-  initStarRating();
-})
 
 initSweetalert('#sweet-alert-shabbo', {
   title: "Shabbo is thinking...",
@@ -22,6 +18,11 @@ const clickSweet = () => {
   document.querySelector('.swal-button--confirm').click()
 }
 
+
+
+if (document.getElementById('sweet-alert-shabbo')) {
+
+console.log("this is being called")
 const sumbit = document.getElementById('sweet-alert-shabbo')
 sumbit.addEventListener('click', (event) => {
 setTimeout(clickSweet, 3300)
@@ -36,3 +37,9 @@ labelz.forEach((label)=> {
     event.currentTarget.previousElementSibling.checked = event.currentTarget.previousElementSibling.checked ? false : true
   });
 });
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  initStarRating();
+})

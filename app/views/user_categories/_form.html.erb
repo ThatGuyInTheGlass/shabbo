@@ -37,6 +37,9 @@
 
 <script>
 
+  if (document.getElementById("sweet-alert-shabbo")) {
+
+    console.log(999)
 const checkBoxes = document.querySelectorAll(".form-check");
   checkBoxes.forEach((checkbox) => {
     checkbox.addEventListener('click', (event) => {
@@ -51,11 +54,15 @@ const checkBoxes = document.querySelectorAll(".form-check");
 
   });
 });
+}
 
+if (document.getElementById("sweet-alert-shabbo")) {
+  console.log(888)
 const labels = document.querySelectorAll(".form-check-label")
 labels.forEach((label)=> {
   label.addEventListener('click', (event) => {
     event.currentTarget.parentElement.click()
   });
 });
+}
 </script>
