@@ -29,12 +29,10 @@
               <p class="m-0"><%= booking.activity.address.truncate(35) %></p>
             </div>
             <div class="weekend-btn d-flex align-items-end">
-              <div class="url">
-                <% unless booking.activity.url.blank? %>
-                  <a href="http://<%= booking.activity.url %>" target="_blank">
-                  <p class="btn btn-primary my-0">See more</p></a>
-                <% end %>
-              </div>
+              <% unless booking.activity.url.blank? %>
+                <a href="http://<%= booking.activity.url %>" target="_blank" class="info-link">
+                <p class="btn x-button m-0 p-0"><i class="fas fa-info-circle"></i></p></a>
+              <% end %>
             </div>
           </div>
         </div>
