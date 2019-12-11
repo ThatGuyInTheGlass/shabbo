@@ -1,4 +1,4 @@
-<%= cl_image_tag @activity.image, class: "show-img" %>
+<%= cl_image_tag @activity.image, crop: :fill, height: 375, width: 355, class: "show-img" %>
 <h1 class="show-title text-center">  <%= @activity.title %> </h1>
 <%= link_to 'Add to my Weekend', activity_bookings_path(@activity), method: :post, class: "btn-primary", id: "bookbtn"%>
 <div class="extra-info ml-2">
