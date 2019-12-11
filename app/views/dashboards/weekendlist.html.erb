@@ -1,54 +1,43 @@
 <div class="container-weekend">
 
-<div class="dashboard-banner"  >
-  <div class="dashboard-banner-text">
-    <h1 class="page-title-entry-title text-center">Your plan for the weekend!</h1>
+  <div class="dashboard-banner">
+    <div class="dashboard-banner-text">
+      <h1 class="page-title-entry-title text-center">Your plan for the weekend!</h1>
+    </div>
   </div>
-</div>
 
-    <% @bookings.each do |booking| %>
-      <div class="card-weekend mb-2">
-        <div class="d-flex">
-        <%=link_to "#", class: "weekend-card-intern" do %>
-          <div class="weekend-image">
-          <%= cl_image_tag booking.activity.image, height: 110 %>
+  <% @bookings.each do |booking| %>
+    <div class="card-weekend mb-2">
+      <div class="d-flex">
+        <div class="weekend-image">
+          <%= cl_image_tag booking.activity.image, height: 150, width: 100, crop: :fill %>
         </div>
-        <%end%>
-        <div class="weekend-info">
+        <div class="weekend-info p-2">
+          <div class="d-flex justify-content-between">
             <h2><%=link_to booking.activity.title.truncate(18,separator: " "), booking.activity %></h2>
-            <h3><%=booking.activity.day %>
-          <div class="rating-weekend">
-          <% booking.activity.rating_average.to_i.times do  %>
-              <i class="fas fa-star"></i>
-            <% end %>
-          <h3><%= booking.activity.address.truncate(35) %></h3>
-          </div>
-          </div>
-          </div>
-          <div>
-            <div class="weekend-btn d-flex  align-content-between">
-              <div class="url">
-              <td>
-                <% if booking.activity.url.blank? %>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                <% else %>
-                  <a href="http://<%= booking.activity.url %>" target="_blank">
-                  <p class="btn btn-primary btn-block btn-url">Go To WebPage</p></a>
-                <% end %>
-          </td>
-          </div>
-          <div class="unbook">
-            <td>
             <%= link_to booking_path(booking), method: :delete, data: { confirm: 'Are you sure you want to delete this booking?' } do %>
-              <p>Unbook</p>
-              <%end%>
-            </td>
+              <p>x</p>
+            <% end %>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div>
+              <h3><%=booking.activity.day %></h3>
+                <% booking.activity.rating_average.to_i.times do  %>
+                  <i class="fas fa-star"></i>
+                <% end %>
+              <h3><%= booking.activity.address.truncate(35) %></h3>
+            </div>
+            <div class="weekend-btn">
+              <div class="url">
+                <% unless booking.activity.url.blank? %>
+                  <a href="http://<%= booking.activity.url %>" target="_blank">
+                  <p class="btn btn-primary">See more</p></a>
+                <% end %>
+              </div>
             </div>
           </div>
-          </div>
-          <div>
         </div>
+      </div>
     </div>
-    <% end %>
-  </div>
+  <% end %>
 </div>
