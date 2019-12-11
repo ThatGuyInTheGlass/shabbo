@@ -134,7 +134,7 @@ activity7 = Activity.create!(
   address: 'Mendeli 23, Tel Aviv, Israel',
   description: 'Prozdor is designed like an American dinner, with pleasant and light music. We have a wide variety of tasty burger combinations - all for a decent price!',
   remote_image_url: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2004/2/25/0/bw2b07_hambugers1.jpg.rend.hgtvcom.826.620.suffix/1558017418187.jpeg",
-  day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
+  day: "Friday & Saturday",
   user: users.sample
     )
 activity8 = Activity.create!(
@@ -142,7 +142,7 @@ activity8 = Activity.create!(
   address: 'Ben Yehuda 30, Tel Aviv, Israel',
   description: 'One of the most recoginizable and regarded restaurants in the city. Owned by an Israeli/Thai couple that wanted to change thai food in the Jewish State! Amazing stuff here',
   remote_image_url: "https://www.thai-house.co.il/wp-content/uploads/2019/08/gallery8.jpg",
-  day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
+  day: "Friday & Saturday",
   user: users.sample
   )
 activity9 = Activity.create!(
@@ -150,7 +150,7 @@ activity9 = Activity.create!(
   address: 'Mendeli 10, Tel Aviv, Israel',
   description: 'Yossi Shitrit\'s most famous restaurant!',
   remote_image_url: "https://cdn.vox-cdn.com/thumbor/eAUeGnBp07jLqaNiHL9JavxMUD0=/0x0:1024x768/870x653/filters:focal(431x303:593x465):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585037/Mashya__photocred_2DanPerez_.0.0.0.jpg",
-  day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
+  day: "Friday & Saturday",
   user: users.sample
   )
 activity10 = Activity.create!(
@@ -158,7 +158,7 @@ activity10 = Activity.create!(
   address: 'Shlomo ha-Melekh St 1, Tel Aviv, Israel',
   description: 'Highly regarded as the best falafel in the city. Also - the biggest tourist trap...',
   remote_image_url: "https://cdn.vox-cdn.com/thumbor/60eMLLok0PJQMoN0W91K49lHtCk=/0x0:1280x854/870x653/filters:focal(538x325:742x529):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585039/Hakosem_2___Yaron_Brenner.0.0.0.jpeg",
-  day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
+  day: "Only Friday",
   user: users.sample
   )
 activity11 = Activity.create!(
@@ -166,7 +166,7 @@ activity11 = Activity.create!(
   address: 'Yigal Alon 98, Tel Aviv, Israel',
   description: 'Meir Cohen\'s masterpiece',
   remote_image_url: "https://cdn.vox-cdn.com/thumbor/xwRbgM93rOwQZjrYiUR7wSOHUIc=/0x0:2000x1742/870x653/filters:focal(840x711:1160x1031):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585047/JAFFA_TEL-AVIV_REST_017.0.0.0.jpg",
-  day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
+  day: "Friday & Saturday",
   user: users.sample
   )
 activity12 = Activity.create!(
@@ -174,7 +174,7 @@ activity12 = Activity.create!(
   address: 'Carmel Alley 30, Tel Aviv, Israel',
   description: 'Look - Israelis may not be able to do steaks very well - but this is the best shot!',
   remote_image_url: "https://cdn.vox-cdn.com/thumbor/_hU9GxUw1BcKvxBsDBcXIoTzbMM=/0x0:960x640/870x653/filters:focal(404x244:556x396):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/62585051/M25__photo_credit_M25_n.0.0.0.jpg",
-  day: ["Only Friday", "Only Saturday", "Friday & Saturday"].sample,
+  day: "Only Friday",
   user: users.sample
   )
 activity13 = Activity.create!(
@@ -811,7 +811,7 @@ activitycategory1 = ActivityCategory.create!(
   )
 
 activitycategory2 = ActivityCategory.create!(
-  category: category2,
+  category: category12,
   activity: activity1
   )
 
