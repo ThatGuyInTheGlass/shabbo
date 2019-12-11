@@ -28,10 +28,12 @@
             <div class="weekend-btn d-flex  align-content-between">
               <div class="url">
               <td>
-                <% unless booking.activity.url.blank? %>
-            <a href="http://<%= booking.activity.url %>" target="_blank">
-            <p class="btn btn-primary btn-block btn-url">Go To WebPage</p></a>
-            <% end %>
+                <% if booking.activity.url.blank? %>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <% else %>
+                  <a href="http://<%= booking.activity.url %>" target="_blank">
+                  <p class="btn btn-primary btn-block btn-url">Go To WebPage</p></a>
+                <% end %>
           </td>
           </div>
           <div class="unbook">
