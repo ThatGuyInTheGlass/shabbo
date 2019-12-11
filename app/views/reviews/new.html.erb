@@ -1,6 +1,8 @@
 <div class="edit">
   <div class="form">
-<h3>Go ahead, write a review about <%= @activity.title %>!</h3>
+    <div class="review-title d-flex align-text-center">
+      <h3>Go ahead, write a review about <%= @activity.title %>!</h3>
+    </div>
     <%= render 'form', review: @review %>
   </div>
   <div class="image">
