@@ -17,7 +17,7 @@
 </div>
 </div>
 </div>
-<h2 class="show-titles"> Categorie(s) </h2>
+<h2 class="show-titles"> <%= "Category".pluralize(@activity.categories.count) %> </h2>
 <div class= "d-flex mt-2 justify-content-around user-categories-tag">
   <div class="activity-categories d-flex">
     <% if @activity.categories.count ==1 %>
