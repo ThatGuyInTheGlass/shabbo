@@ -516,42 +516,42 @@ activity50 = Activity.create!(
   user: users.sample
 
 )
-# activity51 = Activity.create!(
-#   title: 'Dali',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
+activity51 = Activity.create!(
+  title: 'Speakeasy',
+  address: 'Rothschild Boulevard 24,Tel Aviv',
+  description: 'With our large terrace and amazing lounge you are guaranteed the perfect venue for your Entertainment experience.',
+  remote_image_url: "https://static.wixstatic.com/media/0ecf0b_7f24e5294c5a4b379a9c06eb9ec7ec3c~mv2.jpg/v1/fill/w_419,h_279,al_c,q_80,usm_0.66_1.00_0.01/0ecf0b_7f24e5294c5a4b379a9c06eb9ec7ec3c~mv2.jpg",
+  day: "Friday & Saturday",
+  user: users.sample
 
-# )
-# activity52 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
+)
+activity52 = Activity.create!(
+  title: 'Alphabet',
+  address: 'Ahad HaAm 54, Tel Aviv-Yafo, Israel',
+  description: 'An intimate bar with a consistently good DJ line-up, friendly staff, and strong drinks. Ages 25+.',
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/Alphabet_1454783118.jpeg",
+  day: "Friday & Saturday",
+  user: users.sample
 
-# )
-# activity53 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
+)
+activity53 = Activity.create!(
+  title: 'Radio EPGB',
+  address: 'Shadal Street 7, Tel Aviv',
+  description: 'The ultra-hip underground and indie electronic club has just improved its VIP Card Offer – now get 1+1 on all drinks till midnight, and a free chaser with every drink after midnight! And they have a cool hip hop line on Mondays.',
+  remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/549300_596693060347034_1305495395_n.jpg",
+  day: "Friday & Saturday",
+  user: users.sample
 
-# )
-# activity54 = Activity.create!(
-#   title: 'Dalida ',
-#   address: '7 Zevulun Street, Tel Aviv-Yafo',
-#   description: 'Dalida is a great choice for food and alcohol lovers! Located next to the Levinksi market this casual, trendy spot attracts the cool Tel Avivian crowd! They serve delicious cocktails (although we don’t recommend the Sangria) in pitchers for very cheap, about 100 shekels for one litre- yes please! After 11pm cocktails are 30% off. The atmosphere is bustling, and a great place to go with a big group.',
-#   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
-#   day: "Friday & Saturday",
-#   user: users.sample
+)
+activity54 = Activity.create!(
+  title: 'TLV Internations presents: Friday Dinner',
+  address: '7 Zevulun Street, Tel Aviv-Yafo',
+  description: 'JIC Israel and TAIS Invites Young Internationals & Israelis 20s & 30s for Shabbat Dinner At the Tel Aviv International Synagogue with great food & abundance of wine and liquor!',
+  remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
+  day: "Friday & Saturday",
+  user: users.sample
 
-# )
+)
 # activity55 = Activity.create!(
 #   title: 'Dalida ',
 #   address: '7 Zevulun Street, Tel Aviv-Yafo',
@@ -559,7 +559,6 @@ activity50 = Activity.create!(
 #   remote_image_url: "http://www.dalidatlv.co.il/warehouse/dynamic/16598.jpg",
 #   day: "Friday & Saturday",
 #   user: users.sample
-
 # )
 # activity56 = Activity.create!(
 #   title: 'Dalida ',
@@ -1093,6 +1092,30 @@ activitycategory77 = ActivityCategory.create!(
 activitycategory78 = ActivityCategory.create!(
   category: category2,
   activity: activity50
+  )
+activitycategory79 = ActivityCategory.create!(
+  category: category6,
+  activity: activity51
+  )
+activitycategory80 = ActivityCategory.create!(
+  category: category3,
+  activity: activity51
+  )
+activitycategory81 = ActivityCategory.create!(
+  category: category6,
+  activity: activity52
+  )
+activitycategory82 = ActivityCategory.create!(
+  category: category6,
+  activity: activity53
+  )
+activitycategory83 = ActivityCategory.create!(
+  category: category6,
+  activity: activity53
+  )
+activitycategory84 = ActivityCategory.create!(
+  category: category4,
+  activity: activity53
   )
 ################# User Categories ##################################
 puts 'Creating catergoies that a Shabbo user selects.'
