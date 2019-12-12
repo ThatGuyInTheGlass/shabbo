@@ -247,7 +247,7 @@ activity21 = Activity.create!(
 
 )
 activity22 = Activity.create!(
-  title: 'Shabbat Dinner at Heseg House',
+  title: 'Shabbat Dinner at Kerem House',
   address: 'The Kerem House, Tel Aviv Israel',
   description: 'More than just a meal. Shabbat Experience. Welcoming you to our rooftop for a traditional Friday night meal that doesn’t end with food, rather begins with friends, new and old.Friday night, doors open and you are invited to our pre-dinner kiddush chill as we wait for our company to gather and mix.',
   remote_image_url: "https://3gwtod2hg0th1ikege3y0nok-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/1575900045_67842985_1148646868669734_4648210136844730368_o.jpg",
@@ -867,11 +867,11 @@ activitycategory23 = ActivityCategory.create!(
   activity: activity22
   )
 activitycategory24 = ActivityCategory.create!(
-  category: category5,
+  category: category4,
   activity: activity22
   )
 activitycategory25 = ActivityCategory.create!(
-  category: category12,
+  category: category10,
   activity: activity22
   )
 activitycategory25 = ActivityCategory.create!(
@@ -1042,42 +1042,58 @@ activitycategory65 = ActivityCategory.create!(
   category: category7,
   activity: activity44
   )
-# activitycategory66 = ActivityCategory.create!(
-#   category: category6,
-#   activity: activity46
-#   )
-# activitycategory67 = ActivityCategory.create!(
-#   category: category6,
-#   activity: activity46
-#   )
-# activitycategory68 = ActivityCategory.create!(
-#   category: category6,
-#   activity: activity46
-#   )
-# activitycategory69 = ActivityCategory.create!(
-#   category: category6,
-#   activity: activity46
-#   )
-# activitycategory70 = ActivityCategory.create!(
-#   category: category6,
-#   activity: activity46
-#   )
-# activitycategory71 = ActivityCategory.create!(
-#   category: category6,
-#   activity: activity46
-#   )
-# activitycategory72 = ActivityCategory.create!(
-#   category: category6,
-#   activity: activity46
-#   )
-# activitycategory73 = ActivityCategory.create!(
-#   category: category6,
-#   activity: activity46
-#   )
-# activitycategory74 = ActivityCategory.create!(
-#   category: category6,
-#   activity: activity46
-#   )
+activitycategory66 = ActivityCategory.create!(
+  category: category11,
+  activity: activity45
+  )
+activitycategory67 = ActivityCategory.create!(
+  category: category8,
+  activity: activity45
+  )
+activitycategory68 = ActivityCategory.create!(
+  category: category11,
+  activity: activity46
+  )
+activitycategory69 = ActivityCategory.create!(
+  category: category8,
+  activity: activity46
+  )
+activitycategory70 = ActivityCategory.create!(
+  category: category11,
+  activity: activity47
+  )
+activitycategory71 = ActivityCategory.create!(
+  category: category2,
+  activity: activity47
+  )
+activitycategory72 = ActivityCategory.create!(
+  category: category11,
+  activity: activity48
+  )
+activitycategory73 = ActivityCategory.create!(
+  category: category2,
+  activity: activity48
+  )
+activitycategory74 = ActivityCategory.create!(
+  category: category10,
+  activity: activity49
+  )
+activitycategory75 = ActivityCategory.create!(
+  category: category9,
+  activity: activity49
+  )
+activitycategory76 = ActivityCategory.create!(
+  category: category12,
+  activity: activity49
+  )
+activitycategory77 = ActivityCategory.create!(
+  category: category11,
+  activity: activity50
+  )
+activitycategory78 = ActivityCategory.create!(
+  category: category2,
+  activity: activity50
+  )
 ################# User Categories ##################################
 puts 'Creating catergoies that a Shabbo user selects.'
 
